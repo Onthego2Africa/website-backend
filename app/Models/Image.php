@@ -6,26 +6,17 @@ use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Reservation extends Model
+class Image extends Model
 {
     use HasFactory;
 
 
     protected $fillable = [
-        'number_of_guests',
-        'paymentID',
-        'check_in',
-        'check_out',
-        'cost',
+        'url',
         'event_id',
-        'tour_id'
+        'event_id'
     ];
 
-    // Relationship to User
-    public function user()
-    {
-        return $this->belongsTo(User::class, 'user_id');
-    }
 
     // Relationship to Event
     public function event()

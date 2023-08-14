@@ -13,8 +13,12 @@ class CreateTourTable extends Migration
      */
     public function up()
     {
-        Schema::create('tour', function (Blueprint $table) {
+        Schema::create('tours', function (Blueprint $table) {
             $table->id();
+            $table->string('title')->unique();
+            $table->longText('overview');
+            $table->longText('itenary');
+            $table->string('cost');
             $table->timestamps();
         });
     }
