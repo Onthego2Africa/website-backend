@@ -30,7 +30,7 @@ Route::post('/register', [AuthController::class, 'store']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/email/verification-notification', [AuthController::class, 'sendVerificationEmail']);
 Route::get('/verify-email/{id}/{hash}', [AuthController::class, 'verify'])->name('verification.verify');
-Route::get('/search/{username}', [RateCardController::class, 'search']);
+// Route::get('/search/{username}', [RateCardController::class, 'search']);
 Route::get('password/reset/{token}', [AuthController::class, 'resetForm'])->name('password.reset');
 
 // user routes
