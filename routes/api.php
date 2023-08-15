@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\FaqController;
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\TourController;
 
@@ -19,8 +20,10 @@ use App\Http\Controllers\TourController;
 */
 
 // Public Routes
-Route::get('/tour', [TourController::class, 'index']);
-Route::get('/event', [EventController::class, 'index']);
+
+Route::get('/tours', [TourController::class, 'index']);
+Route::get('/events', [EventController::class, 'index']);
+Route::get('/faqs', [FaqController::class, 'index']);
 // Route::get('/users/check-username/{username}', [AuthController::class, 'checkUsername']);
 Route::post('/forgot-password', [AuthController::class, 'forgotPassword']);
 Route::post('/register', [AuthController::class, 'store']);
@@ -35,9 +38,10 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/my-profile', [AuthController::class, 'show']);
     Route::put('/users', [AuthController::class, 'update']);
     Route::post('/logout', [AuthController::class, 'logout']);
-    Route::post('/reservation', [ReservationController::class, 'store']);
-    Route::put('/reservation/{id}', [ReservationController::class, 'update']);
-    Route::delete('/reservation/{id}', [ReservationController::class, 'destroy']);
+    Route::get('/reservations', [ReservationController::class, 'myIndex']);
+    Route::post('/reservations', [ReservationController::class, 'store']);
+    Route::put('/reservations/{id}', [ReservationController::class, 'update']);
+    Route::delete('/reservations/{id}', [ReservationController::class, 'destroy']);
     Route::post('/logout', [AuthController::class, 'logout']);
 });
 
@@ -50,11 +54,11 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/event', [EventController::class, 'store']);
     Route::put('/tour', [TourController::class, 'update']);
     Route::put('/event', [EventController::class, 'update']);
-    Route::post('/admin/reservation', [ReservationController::class, 'store']);
-    Route::put('/reservation/{id}', [ReservationController::class, 'update']);
-    Route::delete('/reservation/{id}', [ReservationController::class, 'destroy']);
+    Route::post('/admin/reservations', [ReservationController::class, 'store']);
+    Route::put('/reservations/{id}', [ReservationController::class, 'update']);
+    Route::delete('/reservations/{id}', [ReservationController::class, 'destroy']);
 });
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });

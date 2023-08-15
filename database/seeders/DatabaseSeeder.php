@@ -21,7 +21,20 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         User::factory(10)->create();
-        // Tour::factory(10)->create();
+        Tour::create([
+            'title' => 'dsfdsfdfsd',
+            'cover_image' => 'fdsfd',
+            'overview' => '423',
+            'itenary' => '4',
+            'cost' => '4',
+        ]);
+        Event::create([
+            'title' => 'dsfdsfdfsd',
+            'cover_image' => 'fdsfd',
+            'overview' => '423',
+            'itenary' => '4',
+            'cost' => '4',
+        ]);
         // Event::factory(10)->create();
         // Faq::factory(10)->create();
         // Reservation::factory(10)->create();

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Newsletter;
 use Illuminate\Http\Request;
 
 class NewsLetterController extends Controller
@@ -13,7 +14,13 @@ class NewsLetterController extends Controller
      */
     public function index()
     {
-        //
+        $newsletters = Newsletter::all();
+
+        $response = [
+            'newsletters' => $newsletters
+        ];
+
+        return response($response, 200);
     }
 
     /**
