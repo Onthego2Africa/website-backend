@@ -2,6 +2,13 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
+use App\Models\Faq;
+use App\Models\Event;
+use App\Models\Image;
+use App\Models\Newsletter;
+use App\Models\Reservation;
+use App\Models\Tour;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +20,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        User::factory(10)->create();
+        // Tour::factory(10)->create();
+        // Event::factory(10)->create();
+        // Faq::factory(10)->create();
+        // Reservation::factory(10)->create();
+        // Newsletter::factory(10)->create();
+        // Image::factory(10)->create();
     }
 }

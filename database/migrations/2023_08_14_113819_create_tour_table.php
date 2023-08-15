@@ -16,6 +16,7 @@ class CreateTourTable extends Migration
         Schema::create('tours', function (Blueprint $table) {
             $table->id();
             $table->string('title')->unique();
+            $table->string('cover_image');
             $table->longText('overview');
             $table->longText('itenary');
             $table->string('cost');
@@ -30,6 +31,6 @@ class CreateTourTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tour');
+        Schema::dropIfExists('tours');
     }
 }
