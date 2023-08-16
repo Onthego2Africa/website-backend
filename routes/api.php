@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
@@ -35,7 +36,7 @@ Route::get('password/reset/{token}', [AuthController::class, 'resetForm'])->name
 
 // user routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
-    Route::get('/my-profile', [AuthController::class, 'show']);
+    Route::get('/profile', [AuthController::class, 'show']);
     Route::put('/users', [AuthController::class, 'update']);
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::get('/reservations', [ReservationController::class, 'myIndex']);
@@ -48,8 +49,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 // admin routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/users', [AuthController::class, 'index']);
-    Route::get('/admin/my-profile', [AuthController::class, 'show']);
-    Route::put('/admins', [AuthController::class, 'update']);
+    Route::get('/admin/my-profile', [AdminController::class, 'show']);
+    Route::put('/admins', [AdminController::class, 'update']);
     Route::post('/tour', [TourController::class, 'store']);
     Route::post('/event', [EventController::class, 'store']);
     Route::put('/tour', [TourController::class, 'update']);

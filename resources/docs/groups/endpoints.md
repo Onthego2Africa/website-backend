@@ -99,8 +99,8 @@ fetch(url, {
             "overview": "423",
             "itenary": "4",
             "cost": "4",
-            "created_at": "2023-08-15T11:43:10.000000Z",
-            "updated_at": "2023-08-15T11:43:10.000000Z"
+            "created_at": "2023-08-15T21:14:29.000000Z",
+            "updated_at": "2023-08-15T21:14:29.000000Z"
         }
     ]
 }
@@ -171,8 +171,8 @@ fetch(url, {
             "overview": "423",
             "itenary": "4",
             "cost": "4",
-            "created_at": "2023-08-15T11:43:10.000000Z",
-            "updated_at": "2023-08-15T11:43:10.000000Z"
+            "created_at": "2023-08-15T21:14:29.000000Z",
+            "updated_at": "2023-08-15T21:14:29.000000Z"
         }
     ]
 }
@@ -323,14 +323,14 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/reservations/aut" \
+    "http://localhost/api/reservations/unde" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/reservations/aut"
+    "http://localhost/api/reservations/unde"
 );
 
 let headers = {
@@ -384,14 +384,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/reservations/quae" \
+    "http://localhost/api/reservations/ipsum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/reservations/quae"
+    "http://localhost/api/reservations/ipsum"
 );
 
 let headers = {
@@ -432,6 +432,121 @@ fetch(url, {
 <input type="text" name="id" data-endpoint="DELETEapi-reservations--id-" data-component="url" required  hidden>
 <br>
 
+</p>
+</form>
+
+
+## Display the specified resource.
+
+
+
+
+> Example request:
+
+```bash
+curl -X GET \
+    -G "http://localhost/api/admin/my-profile" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/admin/my-profile"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response => response.json());
+```
+
+
+> Example response (401):
+
+```json
+{
+    "message": "Unauthenticated."
+}
+```
+<div id="execution-results-GETapi-admin-my-profile" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETapi-admin-my-profile"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-admin-my-profile"></code></pre>
+</div>
+<div id="execution-error-GETapi-admin-my-profile" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-admin-my-profile"></code></pre>
+</div>
+<form id="form-GETapi-admin-my-profile" data-method="GET" data-path="api/admin/my-profile" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETapi-admin-my-profile', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETapi-admin-my-profile" onclick="tryItOut('GETapi-admin-my-profile');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETapi-admin-my-profile" onclick="cancelTryOut('GETapi-admin-my-profile');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETapi-admin-my-profile" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-green">GET</small>
+ <b><code>api/admin/my-profile</code></b>
+</p>
+</form>
+
+
+## Update the specified resource in storage.
+
+
+
+
+> Example request:
+
+```bash
+curl -X PUT \
+    "http://localhost/api/admins" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/admins"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "PUT",
+    headers,
+}).then(response => response.json());
+```
+
+
+<div id="execution-results-PUTapi-admins" hidden>
+    <blockquote>Received response<span id="execution-response-status-PUTapi-admins"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-admins"></code></pre>
+</div>
+<div id="execution-error-PUTapi-admins" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-admins"></code></pre>
+</div>
+<form id="form-PUTapi-admins" data-method="PUT" data-path="api/admins" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTapi-admins', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTapi-admins" onclick="tryItOut('PUTapi-admins');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTapi-admins" onclick="cancelTryOut('PUTapi-admins');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTapi-admins" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-darkblue">PUT</small>
+ <b><code>api/admins</code></b>
 </p>
 </form>
 
