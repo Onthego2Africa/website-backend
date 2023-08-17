@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Password;
 use Illuminate\Validation\ValidationException;
 
 /**
- * @group Auth Management
+ * @group User APIs
  *
  * Apis for managing user resource
  * @return \Illuminate\Http\Response
@@ -20,7 +20,7 @@ class AuthController extends Controller
 {
 
     /**
-     * GET Users
+     * GET /users
      *
      * Get a list of all users
      * 
@@ -87,6 +87,8 @@ class AuthController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @bodyParam email string required
+     * 
+     * 
      * @return \Illuminate\Http\Response
      */
     public function sendVerificationEmail(Request $request)
@@ -102,12 +104,15 @@ class AuthController extends Controller
 
 
     /**
-     * Verify Email
+     * Verify Email - Backend Only
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
+     * 
+     * @response 200 {
+     * "returns": "success page"
+     * }
      */
-
     // public function verify(EmailVerificationRequest $request)
     public function verify(Request $request, $id)
     {
@@ -134,7 +139,6 @@ class AuthController extends Controller
     /**
      * GET /profile
      *
-     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request)
@@ -144,9 +148,6 @@ class AuthController extends Controller
         if (!$user) {
             abort(403, 'Unauthorized Action');
         }
-
-        // $rateCards = User::where('user_id', $user->id)->get();
-        $rateCards = $user->ratecards;
 
         $response = [
             'user' => $user
@@ -193,7 +194,6 @@ class AuthController extends Controller
         }
 
 
-        // return $user['instagram'];
         $user->update([
             'name' => $fields['name'],
             'username' => $fields['username'],
@@ -208,8 +208,14 @@ class AuthController extends Controller
     }
 
     /**
-     * Login User.
+     * POST /login
      *
+     * @bodyParam email string required 
+     * @bodyParam password string required 
+     * 
+     * @param  \Illuminate\Http\Request  $request
+     * @apiResource App\Http\Resources\UserResource
+     * @apiResourceModel App\Models\User
      * @return \Illuminate\Http\Response
      */
     public function login(Request $request)
@@ -238,7 +244,7 @@ class AuthController extends Controller
     }
 
     /**
-     * Logout User.
+     * POST /logout
      *
      * @return \Illuminate\Http\Response
      */
@@ -250,8 +256,10 @@ class AuthController extends Controller
     }
 
     /**
-     * Send Password Reset link.
+     * POST /forgot-password
      *
+     * @bodyParam email string required 
+     * 
      * @return \Illuminate\Http\Response
      */
     public function forgotPassword(Request $request)
@@ -284,8 +292,16 @@ class AuthController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, $id)
     {
-        //
+        $user = User::find($id);
+
+        if (!$request->user()->id != $user->id) {
+            abort(403, 'Unauthorized Action');
+        }
+
+        $user->delete();
+
+        return response(['message' => 'User deleted succesfully']);
     }
 }

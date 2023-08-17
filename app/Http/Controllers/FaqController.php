@@ -5,10 +5,17 @@ namespace App\Http\Controllers;
 use App\Models\Faq;
 use Illuminate\Http\Request;
 
+/**
+ * @group FAQ APIs
+ *
+ * Apis for managing event resource
+ * @return \Illuminate\Http\Response
+ */
+
 class FaqController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * GET /faqs
      *
      * @return \Illuminate\Http\Response
      */
@@ -24,47 +31,93 @@ class FaqController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
+     * POST /faqs
+     * 
+     * @bodyParam title string required 
+     * @bodyParam content string required 
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
+        $fields = $request->validate([
+            'title' => 'string|required',
+            'content' => 'required',
+        ]);
+
+        $faq = Faq::create($fields);
+
+        $response = [
+            'faq' => $faq,
+        ];
+
+        return response($response, 201);
     }
 
     /**
-     * Display the specified resource.
+     * GET /faqs/id
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        //
+        $faq = Faq::find($id);
+
+        if (!$faq) {
+            abort(404, 'Not Found');
+        }
+
+        $response = [
+            'faq' => $faq
+        ];
+
+        return response($response, 200);
     }
 
     /**
-     * Update the specified resource in storage.
+     * PUT /faqs/id
      *
+     * @bodyParam title string required 
+     * @bodyParam content string required 
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        //
+        $faq = Faq::find($id);
+
+        $fields = $request->validate([
+            'title' => 'string|required',
+            'content' => 'required',
+        ]);
+
+        $faq->update($fields);
+
+        $response = [
+            'faq' => $faq,
+        ];
+
+        return response($response, 201);
     }
 
     /**
-     * Remove the specified resource from storage.
+     * DELETE /faqs
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, $id)
     {
-        //
+        $faq = Faq::find($id);
+
+        if (!$request->user()) {
+            abort(403, 'Unauthorized Action');
+        }
+
+        $faq->delete();
+
+        return response(['message' => 'FAQs deleted succesfully']);
     }
 }

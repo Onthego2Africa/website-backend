@@ -4,17 +4,25 @@ namespace App\Http\Controllers;
 
 use App\Models\Newsletter;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
+
+/**
+ * @group NewsLetter APIs
+ *
+ * Apis for managing newsletter resource
+ * @return \Illuminate\Http\Response
+ */
 
 class NewsLetterController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * GET /newsletter
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $newsletters = Newsletter::all();
+        $newsletters = Newsletter::pluck('email')->toArray();
 
         $response = [
             'newsletters' => $newsletters
@@ -24,14 +32,25 @@ class NewsLetterController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
+     * POST /newsletter-subscribe
+     * 
+     * @bodyParam email string required 
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
+        $fields = $request->validate([
+            'email' => ['required', 'email', Rule::unique('newsletters', 'email')],
+        ]);
+
+        $newsletter = Newsletter::create($fields);
+
+        $response = [
+            'message' => 'Subscribed to Newsletter successfully',
+        ];
+
+        return response($response, 201);
     }
 
     /**
@@ -58,7 +77,7 @@ class NewsLetterController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * DELETE /newsletter
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
