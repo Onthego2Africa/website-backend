@@ -38,14 +38,7 @@ fetch(url, {
 
 ```json
 {
-    "newsletters": [
-        {
-            "id": 1,
-            "email": "bralaryea21@gmail.com",
-            "created_at": "2023-08-16T23:07:34.000000Z",
-            "updated_at": "2023-08-16T23:07:34.000000Z"
-        }
-    ]
+    "newsletters": []
 }
 ```
 <div id="execution-results-GETapi-newsletter-subscriptions" hidden>
@@ -82,7 +75,7 @@ curl -X POST \
     "http://localhost/api/newsletter-subscribe" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"enim"}'
+    -d '{"email":"sit"}'
 
 ```
 
@@ -97,7 +90,7 @@ let headers = {
 };
 
 let body = {
-    "email": "enim"
+    "email": "sit"
 }
 
 fetch(url, {

@@ -2,18 +2,54 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+
+/**
+ * @group Admin APIs
+ *
+ * Apis for managing user resource
+ * @return \Illuminate\Http\Response
+ */
 
 class AdminController extends Controller
 {
+
     /**
-     * Display a listing of the resource.
+     * GET /users
+     *
+     * Get a list of all users
+     * 
+     * @param  \Illuminate\Http\Request  $request
+     * @apiResourceCollection App\Http\Resources\UserResource
+     * @apiResourceModel App\Models\User
+     * @return \Illuminate\Http\Response
+     */
+    public function userIndex()
+    {
+        $users = User::role('user')->get();
+
+        $response = [
+            'users' => $users
+        ];
+
+        return response($response, 200);
+    }
+
+    /**
+     * GET /admins
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        $admins = User::role('admin')->get();
+
+        $response = [
+            'admins' => $admins
+        ];
+
+        return response($response, 200);
     }
 
     /**

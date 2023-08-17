@@ -10,11 +10,274 @@
     ],
     "info": {
         "name": "OnTheGo2Africa",
-        "_postman_id": "27752b45-f326-45f5-abbd-a0b2c3bb9bc9",
+        "_postman_id": "b11f9289-fb08-49fa-994a-0be2bb12de47",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
     "item": [
+        {
+            "name": "Admin APIs",
+            "description": "\nApis for managing user resource",
+            "item": [
+                {
+                    "name": "GET \/users",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/users",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/users"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Get a list of all users",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "GET \/users Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "http",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/users",
+                                    "query": [],
+                                    "raw": "http:\/\/{{baseUrl}}\/api\/users"
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "Get a list of all users",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"data\": [\n        {\n            \"name\": \"Vesta Daugherty\",\n            \"username\": \"hailee.gerlach\",\n            \"email\": \"vabbott@example.net\",\n            \"email_verified_at\": \"2023-08-17T13:09:10.000000Z\",\n            \"updated_at\": \"2023-08-17T13:09:10.000000Z\",\n            \"created_at\": \"2023-08-17T13:09:10.000000Z\",\n            \"id\": 16\n        },\n        {\n            \"name\": \"Bernie Balistreri\",\n            \"username\": \"reichert.damon\",\n            \"email\": \"vfritsch@example.net\",\n            \"email_verified_at\": \"2023-08-17T13:09:10.000000Z\",\n            \"updated_at\": \"2023-08-17T13:09:10.000000Z\",\n            \"created_at\": \"2023-08-17T13:09:10.000000Z\",\n            \"id\": 17\n        }\n    ]\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "GET \/admins",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/admins",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/admins"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "GET \/admins Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "http",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/admins",
+                                    "query": [],
+                                    "raw": "http:\/\/{{baseUrl}}\/api\/admins"
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"message\": \"Unauthenticated.\"\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/admins\/:id",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/admins\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "consectetur",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "Display the specified resource. Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "http",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/admins\/:id",
+                                    "query": [],
+                                    "raw": "http:\/\/{{baseUrl}}\/api\/admins\/:id",
+                                    "variable": [
+                                        {
+                                            "id": "id",
+                                            "key": "id",
+                                            "value": "consectetur",
+                                            "description": ""
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"message\": \"Unauthenticated.\"\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/admins",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/admins"
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/admins",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/admins"
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
         {
             "name": "Booking APIs",
             "description": "\nApis for managing reservation resource",
@@ -93,7 +356,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "doloremque",
+                                    "value": "quae",
                                     "description": ""
                                 }
                             ]
@@ -111,7 +374,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"number_of_guests\": \"architecto\",\n    \"check_in\": \"eveniet\",\n    \"check_out\": \"voluptas\",\n    \"cost\": \"repellendus\",\n    \"paymentID\": \"aspernatur\"\n}"
+                            "raw": "{\n    \"number_of_guests\": \"sit\",\n    \"check_in\": \"nobis\",\n    \"check_out\": \"dolore\",\n    \"cost\": \"qui\",\n    \"paymentID\": \"aliquam\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -133,7 +396,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "ducimus",
+                                    "value": "neque",
                                     "description": ""
                                 }
                             ]
@@ -151,45 +414,8 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"number_of_guests\": \"occaecati\",\n    \"check_in\": \"mollitia\",\n    \"check_out\": \"quos\",\n    \"cost\": \"quo\",\n    \"paymentID\": \"eum\"\n}"
+                            "raw": "{\n    \"number_of_guests\": \"id\",\n    \"check_in\": \"unde\",\n    \"check_out\": \"ut\",\n    \"cost\": \"omnis\",\n    \"paymentID\": \"accusantium\"\n}"
                         },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
-                    "name": "PUT \/reservations\/id",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/reservations\/:id",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/reservations\/:id",
-                            "variable": [
-                                {
-                                    "id": "id",
-                                    "key": "id",
-                                    "value": "ex",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
                         "description": "",
                         "auth": {
                             "type": "noauth"
@@ -210,7 +436,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "omnis",
+                                    "value": "rem",
                                     "description": ""
                                 }
                             ]
@@ -246,7 +472,7 @@
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "omnis",
+                                            "value": "rem",
                                             "description": ""
                                         }
                                     ]
@@ -275,6 +501,43 @@
                     ]
                 },
                 {
+                    "name": "PUT \/reservations\/id",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/reservations\/:id",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/reservations\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "autem",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
                     "name": "DELETE \/reservations",
                     "request": {
                         "url": {
@@ -287,7 +550,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "et",
+                                    "value": "similique",
                                     "description": ""
                                 }
                             ]
@@ -487,7 +750,7 @@
                                 {
                                     "id": "slug",
                                     "key": "slug",
-                                    "value": "mollitia",
+                                    "value": "et",
                                     "description": ""
                                 }
                             ]
@@ -523,7 +786,7 @@
                                         {
                                             "id": "slug",
                                             "key": "slug",
-                                            "value": "mollitia",
+                                            "value": "et",
                                             "description": ""
                                         }
                                     ]
@@ -577,27 +840,27 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "sed",
+                                    "value": "ipsum",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "aut",
+                                    "value": "commodi",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "et",
+                                    "value": "recusandae",
                                     "type": "text"
                                 },
                                 {
                                     "key": "cost",
-                                    "value": "et",
+                                    "value": "animi",
                                     "type": "text"
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "quia",
+                                    "value": "consequatur",
                                     "type": "text"
                                 },
                                 {
@@ -627,7 +890,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "qui",
+                                    "value": "illo",
                                     "description": ""
                                 }
                             ]
@@ -648,17 +911,17 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "nam",
+                                    "value": "corrupti",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "doloremque",
+                                    "value": "possimus",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "reiciendis",
+                                    "value": "qui",
                                     "type": "text"
                                 },
                                 {
@@ -668,7 +931,7 @@
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "occaecati",
+                                    "value": "id",
                                     "type": "text"
                                 },
                                 {
@@ -698,7 +961,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "facilis",
+                                    "value": "ab",
                                     "description": ""
                                 }
                             ]
@@ -812,7 +1075,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"aut\",\n    \"content\": \"ut\"\n}"
+                            "raw": "{\n    \"title\": \"sed\",\n    \"content\": \"rerum\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -834,7 +1097,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "doloribus",
+                                    "value": "sed",
                                     "description": ""
                                 }
                             ]
@@ -870,7 +1133,7 @@
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "doloribus",
+                                            "value": "sed",
                                             "description": ""
                                         }
                                     ]
@@ -911,7 +1174,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "deserunt",
+                                    "value": "totam",
                                     "description": ""
                                 }
                             ]
@@ -929,7 +1192,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"non\",\n    \"content\": \"consequatur\"\n}"
+                            "raw": "{\n    \"title\": \"ea\",\n    \"content\": \"labore\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -951,7 +1214,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "itaque",
+                                    "value": "quia",
                                     "description": ""
                                 }
                             ]
@@ -1038,7 +1301,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"newsletters\": [\n        {\n            \"id\": 1,\n            \"email\": \"bralaryea21@gmail.com\",\n            \"created_at\": \"2023-08-16T23:07:34.000000Z\",\n            \"updated_at\": \"2023-08-16T23:07:34.000000Z\"\n        }\n    ]\n}"
+                            "body": "{\n    \"newsletters\": []\n}"
                         }
                     ]
                 },
@@ -1065,7 +1328,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"enim\"\n}"
+                            "raw": "{\n    \"email\": \"sit\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1154,7 +1417,7 @@
                                 {
                                     "id": "slug",
                                     "key": "slug",
-                                    "value": "quod",
+                                    "value": "nemo",
                                     "description": ""
                                 }
                             ]
@@ -1190,7 +1453,7 @@
                                         {
                                             "id": "slug",
                                             "key": "slug",
-                                            "value": "quod",
+                                            "value": "nemo",
                                             "description": ""
                                         }
                                     ]
@@ -1244,27 +1507,27 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "rerum",
+                                    "value": "autem",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "dignissimos",
+                                    "value": "minima",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "repellendus",
+                                    "value": "libero",
                                     "type": "text"
                                 },
                                 {
                                     "key": "cost",
-                                    "value": "repellendus",
+                                    "value": "corporis",
                                     "type": "text"
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "nisi",
+                                    "value": "facilis",
                                     "type": "text"
                                 },
                                 {
@@ -1287,9 +1550,17 @@
                         "url": {
                             "protocol": "http",
                             "host": "{{baseUrl}}",
-                            "path": "api\/tours",
+                            "path": "api\/tours\/:id",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/tours"
+                            "raw": "http:\/\/{{baseUrl}}\/api\/tours\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "iusto",
+                                    "description": ""
+                                }
+                            ]
                         },
                         "method": "PUT",
                         "header": [
@@ -1307,27 +1578,27 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "tempora",
+                                    "value": "sapiente",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "natus",
+                                    "value": "exercitationem",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "corrupti",
+                                    "value": "impedit",
                                     "type": "text"
                                 },
                                 {
                                     "key": "cost",
-                                    "value": "dolorem",
+                                    "value": "voluptatibus",
                                     "type": "text"
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "dolor",
+                                    "value": "odio",
                                     "type": "text"
                                 },
                                 {
@@ -1357,7 +1628,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "reprehenderit",
+                                    "value": "ut",
                                     "description": ""
                                 }
                             ]
@@ -1388,38 +1659,6 @@
             "description": "\nApis for managing user resource",
             "item": [
                 {
-                    "name": "POST \/forgot-password",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/forgot-password",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/forgot-password"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\n    \"email\": \"enim\"\n}"
-                        },
-                        "description": "",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": []
-                },
-                {
                     "name": "POST \/register",
                     "request": {
                         "url": {
@@ -1442,7 +1681,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"tempora\",\n    \"username\": \"laboriosam\",\n    \"email\": \"dolorem\",\n    \"password\": \"vitae\",\n    \"password_confirmation\": \"ab\"\n}"
+                            "raw": "{\n    \"name\": \"et\",\n    \"username\": \"nostrum\",\n    \"email\": \"eos\",\n    \"password\": \"nihil\",\n    \"password_confirmation\": \"fugiat\"\n}"
                         },
                         "description": "Store a newly created user in storage.",
                         "auth": {
@@ -1473,7 +1712,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n    \"name\": \"tempora\",\n    \"username\": \"laboriosam\",\n    \"email\": \"dolorem\",\n    \"password\": \"vitae\",\n    \"password_confirmation\": \"ab\"\n}"
+                                    "raw": "{\n    \"name\": \"et\",\n    \"username\": \"nostrum\",\n    \"email\": \"eos\",\n    \"password\": \"nihil\",\n    \"password_confirmation\": \"fugiat\"\n}"
                                 },
                                 "description": "Store a newly created user in storage.",
                                 "auth": {
@@ -1482,9 +1721,41 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"data\": {\n        \"name\": \"Audra Sporer\",\n        \"username\": \"bode.ward\",\n        \"email\": \"jose12@example.net\",\n        \"email_verified_at\": \"2023-08-16T23:09:55.000000Z\",\n        \"updated_at\": \"2023-08-16T23:09:55.000000Z\",\n        \"created_at\": \"2023-08-16T23:09:55.000000Z\",\n        \"id\": 7\n    }\n}"
+                            "body": "{\n    \"data\": {\n        \"name\": \"Fanny Rath\",\n        \"username\": \"osvaldo.kutch\",\n        \"email\": \"adela81@example.org\",\n        \"email_verified_at\": \"2023-08-17T13:09:10.000000Z\",\n        \"updated_at\": \"2023-08-17T13:09:10.000000Z\",\n        \"created_at\": \"2023-08-17T13:09:10.000000Z\",\n        \"id\": 13\n    }\n}"
                         }
                     ]
+                },
+                {
+                    "name": "POST \/forgot-password",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/forgot-password",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/forgot-password"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"email\": \"et\"\n}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
                 },
                 {
                     "name": "POST \/login",
@@ -1509,7 +1780,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"laborum\",\n    \"password\": \"quas\"\n}"
+                            "raw": "{\n    \"email\": \"tempore\",\n    \"password\": \"voluptatem\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1540,7 +1811,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n    \"email\": \"laborum\",\n    \"password\": \"quas\"\n}"
+                                    "raw": "{\n    \"email\": \"tempore\",\n    \"password\": \"voluptatem\"\n}"
                                 },
                                 "description": "",
                                 "auth": {
@@ -1549,7 +1820,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"data\": {\n        \"name\": \"Lavern Schmidt\",\n        \"username\": \"wyatt53\",\n        \"email\": \"pveum@example.net\",\n        \"email_verified_at\": \"2023-08-16T23:09:55.000000Z\",\n        \"updated_at\": \"2023-08-16T23:09:55.000000Z\",\n        \"created_at\": \"2023-08-16T23:09:55.000000Z\",\n        \"id\": 8\n    }\n}"
+                            "body": "{\n    \"data\": {\n        \"name\": \"Johnpaul Waelchi Sr.\",\n        \"username\": \"muhammad26\",\n        \"email\": \"anderson.nolan@example.net\",\n        \"email_verified_at\": \"2023-08-17T13:09:10.000000Z\",\n        \"updated_at\": \"2023-08-17T13:09:10.000000Z\",\n        \"created_at\": \"2023-08-17T13:09:10.000000Z\",\n        \"id\": 14\n    }\n}"
                         }
                     ]
                 },
@@ -1576,7 +1847,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"enim\"\n}"
+                            "raw": "{\n    \"email\": \"vitae\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1598,13 +1869,13 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "pariatur",
+                                    "value": "laborum",
                                     "description": ""
                                 },
                                 {
                                     "id": "hash",
                                     "key": "hash",
-                                    "value": "ipsam",
+                                    "value": "aliquid",
                                     "description": ""
                                 }
                             ]
@@ -1640,13 +1911,13 @@
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "pariatur",
+                                            "value": "laborum",
                                             "description": ""
                                         },
                                         {
                                             "id": "hash",
                                             "key": "hash",
-                                            "value": "ipsam",
+                                            "value": "aliquid",
                                             "description": ""
                                         }
                                     ]
@@ -1758,7 +2029,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"esse\",\n    \"username\": \"ut\"\n}"
+                            "raw": "{\n    \"name\": \"ducimus\",\n    \"username\": \"quisquam\"\n}"
                         },
                         "description": "Update the user in storage.",
                         "auth": {
@@ -1789,7 +2060,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n    \"name\": \"esse\",\n    \"username\": \"ut\"\n}"
+                                    "raw": "{\n    \"name\": \"ducimus\",\n    \"username\": \"quisquam\"\n}"
                                 },
                                 "description": "Update the user in storage.",
                                 "auth": {
@@ -1798,7 +2069,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"data\": {\n        \"name\": \"Kaitlyn Jakubowski III\",\n        \"username\": \"guillermo.langworth\",\n        \"email\": \"madonna.funk@example.org\",\n        \"email_verified_at\": \"2023-08-16T23:09:55.000000Z\",\n        \"updated_at\": \"2023-08-16T23:09:55.000000Z\",\n        \"created_at\": \"2023-08-16T23:09:55.000000Z\",\n        \"id\": 9\n    }\n}"
+                            "body": "{\n    \"data\": {\n        \"name\": \"Reanna Smitham\",\n        \"username\": \"felicita.zieme\",\n        \"email\": \"jacquelyn88@example.org\",\n        \"email_verified_at\": \"2023-08-17T13:09:10.000000Z\",\n        \"updated_at\": \"2023-08-17T13:09:10.000000Z\",\n        \"created_at\": \"2023-08-17T13:09:10.000000Z\",\n        \"id\": 15\n    }\n}"
                         }
                     ]
                 },
@@ -1815,7 +2086,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "dolores",
+                                    "value": "autem",
                                     "description": ""
                                 }
                             ]
@@ -1867,67 +2138,6 @@
                         }
                     },
                     "response": []
-                },
-                {
-                    "name": "GET \/users",
-                    "request": {
-                        "url": {
-                            "protocol": "http",
-                            "host": "{{baseUrl}}",
-                            "path": "api\/users",
-                            "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/users"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": "Get a list of all users",
-                        "auth": {
-                            "type": "noauth"
-                        }
-                    },
-                    "response": [
-                        {
-                            "name": "GET \/users Response #1",
-                            "originalRequest": {
-                                "url": {
-                                    "protocol": "http",
-                                    "host": "{{baseUrl}}",
-                                    "path": "api\/users",
-                                    "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/users"
-                                },
-                                "method": "GET",
-                                "header": [
-                                    {
-                                        "key": "Content-Type",
-                                        "value": "application\/json"
-                                    },
-                                    {
-                                        "key": "Accept",
-                                        "value": "application\/json"
-                                    }
-                                ],
-                                "body": null,
-                                "description": "Get a list of all users",
-                                "auth": {
-                                    "type": "noauth"
-                                }
-                            },
-                            "header": null,
-                            "cookie": [],
-                            "body": "{\n    \"data\": [\n        {\n            \"name\": \"Elian Schmidt\",\n            \"username\": \"dariana.schumm\",\n            \"email\": \"emely.cronin@example.net\",\n            \"email_verified_at\": \"2023-08-16T23:09:55.000000Z\",\n            \"updated_at\": \"2023-08-16T23:09:55.000000Z\",\n            \"created_at\": \"2023-08-16T23:09:55.000000Z\",\n            \"id\": 10\n        },\n        {\n            \"name\": \"Kellen Tillman\",\n            \"username\": \"amann\",\n            \"email\": \"morissette.easton@example.org\",\n            \"email_verified_at\": \"2023-08-16T23:09:55.000000Z\",\n            \"updated_at\": \"2023-08-16T23:09:55.000000Z\",\n            \"created_at\": \"2023-08-16T23:09:55.000000Z\",\n            \"id\": 11\n        }\n    ]\n}"
-                        }
-                    ]
                 }
             ]
         }

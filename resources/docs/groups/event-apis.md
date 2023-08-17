@@ -72,14 +72,14 @@ Fetch event with slug
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/events/mollitia" \
+    -G "http://localhost/api/events/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/events/mollitia"
+    "http://localhost/api/events/et"
 );
 
 let headers = {
@@ -154,12 +154,12 @@ curl -X POST \
     "http://localhost/api/events" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=sed" \
-    -F "overview=aut" \
-    -F "itenary=et" \
-    -F "cost=et" \
-    -F "images[]=quia" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpC6B0.tmp" 
+    -F "title=ipsum" \
+    -F "overview=commodi" \
+    -F "itenary=recusandae" \
+    -F "cost=animi" \
+    -F "images[]=consequatur" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php23DD.tmp" 
 ```
 
 ```javascript
@@ -173,11 +173,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'sed');
-body.append('overview', 'aut');
-body.append('itenary', 'et');
-body.append('cost', 'et');
-body.append('images[]', 'quia');
+body.append('title', 'ipsum');
+body.append('overview', 'commodi');
+body.append('itenary', 'recusandae');
+body.append('cost', 'animi');
+body.append('images[]', 'consequatur');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -257,20 +257,20 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/events/qui" \
+    "http://localhost/api/events/illo" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=nam" \
-    -F "overview=doloremque" \
-    -F "itenary=reiciendis" \
+    -F "title=corrupti" \
+    -F "overview=possimus" \
+    -F "itenary=qui" \
     -F "cost=doloremque" \
-    -F "images[]=occaecati" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpC6C2.tmp" 
+    -F "images[]=id" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php23EE.tmp" 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/events/qui"
+    "http://localhost/api/events/illo"
 );
 
 let headers = {
@@ -279,11 +279,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'nam');
-body.append('overview', 'doloremque');
-body.append('itenary', 'reiciendis');
+body.append('title', 'corrupti');
+body.append('overview', 'possimus');
+body.append('itenary', 'qui');
 body.append('cost', 'doloremque');
-body.append('images[]', 'occaecati');
+body.append('images[]', 'id');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -370,14 +370,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/events/facilis" \
+    "http://localhost/api/events/ab" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/events/facilis"
+    "http://localhost/api/events/ab"
 );
 
 let headers = {

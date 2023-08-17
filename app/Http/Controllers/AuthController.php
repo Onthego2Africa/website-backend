@@ -20,27 +20,6 @@ class AuthController extends Controller
 {
 
     /**
-     * GET /users
-     *
-     * Get a list of all users
-     * 
-     * @param  \Illuminate\Http\Request  $request
-     * @apiResourceCollection App\Http\Resources\UserResource
-     * @apiResourceModel App\Models\User
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        $users = User::all();
-
-        $response = [
-            'users' => $users
-        ];
-
-        return response($response, 200);
-    }
-
-    /**
      * POST /register
      * 
      * Store a newly created user in storage.
@@ -72,6 +51,8 @@ class AuthController extends Controller
             'username' => $fields['username'],
             'password' => bcrypt($fields['password']),
         ]);
+
+        $user->assignRole('user');
 
         $user->sendEmailVerificationNotification();
 

@@ -7,6 +7,208 @@ servers:
     -
         url: 'http://localhost'
 paths:
+    /api/users:
+        get:
+            summary: 'GET /users'
+            description: 'Get a list of all users'
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+            responses:
+                200:
+                    description: ''
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                example:
+                                    data: [{ name: 'Vesta Daugherty', username: hailee.gerlach, email: vabbott@example.net, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 16 }, { name: 'Bernie Balistreri', username: reichert.damon, email: vfritsch@example.net, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 17 }]
+                                properties:
+                                    data: { type: array, example: [{ name: 'Vesta Daugherty', username: hailee.gerlach, email: vabbott@example.net, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 16 }, { name: 'Bernie Balistreri', username: reichert.damon, email: vfritsch@example.net, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 17 }], items: { type: object } }
+            tags:
+                - 'Admin APIs'
+            security: []
+        put:
+            summary: 'PUT /users'
+            description: 'Update the user in storage.'
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+            responses:
+                200:
+                    description: ''
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                example:
+                                    data: { name: 'Reanna Smitham', username: felicita.zieme, email: jacquelyn88@example.org, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 15 }
+                                properties:
+                                    data: { type: object, example: { name: 'Reanna Smitham', username: felicita.zieme, email: jacquelyn88@example.org, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 15 } }
+            tags:
+                - 'User APIs'
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            type: object
+                            properties:
+                                name:
+                                    type: string
+                                    description: ''
+                                    example: ducimus
+                                username:
+                                    type: string
+                                    description: ''
+                                    example: quisquam
+                            required:
+                                - name
+                                - username
+            security: []
+    /api/admins:
+        get:
+            summary: 'GET /admins'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+            responses:
+                401:
+                    description: ''
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                example:
+                                    message: Unauthenticated.
+                                properties:
+                                    message: { type: string, example: Unauthenticated. }
+            tags:
+                - 'Admin APIs'
+            security: []
+        put:
+            summary: 'Update the specified resource in storage.'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - 'Admin APIs'
+            security: []
+        delete:
+            summary: 'Remove the specified resource from storage.'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - 'Admin APIs'
+            security: []
+    '/api/admins/{id}':
+        get:
+            summary: 'Display the specified resource.'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+            responses:
+                401:
+                    description: ''
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                example:
+                                    message: Unauthenticated.
+                                properties:
+                                    message: { type: string, example: Unauthenticated. }
+            tags:
+                - 'Admin APIs'
+            security: []
+        parameters:
+            -
+                in: path
+                name: id
+                description: ''
+                example: consectetur
+                required: true
+                schema:
+                    type: string
     /api/reservations:
         get:
             summary: 'GET /reservations'
@@ -72,23 +274,23 @@ paths:
                                 number_of_guests:
                                     type: string
                                     description: ''
-                                    example: architecto
+                                    example: sit
                                 check_in:
                                     type: string
                                     description: ''
-                                    example: eveniet
+                                    example: nobis
                                 check_out:
                                     type: string
                                     description: ''
-                                    example: voluptas
+                                    example: dolore
                                 cost:
                                     type: string
                                     description: ''
-                                    example: repellendus
+                                    example: qui
                                 paymentID:
                                     type: string
                                     description: ''
-                                    example: aspernatur
+                                    example: aliquam
                             required:
                                 - number_of_guests
                                 - check_in
@@ -101,7 +303,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: doloremque
+                example: quae
                 required: true
                 schema:
                     type: string
@@ -137,23 +339,23 @@ paths:
                                 number_of_guests:
                                     type: string
                                     description: ''
-                                    example: occaecati
+                                    example: id
                                 check_in:
                                     type: string
                                     description: ''
-                                    example: mollitia
+                                    example: unde
                                 check_out:
                                     type: string
                                     description: ''
-                                    example: quos
+                                    example: ut
                                 cost:
                                     type: string
                                     description: ''
-                                    example: quo
+                                    example: omnis
                                 paymentID:
                                     type: string
                                     description: ''
-                                    example: eum
+                                    example: accusantium
                             required:
                                 - number_of_guests
                                 - check_in
@@ -166,33 +368,11 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: ducimus
+                example: neque
                 required: true
                 schema:
                     type: string
     '/api/reservations/{id}':
-        put:
-            summary: 'PUT /reservations/id'
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - 'Booking APIs'
-            security: []
         get:
             summary: 'GET /reservations/id'
             description: ''
@@ -225,6 +405,28 @@ paths:
             tags:
                 - 'Booking APIs'
             security: []
+        put:
+            summary: 'PUT /reservations/id'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - 'Booking APIs'
+            security: []
         delete:
             summary: 'DELETE /reservations'
             description: ''
@@ -252,7 +454,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: ex
+                example: rem
                 required: true
                 schema:
                     type: string
@@ -373,7 +575,7 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: sed
+                                    example: ipsum
                                 cover_image:
                                     type: string
                                     format: binary
@@ -381,19 +583,19 @@ paths:
                                 overview:
                                     type: string
                                     description: ''
-                                    example: aut
+                                    example: commodi
                                 itenary:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: recusandae
                                 cost:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: animi
                                 'images[]':
                                     type: array
                                     description: ''
-                                    example: quia
+                                    example: consequatur
                             required:
                                 - title
                                 - cover_image
@@ -440,7 +642,7 @@ paths:
                 in: path
                 name: slug
                 description: ''
-                example: mollitia
+                example: et
                 required: true
                 schema:
                     type: string
@@ -476,7 +678,7 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: nam
+                                    example: corrupti
                                 cover_image:
                                     type: string
                                     format: binary
@@ -484,11 +686,11 @@ paths:
                                 overview:
                                     type: string
                                     description: ''
-                                    example: doloremque
+                                    example: possimus
                                 itenary:
                                     type: string
                                     description: ''
-                                    example: reiciendis
+                                    example: qui
                                 cost:
                                     type: string
                                     description: ''
@@ -496,7 +698,7 @@ paths:
                                 'images[]':
                                     type: array
                                     description: ''
-                                    example: occaecati
+                                    example: id
                             required:
                                 - title
                                 - cover_image
@@ -532,7 +734,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: qui
+                example: illo
                 required: true
                 schema:
                     type: string
@@ -600,11 +802,11 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: aut
+                                    example: sed
                                 content:
                                     type: string
                                     description: ''
-                                    example: ut
+                                    example: rerum
                             required:
                                 - title
                                 - content
@@ -673,11 +875,11 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: non
+                                    example: ea
                                 content:
                                     type: string
                                     description: ''
-                                    example: consequatur
+                                    example: labore
                             required:
                                 - title
                                 - content
@@ -709,7 +911,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: doloribus
+                example: sed
                 required: true
                 schema:
                     type: string
@@ -740,9 +942,9 @@ paths:
                             schema:
                                 type: object
                                 example:
-                                    newsletters: [{ id: 1, email: bralaryea21@gmail.com, created_at: '2023-08-16T23:07:34.000000Z', updated_at: '2023-08-16T23:07:34.000000Z' }]
+                                    newsletters: []
                                 properties:
-                                    newsletters: { type: array, example: [{ id: 1, email: bralaryea21@gmail.com, created_at: '2023-08-16T23:07:34.000000Z', updated_at: '2023-08-16T23:07:34.000000Z' }], items: { type: object } }
+                                    newsletters: { type: array, example: [] }
             tags:
                 - 'NewsLetter APIs'
             security: []
@@ -778,7 +980,7 @@ paths:
                                 email:
                                     type: string
                                     description: ''
-                                    example: enim
+                                    example: sit
                             required:
                                 - email
             security: []
@@ -846,7 +1048,7 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: rerum
+                                    example: autem
                                 cover_image:
                                     type: string
                                     format: binary
@@ -854,79 +1056,19 @@ paths:
                                 overview:
                                     type: string
                                     description: ''
-                                    example: dignissimos
+                                    example: minima
                                 itenary:
                                     type: string
                                     description: ''
-                                    example: repellendus
+                                    example: libero
                                 cost:
                                     type: string
                                     description: ''
-                                    example: repellendus
+                                    example: corporis
                                 'images[]':
                                     type: array
                                     description: ''
-                                    example: nisi
-                            required:
-                                - title
-                                - cover_image
-                                - overview
-                                - itenary
-                                - cost
-                                - 'images[]'
-            security: []
-        put:
-            summary: 'PUT /tours'
-            description: ''
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: multipart/form-data
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-            responses: {  }
-            tags:
-                - 'Tour APIs'
-            requestBody:
-                required: true
-                content:
-                    multipart/form-data:
-                        schema:
-                            type: object
-                            properties:
-                                title:
-                                    type: string
-                                    description: ''
-                                    example: tempora
-                                cover_image:
-                                    type: string
-                                    format: binary
-                                    description: ''
-                                overview:
-                                    type: string
-                                    description: ''
-                                    example: natus
-                                itenary:
-                                    type: string
-                                    description: ''
-                                    example: corrupti
-                                cost:
-                                    type: string
-                                    description: ''
-                                    example: dolorem
-                                'images[]':
-                                    type: array
-                                    description: ''
-                                    example: dolor
+                                    example: facilis
                             required:
                                 - title
                                 - cover_image
@@ -973,11 +1115,71 @@ paths:
                 in: path
                 name: slug
                 description: ''
-                example: quod
+                example: nemo
                 required: true
                 schema:
                     type: string
     '/api/tours/{id}':
+        put:
+            summary: 'PUT /tours'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: multipart/form-data
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+            responses: {  }
+            tags:
+                - 'Tour APIs'
+            requestBody:
+                required: true
+                content:
+                    multipart/form-data:
+                        schema:
+                            type: object
+                            properties:
+                                title:
+                                    type: string
+                                    description: ''
+                                    example: sapiente
+                                cover_image:
+                                    type: string
+                                    format: binary
+                                    description: ''
+                                overview:
+                                    type: string
+                                    description: ''
+                                    example: exercitationem
+                                itenary:
+                                    type: string
+                                    description: ''
+                                    example: impedit
+                                cost:
+                                    type: string
+                                    description: ''
+                                    example: voluptatibus
+                                'images[]':
+                                    type: array
+                                    description: ''
+                                    example: odio
+                            required:
+                                - title
+                                - cover_image
+                                - overview
+                                - itenary
+                                - cost
+                                - 'images[]'
+            security: []
         delete:
             summary: 'DELETE /tours'
             description: ''
@@ -1005,10 +1207,76 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: reprehenderit
+                example: iusto
                 required: true
                 schema:
                     type: string
+    /api/register:
+        post:
+            summary: 'POST /register'
+            description: 'Store a newly created user in storage.'
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+            responses:
+                200:
+                    description: ''
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                example:
+                                    data: { name: 'Fanny Rath', username: osvaldo.kutch, email: adela81@example.org, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 13 }
+                                properties:
+                                    data: { type: object, example: { name: 'Fanny Rath', username: osvaldo.kutch, email: adela81@example.org, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 13 } }
+            tags:
+                - 'User APIs'
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            type: object
+                            properties:
+                                name:
+                                    type: string
+                                    description: ''
+                                    example: et
+                                username:
+                                    type: string
+                                    description: ''
+                                    example: nostrum
+                                email:
+                                    type: string
+                                    description: ''
+                                    example: eos
+                                password:
+                                    type: string
+                                    description: ''
+                                    example: nihil
+                                password_confirmation:
+                                    type: string
+                                    description: ''
+                                    example: fugiat
+                            required:
+                                - name
+                                - username
+                                - email
+                                - password
+                                - password_confirmation
+            security: []
     /api/forgot-password:
         post:
             summary: 'POST /forgot-password'
@@ -1041,75 +1309,9 @@ paths:
                                 email:
                                     type: string
                                     description: ''
-                                    example: enim
+                                    example: et
                             required:
                                 - email
-            security: []
-    /api/register:
-        post:
-            summary: 'POST /register'
-            description: 'Store a newly created user in storage.'
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-            responses:
-                200:
-                    description: ''
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                example:
-                                    data: { name: 'Audra Sporer', username: bode.ward, email: jose12@example.net, email_verified_at: '2023-08-16T23:09:55.000000Z', updated_at: '2023-08-16T23:09:55.000000Z', created_at: '2023-08-16T23:09:55.000000Z', id: 7 }
-                                properties:
-                                    data: { type: object, example: { name: 'Audra Sporer', username: bode.ward, email: jose12@example.net, email_verified_at: '2023-08-16T23:09:55.000000Z', updated_at: '2023-08-16T23:09:55.000000Z', created_at: '2023-08-16T23:09:55.000000Z', id: 7 } }
-            tags:
-                - 'User APIs'
-            requestBody:
-                required: true
-                content:
-                    application/json:
-                        schema:
-                            type: object
-                            properties:
-                                name:
-                                    type: string
-                                    description: ''
-                                    example: tempora
-                                username:
-                                    type: string
-                                    description: ''
-                                    example: laboriosam
-                                email:
-                                    type: string
-                                    description: ''
-                                    example: dolorem
-                                password:
-                                    type: string
-                                    description: ''
-                                    example: vitae
-                                password_confirmation:
-                                    type: string
-                                    description: ''
-                                    example: ab
-                            required:
-                                - name
-                                - username
-                                - email
-                                - password
-                                - password_confirmation
             security: []
     /api/login:
         post:
@@ -1138,9 +1340,9 @@ paths:
                             schema:
                                 type: object
                                 example:
-                                    data: { name: 'Lavern Schmidt', username: wyatt53, email: pveum@example.net, email_verified_at: '2023-08-16T23:09:55.000000Z', updated_at: '2023-08-16T23:09:55.000000Z', created_at: '2023-08-16T23:09:55.000000Z', id: 8 }
+                                    data: { name: 'Johnpaul Waelchi Sr.', username: muhammad26, email: anderson.nolan@example.net, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 14 }
                                 properties:
-                                    data: { type: object, example: { name: 'Lavern Schmidt', username: wyatt53, email: pveum@example.net, email_verified_at: '2023-08-16T23:09:55.000000Z', updated_at: '2023-08-16T23:09:55.000000Z', created_at: '2023-08-16T23:09:55.000000Z', id: 8 } }
+                                    data: { type: object, example: { name: 'Johnpaul Waelchi Sr.', username: muhammad26, email: anderson.nolan@example.net, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 14 } }
             tags:
                 - 'User APIs'
             requestBody:
@@ -1153,11 +1355,11 @@ paths:
                                 email:
                                     type: string
                                     description: ''
-                                    example: laborum
+                                    example: tempore
                                 password:
                                     type: string
                                     description: ''
-                                    example: quas
+                                    example: voluptatem
                             required:
                                 - email
                                 - password
@@ -1194,7 +1396,7 @@ paths:
                                 email:
                                     type: string
                                     description: ''
-                                    example: enim
+                                    example: vitae
                             required:
                                 - email
             security: []
@@ -1236,7 +1438,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: pariatur
+                example: laborum
                 required: true
                 schema:
                     type: string
@@ -1244,7 +1446,7 @@ paths:
                 in: path
                 name: hash
                 description: ''
-                example: ipsam
+                example: aliquid
                 required: true
                 schema:
                     type: string
@@ -1281,89 +1483,6 @@ paths:
             tags:
                 - 'User APIs'
             security: []
-    /api/users:
-        put:
-            summary: 'PUT /users'
-            description: 'Update the user in storage.'
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-            responses:
-                200:
-                    description: ''
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                example:
-                                    data: { name: 'Kaitlyn Jakubowski III', username: guillermo.langworth, email: madonna.funk@example.org, email_verified_at: '2023-08-16T23:09:55.000000Z', updated_at: '2023-08-16T23:09:55.000000Z', created_at: '2023-08-16T23:09:55.000000Z', id: 9 }
-                                properties:
-                                    data: { type: object, example: { name: 'Kaitlyn Jakubowski III', username: guillermo.langworth, email: madonna.funk@example.org, email_verified_at: '2023-08-16T23:09:55.000000Z', updated_at: '2023-08-16T23:09:55.000000Z', created_at: '2023-08-16T23:09:55.000000Z', id: 9 } }
-            tags:
-                - 'User APIs'
-            requestBody:
-                required: true
-                content:
-                    application/json:
-                        schema:
-                            type: object
-                            properties:
-                                name:
-                                    type: string
-                                    description: ''
-                                    example: esse
-                                username:
-                                    type: string
-                                    description: ''
-                                    example: ut
-                            required:
-                                - name
-                                - username
-            security: []
-        get:
-            summary: 'GET /users'
-            description: 'Get a list of all users'
-            parameters:
-                -
-                    in: header
-                    name: Content-Type
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-                -
-                    in: header
-                    name: Accept
-                    description: ''
-                    example: application/json
-                    schema:
-                        type: string
-            responses:
-                200:
-                    description: ''
-                    content:
-                        application/json:
-                            schema:
-                                type: object
-                                example:
-                                    data: [{ name: 'Elian Schmidt', username: dariana.schumm, email: emely.cronin@example.net, email_verified_at: '2023-08-16T23:09:55.000000Z', updated_at: '2023-08-16T23:09:55.000000Z', created_at: '2023-08-16T23:09:55.000000Z', id: 10 }, { name: 'Kellen Tillman', username: amann, email: morissette.easton@example.org, email_verified_at: '2023-08-16T23:09:55.000000Z', updated_at: '2023-08-16T23:09:55.000000Z', created_at: '2023-08-16T23:09:55.000000Z', id: 11 }]
-                                properties:
-                                    data: { type: array, example: [{ name: 'Elian Schmidt', username: dariana.schumm, email: emely.cronin@example.net, email_verified_at: '2023-08-16T23:09:55.000000Z', updated_at: '2023-08-16T23:09:55.000000Z', created_at: '2023-08-16T23:09:55.000000Z', id: 10 }, { name: 'Kellen Tillman', username: amann, email: morissette.easton@example.org, email_verified_at: '2023-08-16T23:09:55.000000Z', updated_at: '2023-08-16T23:09:55.000000Z', created_at: '2023-08-16T23:09:55.000000Z', id: 11 }], items: { type: object } }
-            tags:
-                - 'User APIs'
-            security: []
     '/api/users/{id}':
         delete:
             summary: 'DELETE /users'
@@ -1392,7 +1511,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: dolores
+                example: autem
                 required: true
                 schema:
                     type: string

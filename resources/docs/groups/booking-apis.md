@@ -72,16 +72,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "http://localhost/api/book-tour/doloremque" \
+    "http://localhost/api/book-tour/quae" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"number_of_guests":"architecto","check_in":"eveniet","check_out":"voluptas","cost":"repellendus","paymentID":"aspernatur"}'
+    -d '{"number_of_guests":"sit","check_in":"nobis","check_out":"dolore","cost":"qui","paymentID":"aliquam"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/book-tour/doloremque"
+    "http://localhost/api/book-tour/quae"
 );
 
 let headers = {
@@ -90,11 +90,11 @@ let headers = {
 };
 
 let body = {
-    "number_of_guests": "architecto",
-    "check_in": "eveniet",
-    "check_out": "voluptas",
-    "cost": "repellendus",
-    "paymentID": "aspernatur"
+    "number_of_guests": "sit",
+    "check_in": "nobis",
+    "check_out": "dolore",
+    "cost": "qui",
+    "paymentID": "aliquam"
 }
 
 fetch(url, {
@@ -175,16 +175,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "http://localhost/api/book-event/ducimus" \
+    "http://localhost/api/book-event/neque" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"number_of_guests":"occaecati","check_in":"mollitia","check_out":"quos","cost":"quo","paymentID":"eum"}'
+    -d '{"number_of_guests":"id","check_in":"unde","check_out":"ut","cost":"omnis","paymentID":"accusantium"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/book-event/ducimus"
+    "http://localhost/api/book-event/neque"
 );
 
 let headers = {
@@ -193,11 +193,11 @@ let headers = {
 };
 
 let body = {
-    "number_of_guests": "occaecati",
-    "check_in": "mollitia",
-    "check_out": "quos",
-    "cost": "quo",
-    "paymentID": "eum"
+    "number_of_guests": "id",
+    "check_in": "unde",
+    "check_out": "ut",
+    "cost": "omnis",
+    "paymentID": "accusantium"
 }
 
 fetch(url, {
@@ -269,67 +269,6 @@ fetch(url, {
 </form>
 
 
-## PUT /reservations/id
-
-
-
-
-> Example request:
-
-```bash
-curl -X PUT \
-    "http://localhost/api/reservations/ex" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json"
-```
-
-```javascript
-const url = new URL(
-    "http://localhost/api/reservations/ex"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "PUT",
-    headers,
-}).then(response => response.json());
-```
-
-
-<div id="execution-results-PUTapi-reservations--id-" hidden>
-    <blockquote>Received response<span id="execution-response-status-PUTapi-reservations--id-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-PUTapi-reservations--id-"></code></pre>
-</div>
-<div id="execution-error-PUTapi-reservations--id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTapi-reservations--id-"></code></pre>
-</div>
-<form id="form-PUTapi-reservations--id-" data-method="PUT" data-path="api/reservations/{id}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTapi-reservations--id-', this);">
-<h3>
-    Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTapi-reservations--id-" onclick="tryItOut('PUTapi-reservations--id-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTapi-reservations--id-" onclick="cancelTryOut('PUTapi-reservations--id-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTapi-reservations--id-" hidden>Send Request 💥</button>
-    </h3>
-<p>
-<small class="badge badge-darkblue">PUT</small>
- <b><code>api/reservations/{id}</code></b>
-</p>
-<h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-<p>
-<b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="id" data-endpoint="PUTapi-reservations--id-" data-component="url" required  hidden>
-<br>
-
-</p>
-</form>
-
-
 ## GET /reservations/id
 
 
@@ -339,14 +278,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/reservations/omnis" \
+    -G "http://localhost/api/reservations/rem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/reservations/omnis"
+    "http://localhost/api/reservations/rem"
 );
 
 let headers = {
@@ -398,6 +337,67 @@ fetch(url, {
 </form>
 
 
+## PUT /reservations/id
+
+
+
+
+> Example request:
+
+```bash
+curl -X PUT \
+    "http://localhost/api/reservations/autem" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"
+```
+
+```javascript
+const url = new URL(
+    "http://localhost/api/reservations/autem"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "PUT",
+    headers,
+}).then(response => response.json());
+```
+
+
+<div id="execution-results-PUTapi-reservations--id-" hidden>
+    <blockquote>Received response<span id="execution-response-status-PUTapi-reservations--id-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-reservations--id-"></code></pre>
+</div>
+<div id="execution-error-PUTapi-reservations--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-reservations--id-"></code></pre>
+</div>
+<form id="form-PUTapi-reservations--id-" data-method="PUT" data-path="api/reservations/{id}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTapi-reservations--id-', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTapi-reservations--id-" onclick="tryItOut('PUTapi-reservations--id-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTapi-reservations--id-" onclick="cancelTryOut('PUTapi-reservations--id-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTapi-reservations--id-" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-darkblue">PUT</small>
+ <b><code>api/reservations/{id}</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+<p>
+<b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="id" data-endpoint="PUTapi-reservations--id-" data-component="url" required  hidden>
+<br>
+
+</p>
+</form>
+
+
 ## DELETE /reservations
 
 
@@ -407,14 +407,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/reservations/et" \
+    "http://localhost/api/reservations/similique" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/reservations/et"
+    "http://localhost/api/reservations/similique"
 );
 
 let headers = {

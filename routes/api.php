@@ -26,9 +26,9 @@ use App\Http\Controllers\TourController;
 Route::get('/tours', [TourController::class, 'index']);
 Route::get('/events', [EventController::class, 'index']);
 Route::get('/faqs', [FaqController::class, 'index']);
-Route::post('/forgot-password', [AuthController::class, 'forgotPassword']);
 Route::post('/register', [AuthController::class, 'store']);
-Route::get( '/newsletter-subscriptions', [NewsLetterController::class, 'index']);
+Route::post('/forgot-password', [AuthController::class, 'forgotPassword']);
+Route::get('/newsletter-subscriptions', [NewsLetterController::class, 'index']);
 Route::post('/newsletter-subscribe', [NewsLetterController::class, 'store']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/email/verification-notification', [AuthController::class, 'sendVerificationEmail']);
@@ -38,38 +38,36 @@ Route::get('/tours/{slug}', [TourController::class, 'show']);
 Route::get('password/reset/{token}', [AuthController::class, 'resetForm'])->name('password.reset');
 
 // user routes
-Route::group(['middleware' => ['auth:sanctum']], function () {
+Route::group(['middleware' => ['auth:sanctum', 'role:user|super-admin']], function () {
     Route::get('/profile', [AuthController::class, 'show']);
     Route::put('/users', [AuthController::class, 'update']);
     Route::get('/reservations', [ReservationController::class, 'index']);
     Route::post('/book-tour/{id}', [ReservationController::class, 'storeTourBooking']);
     Route::post('/book-event/{id}', [ReservationController::class, 'storeEventBooking']);
-    Route::put('/reservations/{id}', [ReservationController::class, 'update']);
     Route::get('/reservations/{id}', [ReservationController::class, 'show']);
+    Route::put('/reservations/{id}', [ReservationController::class, 'update']);
     Route::delete('/reservations/{id}', [ReservationController::class, 'destroy']);
     Route::delete('/users/{id}', [AuthController::class, 'destroy']);
     Route::post('/logout', [AuthController::class, 'logout']);
 });
 
 // admin routes
-Route::group(['middleware' => ['auth:sanctum']], function () {
-    Route::get('/users', [AuthController::class, 'index']);
+Route::group(['middleware' => ['auth:sanctum', 'role:super-admin']], function () {
+    Route::get('/users', [AdminController::class, 'userIndex']);
+    Route::get('/admins', [AdminController::class, 'index']);
+    Route::get('/admins/{id}', [AdminController::class, 'show']);
+    Route::put('/admins', [AdminController::class, 'update']);
+    Route::delete('/admins', [AdminController::class, 'destroy']);
     Route::post('/faqs', [FaqController::class, 'store']);
     Route::get('/faqs/{id}', [FaqController::class, 'show']);
     Route::put('/faqs/{id}', [FaqController::class, 'update']);
     Route::delete('/faqs/{id}', [FaqController::class, 'destroy']);
-    // Route::get('/admin/my-profile', [AdminController::class, 'show']);
-    // Route::put('/admins', [AdminController::class, 'update']);
     Route::post('/tours', [TourController::class, 'store']);
-    Route::post('/events', [EventController::class, 'store']);
-    Route::put('/tours', [TourController::class, 'update']);
-    Route::put('/events/{id}', [EventController::class, 'update']);
-    // Route::post('/admin/reservations', [ReservationController::class, 'store']);
-    Route::put('/reservations/{id}', [ReservationController::class, 'update']);
-    // Route::delete('/admins', [AdminController::class, 'destroy']);
-    Route::delete('/reservations/{id}', [ReservationController::class, 'destroy']);
-    Route::delete('/events/{id}', [EventController::class, 'destroy']);
+    Route::put('/tours/{id}', [TourController::class, 'update']);
     Route::delete('/tours/{id}', [TourController::class, 'destroy']);
+    Route::post('/events', [EventController::class, 'store']);
+    Route::put('/events/{id}', [EventController::class, 'update']);
+    Route::delete('/events/{id}', [EventController::class, 'destroy']);
 });
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

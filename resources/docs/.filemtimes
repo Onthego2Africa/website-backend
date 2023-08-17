@@ -1,15 +1,16 @@
 # GENERATED. YOU SHOULDN'T MODIFY OR DELETE THIS FILE.
 # Scribe uses this file to know when you change something manually in your docs.
-resources/docs/groups/endpoints.md=1692227395
-resources/docs/index.md=1692227395
-resources/docs/authentication.md=1692227395
+resources/docs/groups/endpoints.md=1692277751
+resources/docs/index.md=1692277751
+resources/docs/authentication.md=1692277751
 resources/docs/groups/auth-management.md=1692186382
 resources/docs/groups/user-management.md=1692221819
 resources/docs/groups/event-management.md=1692221819
 resources/docs/groups/tour-management.md=1692221819
-resources/docs/groups/event-apis.md=1692227395
-resources/docs/groups/tour-apis.md=1692227395
-resources/docs/groups/user-apis.md=1692227395
-resources/docs/groups/booking-apis.md=1692227395
-resources/docs/groups/faq-apis.md=1692227395
-resources/docs/groups/newsletter-apis.md=1692227395
+resources/docs/groups/event-apis.md=1692277751
+resources/docs/groups/tour-apis.md=1692277751
+resources/docs/groups/user-apis.md=1692277751
+resources/docs/groups/booking-apis.md=1692277751
+resources/docs/groups/faq-apis.md=1692277751
+resources/docs/groups/newsletter-apis.md=1692277751
+resources/docs/groups/admin-apis.md=1692277751

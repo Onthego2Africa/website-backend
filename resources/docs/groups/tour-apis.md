@@ -72,14 +72,14 @@ Fetch tour with slug
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/tours/quod" \
+    -G "http://localhost/api/tours/nemo" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/tours/quod"
+    "http://localhost/api/tours/nemo"
 );
 
 let headers = {
@@ -154,12 +154,12 @@ curl -X POST \
     "http://localhost/api/tours" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=rerum" \
-    -F "overview=dignissimos" \
-    -F "itenary=repellendus" \
-    -F "cost=repellendus" \
-    -F "images[]=nisi" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpC690.tmp" 
+    -F "title=autem" \
+    -F "overview=minima" \
+    -F "itenary=libero" \
+    -F "cost=corporis" \
+    -F "images[]=facilis" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php23AC.tmp" 
 ```
 
 ```javascript
@@ -173,11 +173,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'rerum');
-body.append('overview', 'dignissimos');
-body.append('itenary', 'repellendus');
-body.append('cost', 'repellendus');
-body.append('images[]', 'nisi');
+body.append('title', 'autem');
+body.append('overview', 'minima');
+body.append('itenary', 'libero');
+body.append('cost', 'corporis');
+body.append('images[]', 'facilis');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -257,20 +257,20 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/tours" \
+    "http://localhost/api/tours/iusto" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=tempora" \
-    -F "overview=natus" \
-    -F "itenary=corrupti" \
-    -F "cost=dolorem" \
-    -F "images[]=dolor" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpC6C1.tmp" 
+    -F "title=sapiente" \
+    -F "overview=exercitationem" \
+    -F "itenary=impedit" \
+    -F "cost=voluptatibus" \
+    -F "images[]=odio" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php23CD.tmp" 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/tours"
+    "http://localhost/api/tours/iusto"
 );
 
 let headers = {
@@ -279,11 +279,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'tempora');
-body.append('overview', 'natus');
-body.append('itenary', 'corrupti');
-body.append('cost', 'dolorem');
-body.append('images[]', 'dolor');
+body.append('title', 'sapiente');
+body.append('overview', 'exercitationem');
+body.append('itenary', 'impedit');
+body.append('cost', 'voluptatibus');
+body.append('images[]', 'odio');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -294,59 +294,66 @@ fetch(url, {
 ```
 
 
-<div id="execution-results-PUTapi-tours" hidden>
-    <blockquote>Received response<span id="execution-response-status-PUTapi-tours"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-PUTapi-tours"></code></pre>
+<div id="execution-results-PUTapi-tours--id-" hidden>
+    <blockquote>Received response<span id="execution-response-status-PUTapi-tours--id-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-tours--id-"></code></pre>
 </div>
-<div id="execution-error-PUTapi-tours" hidden>
+<div id="execution-error-PUTapi-tours--id-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTapi-tours"></code></pre>
+    <pre><code id="execution-error-message-PUTapi-tours--id-"></code></pre>
 </div>
-<form id="form-PUTapi-tours" data-method="PUT" data-path="api/tours" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTapi-tours', this);">
+<form id="form-PUTapi-tours--id-" data-method="PUT" data-path="api/tours/{id}" data-authed="0" data-hasfiles="1" data-headers='{"Content-Type":"multipart\/form-data","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('PUTapi-tours--id-', this);">
 <h3>
     Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTapi-tours" onclick="tryItOut('PUTapi-tours');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTapi-tours" onclick="cancelTryOut('PUTapi-tours');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTapi-tours" hidden>Send Request 💥</button>
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-PUTapi-tours--id-" onclick="tryItOut('PUTapi-tours--id-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-PUTapi-tours--id-" onclick="cancelTryOut('PUTapi-tours--id-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-PUTapi-tours--id-" hidden>Send Request 💥</button>
     </h3>
 <p>
 <small class="badge badge-darkblue">PUT</small>
- <b><code>api/tours</code></b>
+ <b><code>api/tours/{id}</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+<p>
+<b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="id" data-endpoint="PUTapi-tours--id-" data-component="url" required  hidden>
+<br>
+
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
 <b><code>title</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="title" data-endpoint="PUTapi-tours" data-component="body" required  hidden>
+<input type="text" name="title" data-endpoint="PUTapi-tours--id-" data-component="body" required  hidden>
 <br>
 
 </p>
 <p>
 <b><code>cover_image</code></b>&nbsp;&nbsp;<small>file</small>  &nbsp;
-<input type="file" name="cover_image" data-endpoint="PUTapi-tours" data-component="body" required  hidden>
+<input type="file" name="cover_image" data-endpoint="PUTapi-tours--id-" data-component="body" required  hidden>
 <br>
 
 </p>
 <p>
 <b><code>overview</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="overview" data-endpoint="PUTapi-tours" data-component="body" required  hidden>
+<input type="text" name="overview" data-endpoint="PUTapi-tours--id-" data-component="body" required  hidden>
 <br>
 
 </p>
 <p>
 <b><code>itenary</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="itenary" data-endpoint="PUTapi-tours" data-component="body" required  hidden>
+<input type="text" name="itenary" data-endpoint="PUTapi-tours--id-" data-component="body" required  hidden>
 <br>
 
 </p>
 <p>
 <b><code>cost</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="cost" data-endpoint="PUTapi-tours" data-component="body" required  hidden>
+<input type="text" name="cost" data-endpoint="PUTapi-tours--id-" data-component="body" required  hidden>
 <br>
 
 </p>
 <p>
 <b><code>images[]</code></b>&nbsp;&nbsp;<small>array</small>  &nbsp;
-<input type="text" name="images.0" data-endpoint="PUTapi-tours" data-component="body" required  hidden>
+<input type="text" name="images.0" data-endpoint="PUTapi-tours--id-" data-component="body" required  hidden>
 <br>
 
 </p>
@@ -363,14 +370,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/tours/reprehenderit" \
+    "http://localhost/api/tours/ut" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/tours/reprehenderit"
+    "http://localhost/api/tours/ut"
 );
 
 let headers = {

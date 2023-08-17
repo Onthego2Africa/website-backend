@@ -2,14 +2,15 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 use App\Models\Faq;
+use App\Models\Tour;
+use App\Models\User;
 use App\Models\Event;
 use App\Models\Image;
 use App\Models\Newsletter;
 use App\Models\Reservation;
-use App\Models\Tour;
 use Illuminate\Database\Seeder;
+use Spatie\Permission\Models\Role;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,25 +21,18 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(10)->create();
-        Tour::create([
-            'title' => 'dsfdsfdfsd',
-            'cover_image' => 'fdsfd',
-            'overview' => '423',
-            'itenary' => '4',
-            'cost' => '4',
+        Role::create(['name' => 'super-admin']);
+        Role::create(['name' => 'admin']);
+        Role::create(['name' => 'user']);
+        
+        $user = User::create([
+            'name' => 'Super Admin',
+            'email' => 'admin@onthego2africa.com',
+            'password' => bcrypt('123456789'),
+            'username' => 'admin1',
+            'email_verified_at' => now()
         ]);
-        Event::create([
-            'title' => 'dsfdsfdfsd',
-            'cover_image' => 'fdsfd',
-            'overview' => '423',
-            'itenary' => '4',
-            'cost' => '4',
-        ]);
-        // Event::factory(10)->create();
-        // Faq::factory(10)->create();
-        // Reservation::factory(10)->create();
-        // Newsletter::factory(10)->create();
-        // Image::factory(10)->create();
+
+        $user->assignRole('super-admin');
     }
 }
