@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/**
+ * Stale
+ * 
+ * 
+ * @return \Illuminate\Http\Response
+ * 
+ * @response 200 {
+ * "returns": "success page"
+ * }
+ */
 Route::get('/', function () {
     return view('welcome');
 });

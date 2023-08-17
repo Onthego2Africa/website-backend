@@ -72,14 +72,14 @@ Fetch event with slug
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/events/et" \
+    -G "http://localhost/api/events/officia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/events/et"
+    "http://localhost/api/events/officia"
 );
 
 let headers = {
@@ -154,12 +154,12 @@ curl -X POST \
     "http://localhost/api/events" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=ipsum" \
-    -F "overview=commodi" \
-    -F "itenary=recusandae" \
-    -F "cost=animi" \
-    -F "images[]=consequatur" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php23DD.tmp" 
+    -F "title=in" \
+    -F "overview=at" \
+    -F "itenary=perspiciatis" \
+    -F "cost=tempora" \
+    -F "images[]=non" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpEAED.tmp" 
 ```
 
 ```javascript
@@ -173,11 +173,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'ipsum');
-body.append('overview', 'commodi');
-body.append('itenary', 'recusandae');
-body.append('cost', 'animi');
-body.append('images[]', 'consequatur');
+body.append('title', 'in');
+body.append('overview', 'at');
+body.append('itenary', 'perspiciatis');
+body.append('cost', 'tempora');
+body.append('images[]', 'non');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -257,20 +257,20 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/events/illo" \
+    "http://localhost/api/events/recusandae" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=corrupti" \
-    -F "overview=possimus" \
-    -F "itenary=qui" \
-    -F "cost=doloremque" \
-    -F "images[]=id" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php23EE.tmp" 
+    -F "title=ducimus" \
+    -F "overview=ad" \
+    -F "itenary=et" \
+    -F "cost=nihil" \
+    -F "images[]=vero" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpEAFD.tmp" 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/events/illo"
+    "http://localhost/api/events/recusandae"
 );
 
 let headers = {
@@ -279,11 +279,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'corrupti');
-body.append('overview', 'possimus');
-body.append('itenary', 'qui');
-body.append('cost', 'doloremque');
-body.append('images[]', 'id');
+body.append('title', 'ducimus');
+body.append('overview', 'ad');
+body.append('itenary', 'et');
+body.append('cost', 'nihil');
+body.append('images[]', 'vero');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -370,14 +370,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/events/ab" \
+    "http://localhost/api/events/dolor" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/events/ab"
+    "http://localhost/api/events/dolor"
 );
 
 let headers = {

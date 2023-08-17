@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/faqs" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"sed","content":"rerum"}'
+    -d '{"title":"expedita","content":"dignissimos"}'
 
 ```
 
@@ -90,8 +90,8 @@ let headers = {
 };
 
 let body = {
-    "title": "sed",
-    "content": "rerum"
+    "title": "expedita",
+    "content": "dignissimos"
 }
 
 fetch(url, {
@@ -147,14 +147,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/faqs/sed" \
+    -G "http://localhost/api/faqs/dolorem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/faqs/sed"
+    "http://localhost/api/faqs/dolorem"
 );
 
 let headers = {
@@ -215,16 +215,16 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/faqs/totam" \
+    "http://localhost/api/faqs/laborum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"ea","content":"labore"}'
+    -d '{"title":"minima","content":"voluptas"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/faqs/totam"
+    "http://localhost/api/faqs/laborum"
 );
 
 let headers = {
@@ -233,8 +233,8 @@ let headers = {
 };
 
 let body = {
-    "title": "ea",
-    "content": "labore"
+    "title": "minima",
+    "content": "voluptas"
 }
 
 fetch(url, {
@@ -297,14 +297,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/faqs/quia" \
+    "http://localhost/api/faqs/odit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/faqs/quia"
+    "http://localhost/api/faqs/odit"
 );
 
 let headers = {

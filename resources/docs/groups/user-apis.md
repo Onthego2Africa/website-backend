@@ -14,7 +14,7 @@ curl -X POST \
     "http://localhost/api/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"et","username":"nostrum","email":"eos","password":"nihil","password_confirmation":"fugiat"}'
+    -d '{"name":"at","username":"quia","email":"doloribus","password":"at","password_confirmation":"vitae"}'
 
 ```
 
@@ -29,11 +29,11 @@ let headers = {
 };
 
 let body = {
-    "name": "et",
-    "username": "nostrum",
-    "email": "eos",
-    "password": "nihil",
-    "password_confirmation": "fugiat"
+    "name": "at",
+    "username": "quia",
+    "email": "doloribus",
+    "password": "at",
+    "password_confirmation": "vitae"
 }
 
 fetch(url, {
@@ -49,13 +49,13 @@ fetch(url, {
 ```json
 {
     "data": {
-        "name": "Fanny Rath",
-        "username": "osvaldo.kutch",
-        "email": "adela81@example.org",
-        "email_verified_at": "2023-08-17T13:09:10.000000Z",
-        "updated_at": "2023-08-17T13:09:10.000000Z",
-        "created_at": "2023-08-17T13:09:10.000000Z",
-        "id": 13
+        "name": "Major Wiza Jr.",
+        "username": "gmorissette",
+        "email": "justine14@example.net",
+        "email_verified_at": "2023-08-17T13:12:12.000000Z",
+        "updated_at": "2023-08-17T13:12:12.000000Z",
+        "created_at": "2023-08-17T13:12:12.000000Z",
+        "id": 28
     }
 }
 ```
@@ -125,7 +125,7 @@ curl -X POST \
     "http://localhost/api/forgot-password" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"et"}'
+    -d '{"email":"aperiam"}'
 
 ```
 
@@ -140,7 +140,7 @@ let headers = {
 };
 
 let body = {
-    "email": "et"
+    "email": "aperiam"
 }
 
 fetch(url, {
@@ -193,7 +193,7 @@ curl -X POST \
     "http://localhost/api/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"tempore","password":"voluptatem"}'
+    -d '{"email":"voluptatem","password":"possimus"}'
 
 ```
 
@@ -208,8 +208,8 @@ let headers = {
 };
 
 let body = {
-    "email": "tempore",
-    "password": "voluptatem"
+    "email": "voluptatem",
+    "password": "possimus"
 }
 
 fetch(url, {
@@ -225,13 +225,13 @@ fetch(url, {
 ```json
 {
     "data": {
-        "name": "Johnpaul Waelchi Sr.",
-        "username": "muhammad26",
-        "email": "anderson.nolan@example.net",
-        "email_verified_at": "2023-08-17T13:09:10.000000Z",
-        "updated_at": "2023-08-17T13:09:10.000000Z",
-        "created_at": "2023-08-17T13:09:10.000000Z",
-        "id": 14
+        "name": "Beverly Eichmann Jr.",
+        "username": "dora15",
+        "email": "ldaniel@example.org",
+        "email_verified_at": "2023-08-17T13:12:12.000000Z",
+        "updated_at": "2023-08-17T13:12:12.000000Z",
+        "created_at": "2023-08-17T13:12:12.000000Z",
+        "id": 29
     }
 }
 ```
@@ -283,7 +283,7 @@ curl -X POST \
     "http://localhost/api/email/verification-notification" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"vitae"}'
+    -d '{"email":"quas"}'
 
 ```
 
@@ -298,7 +298,7 @@ let headers = {
 };
 
 let body = {
-    "email": "vitae"
+    "email": "quas"
 }
 
 fetch(url, {
@@ -348,14 +348,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/verify-email/laborum/aliquid" \
+    -G "http://localhost/api/verify-email/in/ullam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/verify-email/laborum/aliquid"
+    "http://localhost/api/verify-email/in/ullam"
 );
 
 let headers = {
@@ -486,7 +486,7 @@ curl -X PUT \
     "http://localhost/api/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"ducimus","username":"quisquam"}'
+    -d '{"name":"et","username":"saepe"}'
 
 ```
 
@@ -501,8 +501,8 @@ let headers = {
 };
 
 let body = {
-    "name": "ducimus",
-    "username": "quisquam"
+    "name": "et",
+    "username": "saepe"
 }
 
 fetch(url, {
@@ -518,13 +518,13 @@ fetch(url, {
 ```json
 {
     "data": {
-        "name": "Reanna Smitham",
-        "username": "felicita.zieme",
-        "email": "jacquelyn88@example.org",
-        "email_verified_at": "2023-08-17T13:09:10.000000Z",
-        "updated_at": "2023-08-17T13:09:10.000000Z",
-        "created_at": "2023-08-17T13:09:10.000000Z",
-        "id": 15
+        "name": "Enrique Denesik",
+        "username": "giovani59",
+        "email": "zreichel@example.org",
+        "email_verified_at": "2023-08-17T13:12:12.000000Z",
+        "updated_at": "2023-08-17T13:12:12.000000Z",
+        "created_at": "2023-08-17T13:12:12.000000Z",
+        "id": 30
     }
 }
 ```
@@ -573,14 +573,14 @@ Remove the specified resource from storage.
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/users/autem" \
+    "http://localhost/api/users/tenetur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/users/autem"
+    "http://localhost/api/users/tenetur"
 );
 
 let headers = {

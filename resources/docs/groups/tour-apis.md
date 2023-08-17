@@ -72,14 +72,14 @@ Fetch tour with slug
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/tours/nemo" \
+    -G "http://localhost/api/tours/impedit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/tours/nemo"
+    "http://localhost/api/tours/impedit"
 );
 
 let headers = {
@@ -154,12 +154,12 @@ curl -X POST \
     "http://localhost/api/tours" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=autem" \
-    -F "overview=minima" \
-    -F "itenary=libero" \
-    -F "cost=corporis" \
-    -F "images[]=facilis" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php23AC.tmp" 
+    -F "title=veritatis" \
+    -F "overview=esse" \
+    -F "itenary=voluptatem" \
+    -F "cost=quam" \
+    -F "images[]=aspernatur" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpEAAC.tmp" 
 ```
 
 ```javascript
@@ -173,11 +173,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'autem');
-body.append('overview', 'minima');
-body.append('itenary', 'libero');
-body.append('cost', 'corporis');
-body.append('images[]', 'facilis');
+body.append('title', 'veritatis');
+body.append('overview', 'esse');
+body.append('itenary', 'voluptatem');
+body.append('cost', 'quam');
+body.append('images[]', 'aspernatur');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -257,20 +257,20 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/tours/iusto" \
+    "http://localhost/api/tours/alias" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=sapiente" \
-    -F "overview=exercitationem" \
-    -F "itenary=impedit" \
-    -F "cost=voluptatibus" \
-    -F "images[]=odio" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php23CD.tmp" 
+    -F "title=et" \
+    -F "overview=temporibus" \
+    -F "itenary=ut" \
+    -F "cost=eveniet" \
+    -F "images[]=ratione" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpEADC.tmp" 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/tours/iusto"
+    "http://localhost/api/tours/alias"
 );
 
 let headers = {
@@ -279,11 +279,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'sapiente');
-body.append('overview', 'exercitationem');
-body.append('itenary', 'impedit');
-body.append('cost', 'voluptatibus');
-body.append('images[]', 'odio');
+body.append('title', 'et');
+body.append('overview', 'temporibus');
+body.append('itenary', 'ut');
+body.append('cost', 'eveniet');
+body.append('images[]', 'ratione');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -370,14 +370,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/tours/ut" \
+    "http://localhost/api/tours/maiores" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/tours/ut"
+    "http://localhost/api/tours/maiores"
 );
 
 let headers = {

@@ -40,22 +40,22 @@ fetch(url, {
 {
     "data": [
         {
-            "name": "Vesta Daugherty",
-            "username": "hailee.gerlach",
-            "email": "vabbott@example.net",
-            "email_verified_at": "2023-08-17T13:09:10.000000Z",
-            "updated_at": "2023-08-17T13:09:10.000000Z",
-            "created_at": "2023-08-17T13:09:10.000000Z",
-            "id": 16
+            "name": "Waino Koelpin",
+            "username": "balistreri.mohammed",
+            "email": "heller.marguerite@example.org",
+            "email_verified_at": "2023-08-17T13:12:12.000000Z",
+            "updated_at": "2023-08-17T13:12:12.000000Z",
+            "created_at": "2023-08-17T13:12:12.000000Z",
+            "id": 31
         },
         {
-            "name": "Bernie Balistreri",
-            "username": "reichert.damon",
-            "email": "vfritsch@example.net",
-            "email_verified_at": "2023-08-17T13:09:10.000000Z",
-            "updated_at": "2023-08-17T13:09:10.000000Z",
-            "created_at": "2023-08-17T13:09:10.000000Z",
-            "id": 17
+            "name": "Keanu Kemmer",
+            "username": "parmstrong",
+            "email": "dare.nikki@example.com",
+            "email_verified_at": "2023-08-17T13:12:12.000000Z",
+            "updated_at": "2023-08-17T13:12:12.000000Z",
+            "created_at": "2023-08-17T13:12:12.000000Z",
+            "id": 32
         }
     ]
 }
@@ -152,14 +152,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/admins/consectetur" \
+    -G "http://localhost/api/admins/voluptatibus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/admins/consectetur"
+    "http://localhost/api/admins/voluptatibus"
 );
 
 let headers = {

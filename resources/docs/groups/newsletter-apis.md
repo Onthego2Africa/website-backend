@@ -75,7 +75,7 @@ curl -X POST \
     "http://localhost/api/newsletter-subscribe" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"sit"}'
+    -d '{"email":"non"}'
 
 ```
 
@@ -90,7 +90,7 @@ let headers = {
 };
 
 let body = {
-    "email": "sit"
+    "email": "non"
 }
 
 fetch(url, {

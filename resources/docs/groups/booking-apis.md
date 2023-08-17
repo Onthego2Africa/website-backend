@@ -72,16 +72,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "http://localhost/api/book-tour/quae" \
+    "http://localhost/api/book-tour/ab" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"number_of_guests":"sit","check_in":"nobis","check_out":"dolore","cost":"qui","paymentID":"aliquam"}'
+    -d '{"number_of_guests":"hic","check_in":"impedit","check_out":"molestiae","cost":"autem","paymentID":"et"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/book-tour/quae"
+    "http://localhost/api/book-tour/ab"
 );
 
 let headers = {
@@ -90,11 +90,11 @@ let headers = {
 };
 
 let body = {
-    "number_of_guests": "sit",
-    "check_in": "nobis",
-    "check_out": "dolore",
-    "cost": "qui",
-    "paymentID": "aliquam"
+    "number_of_guests": "hic",
+    "check_in": "impedit",
+    "check_out": "molestiae",
+    "cost": "autem",
+    "paymentID": "et"
 }
 
 fetch(url, {
@@ -175,16 +175,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "http://localhost/api/book-event/neque" \
+    "http://localhost/api/book-event/ducimus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"number_of_guests":"id","check_in":"unde","check_out":"ut","cost":"omnis","paymentID":"accusantium"}'
+    -d '{"number_of_guests":"eligendi","check_in":"ut","check_out":"minima","cost":"dolor","paymentID":"dolorum"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/book-event/neque"
+    "http://localhost/api/book-event/ducimus"
 );
 
 let headers = {
@@ -193,11 +193,11 @@ let headers = {
 };
 
 let body = {
-    "number_of_guests": "id",
-    "check_in": "unde",
-    "check_out": "ut",
-    "cost": "omnis",
-    "paymentID": "accusantium"
+    "number_of_guests": "eligendi",
+    "check_in": "ut",
+    "check_out": "minima",
+    "cost": "dolor",
+    "paymentID": "dolorum"
 }
 
 fetch(url, {
@@ -278,14 +278,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/reservations/rem" \
+    -G "http://localhost/api/reservations/ea" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/reservations/rem"
+    "http://localhost/api/reservations/ea"
 );
 
 let headers = {
@@ -346,14 +346,14 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/reservations/autem" \
+    "http://localhost/api/reservations/molestias" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/reservations/autem"
+    "http://localhost/api/reservations/molestias"
 );
 
 let headers = {
@@ -407,14 +407,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/reservations/similique" \
+    "http://localhost/api/reservations/in" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/reservations/similique"
+    "http://localhost/api/reservations/in"
 );
 
 let headers = {

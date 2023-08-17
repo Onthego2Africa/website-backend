@@ -34,9 +34,9 @@ paths:
                             schema:
                                 type: object
                                 example:
-                                    data: [{ name: 'Vesta Daugherty', username: hailee.gerlach, email: vabbott@example.net, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 16 }, { name: 'Bernie Balistreri', username: reichert.damon, email: vfritsch@example.net, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 17 }]
+                                    data: [{ name: 'Waino Koelpin', username: balistreri.mohammed, email: heller.marguerite@example.org, email_verified_at: '2023-08-17T13:12:12.000000Z', updated_at: '2023-08-17T13:12:12.000000Z', created_at: '2023-08-17T13:12:12.000000Z', id: 31 }, { name: 'Keanu Kemmer', username: parmstrong, email: dare.nikki@example.com, email_verified_at: '2023-08-17T13:12:12.000000Z', updated_at: '2023-08-17T13:12:12.000000Z', created_at: '2023-08-17T13:12:12.000000Z', id: 32 }]
                                 properties:
-                                    data: { type: array, example: [{ name: 'Vesta Daugherty', username: hailee.gerlach, email: vabbott@example.net, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 16 }, { name: 'Bernie Balistreri', username: reichert.damon, email: vfritsch@example.net, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 17 }], items: { type: object } }
+                                    data: { type: array, example: [{ name: 'Waino Koelpin', username: balistreri.mohammed, email: heller.marguerite@example.org, email_verified_at: '2023-08-17T13:12:12.000000Z', updated_at: '2023-08-17T13:12:12.000000Z', created_at: '2023-08-17T13:12:12.000000Z', id: 31 }, { name: 'Keanu Kemmer', username: parmstrong, email: dare.nikki@example.com, email_verified_at: '2023-08-17T13:12:12.000000Z', updated_at: '2023-08-17T13:12:12.000000Z', created_at: '2023-08-17T13:12:12.000000Z', id: 32 }], items: { type: object } }
             tags:
                 - 'Admin APIs'
             security: []
@@ -66,9 +66,9 @@ paths:
                             schema:
                                 type: object
                                 example:
-                                    data: { name: 'Reanna Smitham', username: felicita.zieme, email: jacquelyn88@example.org, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 15 }
+                                    data: { name: 'Enrique Denesik', username: giovani59, email: zreichel@example.org, email_verified_at: '2023-08-17T13:12:12.000000Z', updated_at: '2023-08-17T13:12:12.000000Z', created_at: '2023-08-17T13:12:12.000000Z', id: 30 }
                                 properties:
-                                    data: { type: object, example: { name: 'Reanna Smitham', username: felicita.zieme, email: jacquelyn88@example.org, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 15 } }
+                                    data: { type: object, example: { name: 'Enrique Denesik', username: giovani59, email: zreichel@example.org, email_verified_at: '2023-08-17T13:12:12.000000Z', updated_at: '2023-08-17T13:12:12.000000Z', created_at: '2023-08-17T13:12:12.000000Z', id: 30 } }
             tags:
                 - 'User APIs'
             requestBody:
@@ -81,11 +81,11 @@ paths:
                                 name:
                                     type: string
                                     description: ''
-                                    example: ducimus
+                                    example: et
                                 username:
                                     type: string
                                     description: ''
-                                    example: quisquam
+                                    example: saepe
                             required:
                                 - name
                                 - username
@@ -205,7 +205,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: consectetur
+                example: voluptatibus
                 required: true
                 schema:
                     type: string
@@ -274,23 +274,23 @@ paths:
                                 number_of_guests:
                                     type: string
                                     description: ''
-                                    example: sit
+                                    example: hic
                                 check_in:
                                     type: string
                                     description: ''
-                                    example: nobis
+                                    example: impedit
                                 check_out:
                                     type: string
                                     description: ''
-                                    example: dolore
+                                    example: molestiae
                                 cost:
                                     type: string
                                     description: ''
-                                    example: qui
+                                    example: autem
                                 paymentID:
                                     type: string
                                     description: ''
-                                    example: aliquam
+                                    example: et
                             required:
                                 - number_of_guests
                                 - check_in
@@ -303,7 +303,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: quae
+                example: ab
                 required: true
                 schema:
                     type: string
@@ -339,23 +339,23 @@ paths:
                                 number_of_guests:
                                     type: string
                                     description: ''
-                                    example: id
+                                    example: eligendi
                                 check_in:
                                     type: string
                                     description: ''
-                                    example: unde
+                                    example: ut
                                 check_out:
                                     type: string
                                     description: ''
-                                    example: ut
+                                    example: minima
                                 cost:
                                     type: string
                                     description: ''
-                                    example: omnis
+                                    example: dolor
                                 paymentID:
                                     type: string
                                     description: ''
-                                    example: accusantium
+                                    example: dolorum
                             required:
                                 - number_of_guests
                                 - check_in
@@ -368,7 +368,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: neque
+                example: ducimus
                 required: true
                 schema:
                     type: string
@@ -454,7 +454,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: rem
+                example: ea
                 required: true
                 schema:
                     type: string
@@ -483,7 +483,7 @@ paths:
             security: []
     /:
         get:
-            summary: ''
+            summary: Stale
             description: ''
             parameters:
                 -
@@ -502,12 +502,15 @@ paths:
                         type: string
             responses:
                 200:
-                    description: ''
+                    description: '200'
                     content:
-                        text/plain:
+                        application/json:
                             schema:
-                                type: string
-                                example: "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <link rel=\"stylesheet\" href=\"styles.css\">\n    <title>Success</title>\n\n    <style>\n@import  url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');\n*{\n  margin:0;\n  padding: 0;\n  box-sizing: border-box;\n}\nbody  { \n    background-color: #ffe9cc;\n  height: 100vh;\n  display: flex;\n  font-size: 14px;\n  text-align: center;\n  justify-content: center;\n  align-items: center;\n  font-family: 'Poppins', sans-serif;   \n}        \n\n.wrapperAlert {\n  width: 500px;\n  height: 400px;\n  overflow: hidden;\n  border-radius: 12px;\n  border: thin solid #ddd;           \n}\n\n.topHalf {\n  width: 100%;\n  color: white;\n  overflow: hidden;\n  min-height: 250px;\n  position: relative;\n  padding: 40px 0;\n  background: rgb(0,0,0);\n  background: -webkit-linear-gradient(45deg, #009a4e, #49e051);\n}\n\n.topHalf p {\n  margin-bottom: 10px;\n  margin-top: 30px\n}\nsvg {\n  fill: white;\n}\n.topHalf h1 {\n  font-size: 2.25rem;\n  display: block;\n  font-weight: 500;\n  letter-spacing: 0.15rem;\n  text-shadow: 0 2px rgba(128, 128, 128, 0.6);\n}\n        \n/* Original Author of Bubbles Animation -- https://codepen.io/Lewitje/pen/BNNJjo */\n.bg-bubbles{\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;            \n  z-index: 1;\n}\n\nli{\n  position: absolute;\n  list-style: none;\n  display: block;\n  width: 40px;\n  height: 40px;\n  background-color: rgba(255, 255, 255, 0.15);/* fade(green, 75%);*/\n  bottom: -160px;\n\n  -webkit-animation: square 20s infinite;\n  animation:         square 20s infinite;\n\n  -webkit-transition-timing-function: linear;\n  transition-timing-function: linear;\n}\nli:nth-child(1){\n  left: 10%;\n}\t\t\nli:nth-child(2){\n  left: 20%;\n\n  width: 80px;\n  height: 80px;\n\n  animation-delay: 2s;\n  animation-duration: 17s;\n}\t\t\nli:nth-child(3){\n  left: 25%;\n  animation-delay: 4s;\n}\t\t\nli:nth-child(4){\n  left: 40%;\n  width: 60px;\n  height: 60px;\n\n  animation-duration: 22s;\n\n  background-color: rgba(white, 0.3); /* fade(white, 25%); */\n}\t\t\nli:nth-child(5){\n  left: 70%;\n}\t\t\nli:nth-child(6){\n  left: 80%;\n  width: 120px;\n  height: 120px;\n\n  animation-delay: 3s;\n  background-color: rgba(white, 0.2); /* fade(white, 20%); */\n}\t\t\nli:nth-child(7){\n  left: 32%;\n  width: 160px;\n  height: 160px;\n\n  animation-delay: 7s;\n}\t\t\nli:nth-child(8){\n  left: 55%;\n  width: 20px;\n  height: 20px;\n\n  animation-delay: 15s;\n  animation-duration: 40s;\n}\t\t\nli:nth-child(9){\n  left: 25%;\n  width: 10px;\n  height: 10px;\n\n  animation-delay: 2s;\n  animation-duration: 40s;\n  background-color: rgba(white, 0.3); /*fade(white, 30%);*/\n}\t\t\nli:nth-child(10){\n  left: 90%;\n  width: 160px;\n  height: 160px;\n\n  animation-delay: 11s;\n}\n\n@-webkit-keyframes square {\n  0%   { transform: translateY(0); }\n  100% { transform: translateY(-500px) rotate(600deg); }\n}\n@keyframes  square {\n  0%   { transform: translateY(0); }\n  100% { transform: translateY(-500px) rotate(600deg); }\n}\n\n.bottomHalf {\n  align-items: center;\n  padding: 35px;\n}\n.bottomHalf p {\n  font-weight: 500;\n  font-size: 1.05rem;\n  margin-bottom: 20px;\n}\n\nbutton {\n  border: none;\n  color: white;\n  cursor: pointer;\n  border-radius: 5px;            \n  padding: 10px 18px;            \n  background-color: #009a4e;\n  text-shadow: 0 1px rgba(128, 128, 128, 0.75);\n  transition: all 0.3s ease;\n}\nbutton:hover {\n  background-color: #007906;\n}\nbutton a{\n    text-decoration: none;\n    color: white;\n}\n    </style>\n  </head>\n  <body>\n    <div class=\"wrapperAlert\">\n      <div class=\"contentAlert\">\n        <div class=\"topHalf\">\n          <p>\n            <svg viewBox=\"0 0 512 512\" width=\"100\" title=\"check-circle\">\n              <path\n                d=\"M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z\"\n              />\n            </svg>\n          </p>\n          \n\n          <ul class=\"bg-bubbles\">\n            <li></li>\n            <li></li>\n            <li></li>\n            <li></li>\n            <li></li>\n            <li></li>\n            <li></li>\n            <li></li>\n            <li></li>\n            <li></li>\n          </ul>\n        </div>\n\n        <div class=\"bottomHalf\">\n          <p>Email Verified Successfully</p>\n\n          <button id=\"alertMO\">\n              <a href=\"https://\">Visit On The go2 Africa</a>\n              \n          </button>\n        </div>\n      </div>\n    </div>\n  </body>\n</html>\n"
+                                type: object
+                                example:
+                                    returns: 'success page'
+                                properties:
+                                    returns: { type: string, example: 'success page' }
             tags:
                 - Endpoints
             security: []
@@ -575,7 +578,7 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: ipsum
+                                    example: in
                                 cover_image:
                                     type: string
                                     format: binary
@@ -583,19 +586,19 @@ paths:
                                 overview:
                                     type: string
                                     description: ''
-                                    example: commodi
+                                    example: at
                                 itenary:
                                     type: string
                                     description: ''
-                                    example: recusandae
+                                    example: perspiciatis
                                 cost:
                                     type: string
                                     description: ''
-                                    example: animi
+                                    example: tempora
                                 'images[]':
                                     type: array
                                     description: ''
-                                    example: consequatur
+                                    example: non
                             required:
                                 - title
                                 - cover_image
@@ -642,7 +645,7 @@ paths:
                 in: path
                 name: slug
                 description: ''
-                example: et
+                example: officia
                 required: true
                 schema:
                     type: string
@@ -678,7 +681,7 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: corrupti
+                                    example: ducimus
                                 cover_image:
                                     type: string
                                     format: binary
@@ -686,19 +689,19 @@ paths:
                                 overview:
                                     type: string
                                     description: ''
-                                    example: possimus
+                                    example: ad
                                 itenary:
                                     type: string
                                     description: ''
-                                    example: qui
+                                    example: et
                                 cost:
                                     type: string
                                     description: ''
-                                    example: doloremque
+                                    example: nihil
                                 'images[]':
                                     type: array
                                     description: ''
-                                    example: id
+                                    example: vero
                             required:
                                 - title
                                 - cover_image
@@ -734,7 +737,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: illo
+                example: recusandae
                 required: true
                 schema:
                     type: string
@@ -802,11 +805,11 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: sed
+                                    example: expedita
                                 content:
                                     type: string
                                     description: ''
-                                    example: rerum
+                                    example: dignissimos
                             required:
                                 - title
                                 - content
@@ -875,11 +878,11 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: ea
+                                    example: minima
                                 content:
                                     type: string
                                     description: ''
-                                    example: labore
+                                    example: voluptas
                             required:
                                 - title
                                 - content
@@ -911,7 +914,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: sed
+                example: dolorem
                 required: true
                 schema:
                     type: string
@@ -980,7 +983,7 @@ paths:
                                 email:
                                     type: string
                                     description: ''
-                                    example: sit
+                                    example: non
                             required:
                                 - email
             security: []
@@ -1048,7 +1051,7 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: autem
+                                    example: veritatis
                                 cover_image:
                                     type: string
                                     format: binary
@@ -1056,19 +1059,19 @@ paths:
                                 overview:
                                     type: string
                                     description: ''
-                                    example: minima
+                                    example: esse
                                 itenary:
                                     type: string
                                     description: ''
-                                    example: libero
+                                    example: voluptatem
                                 cost:
                                     type: string
                                     description: ''
-                                    example: corporis
+                                    example: quam
                                 'images[]':
                                     type: array
                                     description: ''
-                                    example: facilis
+                                    example: aspernatur
                             required:
                                 - title
                                 - cover_image
@@ -1115,7 +1118,7 @@ paths:
                 in: path
                 name: slug
                 description: ''
-                example: nemo
+                example: impedit
                 required: true
                 schema:
                     type: string
@@ -1151,7 +1154,7 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: sapiente
+                                    example: et
                                 cover_image:
                                     type: string
                                     format: binary
@@ -1159,19 +1162,19 @@ paths:
                                 overview:
                                     type: string
                                     description: ''
-                                    example: exercitationem
+                                    example: temporibus
                                 itenary:
                                     type: string
                                     description: ''
-                                    example: impedit
+                                    example: ut
                                 cost:
                                     type: string
                                     description: ''
-                                    example: voluptatibus
+                                    example: eveniet
                                 'images[]':
                                     type: array
                                     description: ''
-                                    example: odio
+                                    example: ratione
                             required:
                                 - title
                                 - cover_image
@@ -1207,7 +1210,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: iusto
+                example: alias
                 required: true
                 schema:
                     type: string
@@ -1238,9 +1241,9 @@ paths:
                             schema:
                                 type: object
                                 example:
-                                    data: { name: 'Fanny Rath', username: osvaldo.kutch, email: adela81@example.org, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 13 }
+                                    data: { name: 'Major Wiza Jr.', username: gmorissette, email: justine14@example.net, email_verified_at: '2023-08-17T13:12:12.000000Z', updated_at: '2023-08-17T13:12:12.000000Z', created_at: '2023-08-17T13:12:12.000000Z', id: 28 }
                                 properties:
-                                    data: { type: object, example: { name: 'Fanny Rath', username: osvaldo.kutch, email: adela81@example.org, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 13 } }
+                                    data: { type: object, example: { name: 'Major Wiza Jr.', username: gmorissette, email: justine14@example.net, email_verified_at: '2023-08-17T13:12:12.000000Z', updated_at: '2023-08-17T13:12:12.000000Z', created_at: '2023-08-17T13:12:12.000000Z', id: 28 } }
             tags:
                 - 'User APIs'
             requestBody:
@@ -1253,23 +1256,23 @@ paths:
                                 name:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: at
                                 username:
                                     type: string
                                     description: ''
-                                    example: nostrum
+                                    example: quia
                                 email:
                                     type: string
                                     description: ''
-                                    example: eos
+                                    example: doloribus
                                 password:
                                     type: string
                                     description: ''
-                                    example: nihil
+                                    example: at
                                 password_confirmation:
                                     type: string
                                     description: ''
-                                    example: fugiat
+                                    example: vitae
                             required:
                                 - name
                                 - username
@@ -1309,7 +1312,7 @@ paths:
                                 email:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: aperiam
                             required:
                                 - email
             security: []
@@ -1340,9 +1343,9 @@ paths:
                             schema:
                                 type: object
                                 example:
-                                    data: { name: 'Johnpaul Waelchi Sr.', username: muhammad26, email: anderson.nolan@example.net, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 14 }
+                                    data: { name: 'Beverly Eichmann Jr.', username: dora15, email: ldaniel@example.org, email_verified_at: '2023-08-17T13:12:12.000000Z', updated_at: '2023-08-17T13:12:12.000000Z', created_at: '2023-08-17T13:12:12.000000Z', id: 29 }
                                 properties:
-                                    data: { type: object, example: { name: 'Johnpaul Waelchi Sr.', username: muhammad26, email: anderson.nolan@example.net, email_verified_at: '2023-08-17T13:09:10.000000Z', updated_at: '2023-08-17T13:09:10.000000Z', created_at: '2023-08-17T13:09:10.000000Z', id: 14 } }
+                                    data: { type: object, example: { name: 'Beverly Eichmann Jr.', username: dora15, email: ldaniel@example.org, email_verified_at: '2023-08-17T13:12:12.000000Z', updated_at: '2023-08-17T13:12:12.000000Z', created_at: '2023-08-17T13:12:12.000000Z', id: 29 } }
             tags:
                 - 'User APIs'
             requestBody:
@@ -1355,11 +1358,11 @@ paths:
                                 email:
                                     type: string
                                     description: ''
-                                    example: tempore
+                                    example: voluptatem
                                 password:
                                     type: string
                                     description: ''
-                                    example: voluptatem
+                                    example: possimus
                             required:
                                 - email
                                 - password
@@ -1396,7 +1399,7 @@ paths:
                                 email:
                                     type: string
                                     description: ''
-                                    example: vitae
+                                    example: quas
                             required:
                                 - email
             security: []
@@ -1438,7 +1441,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: laborum
+                example: in
                 required: true
                 schema:
                     type: string
@@ -1446,7 +1449,7 @@ paths:
                 in: path
                 name: hash
                 description: ''
-                example: aliquid
+                example: ullam
                 required: true
                 schema:
                     type: string
@@ -1511,7 +1514,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: autem
+                example: tenetur
                 required: true
                 schema:
                     type: string
