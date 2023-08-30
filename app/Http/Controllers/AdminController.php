@@ -166,6 +166,8 @@ class AdminController extends Controller
     }
 
     /**
+     * DELETE /admins
+     * 
      * Remove the Admin from storage.
      *
      * @param  int  $id
