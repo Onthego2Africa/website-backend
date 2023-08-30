@@ -218,7 +218,7 @@ button a{
         </div>
 
         <div class="bottomHalf">
-          <p>Email Verified Sccessfully</p>
+          <p>Email Verified Successfully</p>
 
           <button id="alertMO">
               <a href="https://">Visit On The go2 Africa</a>
