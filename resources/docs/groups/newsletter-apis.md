@@ -11,14 +11,14 @@ Apis for managing newsletter resource
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/newsletter-subscriptions" \
+    -G "https://onthego-api.ratecardly.com/api/newsletter-subscriptions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/newsletter-subscriptions"
+    "https://onthego-api.ratecardly.com/api/newsletter-subscriptions"
 );
 
 let headers = {
@@ -72,16 +72,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "http://localhost/api/newsletter-subscribe" \
+    "https://onthego-api.ratecardly.com/api/newsletter-subscribe" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"non"}'
+    -d '{"email":"aperiam"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/newsletter-subscribe"
+    "https://onthego-api.ratecardly.com/api/newsletter-subscribe"
 );
 
 let headers = {
@@ -90,7 +90,7 @@ let headers = {
 };
 
 let body = {
-    "email": "non"
+    "email": "aperiam"
 }
 
 fetch(url, {

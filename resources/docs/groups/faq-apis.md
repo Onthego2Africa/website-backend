@@ -11,14 +11,14 @@ Apis for managing event resource
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/faqs" \
+    -G "https://onthego-api.ratecardly.com/api/faqs" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/faqs"
+    "https://onthego-api.ratecardly.com/api/faqs"
 );
 
 let headers = {
@@ -72,16 +72,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "http://localhost/api/faqs" \
+    "https://onthego-api.ratecardly.com/api/faqs" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"expedita","content":"dignissimos"}'
+    -d '{"title":"repellendus","content":"ex"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/faqs"
+    "https://onthego-api.ratecardly.com/api/faqs"
 );
 
 let headers = {
@@ -90,8 +90,8 @@ let headers = {
 };
 
 let body = {
-    "title": "expedita",
-    "content": "dignissimos"
+    "title": "repellendus",
+    "content": "ex"
 }
 
 fetch(url, {
@@ -147,14 +147,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/faqs/dolorem" \
+    -G "https://onthego-api.ratecardly.com/api/faqs/eum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/faqs/dolorem"
+    "https://onthego-api.ratecardly.com/api/faqs/eum"
 );
 
 let headers = {
@@ -215,16 +215,16 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/faqs/laborum" \
+    "https://onthego-api.ratecardly.com/api/faqs/nulla" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"minima","content":"voluptas"}'
+    -d '{"title":"quibusdam","content":"eum"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/faqs/laborum"
+    "https://onthego-api.ratecardly.com/api/faqs/nulla"
 );
 
 let headers = {
@@ -233,8 +233,8 @@ let headers = {
 };
 
 let body = {
-    "title": "minima",
-    "content": "voluptas"
+    "title": "quibusdam",
+    "content": "eum"
 }
 
 fetch(url, {
@@ -297,14 +297,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/faqs/odit" \
+    "https://onthego-api.ratecardly.com/api/faqs/temporibus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/faqs/odit"
+    "https://onthego-api.ratecardly.com/api/faqs/temporibus"
 );
 
 let headers = {

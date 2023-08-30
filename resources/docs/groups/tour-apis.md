@@ -11,14 +11,14 @@ Apis for managing event resource
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/tours" \
+    -G "https://onthego-api.ratecardly.com/api/tours" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/tours"
+    "https://onthego-api.ratecardly.com/api/tours"
 );
 
 let headers = {
@@ -72,14 +72,14 @@ Fetch tour with slug
 
 ```bash
 curl -X GET \
-    -G "http://localhost/api/tours/impedit" \
+    -G "https://onthego-api.ratecardly.com/api/tours/perferendis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/tours/impedit"
+    "https://onthego-api.ratecardly.com/api/tours/perferendis"
 );
 
 let headers = {
@@ -151,20 +151,20 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "http://localhost/api/tours" \
+    "https://onthego-api.ratecardly.com/api/tours" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=veritatis" \
-    -F "overview=esse" \
-    -F "itenary=voluptatem" \
-    -F "cost=quam" \
-    -F "images[]=aspernatur" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpEAAC.tmp" 
+    -F "title=qui" \
+    -F "overview=atque" \
+    -F "itenary=sit" \
+    -F "cost=harum" \
+    -F "images[]=mollitia" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php7890.tmp" 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/tours"
+    "https://onthego-api.ratecardly.com/api/tours"
 );
 
 let headers = {
@@ -173,11 +173,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'veritatis');
-body.append('overview', 'esse');
-body.append('itenary', 'voluptatem');
-body.append('cost', 'quam');
-body.append('images[]', 'aspernatur');
+body.append('title', 'qui');
+body.append('overview', 'atque');
+body.append('itenary', 'sit');
+body.append('cost', 'harum');
+body.append('images[]', 'mollitia');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -257,20 +257,20 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "http://localhost/api/tours/alias" \
+    "https://onthego-api.ratecardly.com/api/tours/eaque" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=et" \
-    -F "overview=temporibus" \
-    -F "itenary=ut" \
-    -F "cost=eveniet" \
-    -F "images[]=ratione" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpEADC.tmp" 
+    -F "title=ipsam" \
+    -F "overview=repellat" \
+    -F "itenary=iusto" \
+    -F "cost=in" \
+    -F "images[]=temporibus" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php78B1.tmp" 
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/tours/alias"
+    "https://onthego-api.ratecardly.com/api/tours/eaque"
 );
 
 let headers = {
@@ -279,11 +279,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'et');
-body.append('overview', 'temporibus');
-body.append('itenary', 'ut');
-body.append('cost', 'eveniet');
-body.append('images[]', 'ratione');
+body.append('title', 'ipsam');
+body.append('overview', 'repellat');
+body.append('itenary', 'iusto');
+body.append('cost', 'in');
+body.append('images[]', 'temporibus');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -370,14 +370,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "http://localhost/api/tours/maiores" \
+    "https://onthego-api.ratecardly.com/api/tours/quisquam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/api/tours/maiores"
+    "https://onthego-api.ratecardly.com/api/tours/quisquam"
 );
 
 let headers = {

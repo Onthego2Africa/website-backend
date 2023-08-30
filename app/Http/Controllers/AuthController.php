@@ -125,10 +125,15 @@ class AuthController extends Controller
     public function show(Request $request)
     {
         $user = $request->user();
-
         if (!$user) {
+            abort(404, 'Not Found');
+        }
+
+        if($user->getRoleNames()[0] == 'super-admin' || $user->getRoleNames()[0] == 'admin'){
+        } elseif ($request->user()->id != $user->id) {
             abort(403, 'Unauthorized Action');
         }
+        
 
         $response = [
             'user' => $user
@@ -160,6 +165,11 @@ class AuthController extends Controller
         // }
         $user = $request->user();
 
+        if($user->getRoleNames()[0] == 'super-admin' || $user->getRoleNames()[0] == 'admin'){
+        } elseif ($request->user()->id != $user->id) {
+            abort(403, 'Unauthorized Action');
+        }
+
         $fields = $request->validate([
             'name' => ['required'],
             // 'email' => ['required', 'email'],
@@ -174,11 +184,9 @@ class AuthController extends Controller
             $request->validate(['username' =>  Rule::unique('users', 'username')]);
         }
 
-
         $user->update([
             'name' => $fields['name'],
             'username' => $fields['username'],
-            'about' => ($request['about'] != 'null' ? $request['about'] : $user['about']),
         ]);
 
         $response = [
@@ -277,10 +285,10 @@ class AuthController extends Controller
     {
         $user = User::find($id);
 
-        if (!$request->user()->id != $user->id) {
+       if($user->getRoleNames()[0] == 'super-admin' || $user->getRoleNames()[0] == 'admin'){
+        } elseif ($request->user()->id != $user->id) {
             abort(403, 'Unauthorized Action');
         }
-
         $user->delete();
 
         return response(['message' => 'User deleted succesfully']);

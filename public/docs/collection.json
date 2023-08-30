@@ -5,12 +5,12 @@
             "key": "baseUrl",
             "type": "string",
             "name": "string",
-            "value": "localhost"
+            "value": "onthego-api.ratecardly.com"
         }
     ],
     "info": {
         "name": "OnTheGo2Africa",
-        "_postman_id": "8cf78a0d-96fb-4a7b-8407-e247fe4771f7",
+        "_postman_id": "8590639e-8378-435c-ae5c-b495aca00588",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -23,11 +23,11 @@
                     "name": "GET \/users",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/users",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/users"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/users"
                         },
                         "method": "GET",
                         "header": [
@@ -51,11 +51,11 @@
                             "name": "GET \/users Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/users",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/users"
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/users"
                                 },
                                 "method": "GET",
                                 "header": [
@@ -76,7 +76,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"data\": [\n        {\n            \"name\": \"Waino Koelpin\",\n            \"username\": \"balistreri.mohammed\",\n            \"email\": \"heller.marguerite@example.org\",\n            \"email_verified_at\": \"2023-08-17T13:12:12.000000Z\",\n            \"updated_at\": \"2023-08-17T13:12:12.000000Z\",\n            \"created_at\": \"2023-08-17T13:12:12.000000Z\",\n            \"id\": 31\n        },\n        {\n            \"name\": \"Keanu Kemmer\",\n            \"username\": \"parmstrong\",\n            \"email\": \"dare.nikki@example.com\",\n            \"email_verified_at\": \"2023-08-17T13:12:12.000000Z\",\n            \"updated_at\": \"2023-08-17T13:12:12.000000Z\",\n            \"created_at\": \"2023-08-17T13:12:12.000000Z\",\n            \"id\": 32\n        }\n    ]\n}"
+                            "body": "{\n    \"data\": [\n        {\n            \"name\": \"Prof. Keanu Zemlak II\",\n            \"username\": \"zoe03\",\n            \"email\": \"wilburn89@example.com\",\n            \"email_verified_at\": \"2023-08-30T13:54:01.000000Z\",\n            \"updated_at\": \"2023-08-30T13:54:01.000000Z\",\n            \"created_at\": \"2023-08-30T13:54:01.000000Z\",\n            \"id\": 58\n        },\n        {\n            \"name\": \"Nat Harris\",\n            \"username\": \"torp.torrey\",\n            \"email\": \"cole.birdie@example.net\",\n            \"email_verified_at\": \"2023-08-30T13:54:01.000000Z\",\n            \"updated_at\": \"2023-08-30T13:54:01.000000Z\",\n            \"created_at\": \"2023-08-30T13:54:01.000000Z\",\n            \"id\": 59\n        }\n    ]\n}"
                         }
                     ]
                 },
@@ -84,11 +84,11 @@
                     "name": "GET \/admins",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/admins",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/admins"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/admins"
                         },
                         "method": "GET",
                         "header": [
@@ -112,11 +112,11 @@
                             "name": "GET \/admins Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/admins",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/admins"
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/admins"
                                 },
                                 "method": "GET",
                                 "header": [
@@ -142,19 +142,51 @@
                     ]
                 },
                 {
-                    "name": "Display the specified resource.",
+                    "name": "POST \/admins",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/admins",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/admins"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"illo\",\n    \"username\": \"est\",\n    \"email\": \"rerum\",\n    \"password\": \"rerum\",\n    \"password_confirmation\": \"quia\"\n}"
+                        },
+                        "description": "Store a newly created admin in storage.",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET \/admin\/id",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/admins\/:id",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/admins\/:id",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/admins\/:id",
                             "variable": [
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "voluptatibus",
+                                    "value": "omnis",
                                     "description": ""
                                 }
                             ]
@@ -178,19 +210,19 @@
                     },
                     "response": [
                         {
-                            "name": "Display the specified resource. Response #1",
+                            "name": "GET \/admin\/id Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/admins\/:id",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/admins\/:id",
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/admins\/:id",
                                     "variable": [
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "voluptatibus",
+                                            "value": "omnis",
                                             "description": ""
                                         }
                                     ]
@@ -219,14 +251,14 @@
                     ]
                 },
                 {
-                    "name": "Update the specified resource in storage.",
+                    "name": "PUT \/admins",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/admins",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/admins"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/admins"
                         },
                         "method": "PUT",
                         "header": [
@@ -239,8 +271,11 @@
                                 "value": "application\/json"
                             }
                         ],
-                        "body": null,
-                        "description": "",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"est\",\n    \"username\": \"accusamus\"\n}"
+                        },
+                        "description": "Update the admin in storage.",
                         "auth": {
                             "type": "noauth"
                         }
@@ -248,14 +283,14 @@
                     "response": []
                 },
                 {
-                    "name": "Remove the specified resource from storage.",
+                    "name": "Remove the Admin from storage.",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/admins",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/admins"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/admins"
                         },
                         "method": "DELETE",
                         "header": [
@@ -286,11 +321,11 @@
                     "name": "GET \/reservations",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/reservations",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/reservations"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/reservations"
                         },
                         "method": "GET",
                         "header": [
@@ -314,11 +349,11 @@
                             "name": "GET \/reservations Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/reservations",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/reservations"
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/reservations"
                                 },
                                 "method": "GET",
                                 "header": [
@@ -347,16 +382,16 @@
                     "name": "POST \/book-tour",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/book-tour\/:id",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/book-tour\/:id",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/book-tour\/:id",
                             "variable": [
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "ab",
+                                    "value": "quo",
                                     "description": ""
                                 }
                             ]
@@ -374,7 +409,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"number_of_guests\": \"hic\",\n    \"check_in\": \"impedit\",\n    \"check_out\": \"molestiae\",\n    \"cost\": \"autem\",\n    \"paymentID\": \"et\"\n}"
+                            "raw": "{\n    \"number_of_guests\": \"occaecati\",\n    \"check_in\": \"ut\",\n    \"check_out\": \"nam\",\n    \"cost\": \"doloremque\",\n    \"paymentID\": \"quo\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -387,16 +422,16 @@
                     "name": "POST \/book-event",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/book-event\/:id",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/book-event\/:id",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/book-event\/:id",
                             "variable": [
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "ducimus",
+                                    "value": "perferendis",
                                     "description": ""
                                 }
                             ]
@@ -414,7 +449,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"number_of_guests\": \"eligendi\",\n    \"check_in\": \"ut\",\n    \"check_out\": \"minima\",\n    \"cost\": \"dolor\",\n    \"paymentID\": \"dolorum\"\n}"
+                            "raw": "{\n    \"number_of_guests\": \"recusandae\",\n    \"check_in\": \"voluptates\",\n    \"check_out\": \"maiores\",\n    \"cost\": \"non\",\n    \"paymentID\": \"maxime\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -427,16 +462,16 @@
                     "name": "GET \/reservations\/id",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/reservations\/:id",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/reservations\/:id",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/reservations\/:id",
                             "variable": [
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "ea",
+                                    "value": "dicta",
                                     "description": ""
                                 }
                             ]
@@ -463,16 +498,16 @@
                             "name": "GET \/reservations\/id Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/reservations\/:id",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/reservations\/:id",
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/reservations\/:id",
                                     "variable": [
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "ea",
+                                            "value": "dicta",
                                             "description": ""
                                         }
                                     ]
@@ -504,16 +539,16 @@
                     "name": "PUT \/reservations\/id",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/reservations\/:id",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/reservations\/:id",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/reservations\/:id",
                             "variable": [
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "molestias",
+                                    "value": "qui",
                                     "description": ""
                                 }
                             ]
@@ -541,16 +576,16 @@
                     "name": "DELETE \/reservations",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/reservations\/:id",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/reservations\/:id",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/reservations\/:id",
                             "variable": [
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "in",
+                                    "value": "qui",
                                     "description": ""
                                 }
                             ]
@@ -584,11 +619,11 @@
                     "name": "Return an empty response simply to trigger the storage of the CSRF cookie in the browser.",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "sanctum\/csrf-cookie",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/sanctum\/csrf-cookie"
+                            "raw": "https:\/\/{{baseUrl}}\/sanctum\/csrf-cookie"
                         },
                         "method": "GET",
                         "header": [
@@ -613,11 +648,11 @@
                     "name": "Stale",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "\/",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/\/"
+                            "raw": "https:\/\/{{baseUrl}}\/\/"
                         },
                         "method": "GET",
                         "header": [
@@ -641,11 +676,11 @@
                             "name": "Stale Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "\/",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/\/"
+                                    "raw": "https:\/\/{{baseUrl}}\/\/"
                                 },
                                 "method": "GET",
                                 "header": [
@@ -680,11 +715,11 @@
                     "name": "GET \/events",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/events",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/events"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/events"
                         },
                         "method": "GET",
                         "header": [
@@ -708,11 +743,11 @@
                             "name": "GET \/events Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/events",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/events"
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/events"
                                 },
                                 "method": "GET",
                                 "header": [
@@ -741,16 +776,16 @@
                     "name": "GET \/events\/slug",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/events\/:slug",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/events\/:slug",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/events\/:slug",
                             "variable": [
                                 {
                                     "id": "slug",
                                     "key": "slug",
-                                    "value": "officia",
+                                    "value": "iure",
                                     "description": ""
                                 }
                             ]
@@ -777,16 +812,16 @@
                             "name": "GET \/events\/slug Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/events\/:slug",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/events\/:slug",
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/events\/:slug",
                                     "variable": [
                                         {
                                             "id": "slug",
                                             "key": "slug",
-                                            "value": "officia",
+                                            "value": "iure",
                                             "description": ""
                                         }
                                     ]
@@ -818,11 +853,11 @@
                     "name": "POST \/events",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/events",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/events"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/events"
                         },
                         "method": "POST",
                         "header": [
@@ -840,27 +875,27 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "in",
+                                    "value": "omnis",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "at",
+                                    "value": "dolorem",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "perspiciatis",
+                                    "value": "omnis",
                                     "type": "text"
                                 },
                                 {
                                     "key": "cost",
-                                    "value": "tempora",
+                                    "value": "non",
                                     "type": "text"
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "non",
+                                    "value": "veritatis",
                                     "type": "text"
                                 },
                                 {
@@ -881,16 +916,16 @@
                     "name": "PUT \/events",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/events\/:id",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/events\/:id",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/events\/:id",
                             "variable": [
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "recusandae",
+                                    "value": "ea",
                                     "description": ""
                                 }
                             ]
@@ -911,27 +946,27 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "ducimus",
+                                    "value": "in",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "ad",
+                                    "value": "earum",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "et",
+                                    "value": "enim",
                                     "type": "text"
                                 },
                                 {
                                     "key": "cost",
-                                    "value": "nihil",
+                                    "value": "fuga",
                                     "type": "text"
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "vero",
+                                    "value": "qui",
                                     "type": "text"
                                 },
                                 {
@@ -952,16 +987,16 @@
                     "name": "DELETE \/events",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/events\/:id",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/events\/:id",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/events\/:id",
                             "variable": [
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "dolor",
+                                    "value": "eligendi",
                                     "description": ""
                                 }
                             ]
@@ -995,11 +1030,11 @@
                     "name": "GET \/faqs",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/faqs",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/faqs"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/faqs"
                         },
                         "method": "GET",
                         "header": [
@@ -1023,11 +1058,11 @@
                             "name": "GET \/faqs Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/faqs",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/faqs"
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/faqs"
                                 },
                                 "method": "GET",
                                 "header": [
@@ -1056,11 +1091,11 @@
                     "name": "POST \/faqs",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/faqs",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/faqs"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/faqs"
                         },
                         "method": "POST",
                         "header": [
@@ -1075,7 +1110,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"expedita\",\n    \"content\": \"dignissimos\"\n}"
+                            "raw": "{\n    \"title\": \"repellendus\",\n    \"content\": \"ex\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1088,16 +1123,16 @@
                     "name": "GET \/faqs\/id",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/faqs\/:id",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/faqs\/:id",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/faqs\/:id",
                             "variable": [
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "dolorem",
+                                    "value": "eum",
                                     "description": ""
                                 }
                             ]
@@ -1124,16 +1159,16 @@
                             "name": "GET \/faqs\/id Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/faqs\/:id",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/faqs\/:id",
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/faqs\/:id",
                                     "variable": [
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "dolorem",
+                                            "value": "eum",
                                             "description": ""
                                         }
                                     ]
@@ -1165,16 +1200,16 @@
                     "name": "PUT \/faqs\/id",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/faqs\/:id",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/faqs\/:id",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/faqs\/:id",
                             "variable": [
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "laborum",
+                                    "value": "nulla",
                                     "description": ""
                                 }
                             ]
@@ -1192,7 +1227,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"minima\",\n    \"content\": \"voluptas\"\n}"
+                            "raw": "{\n    \"title\": \"quibusdam\",\n    \"content\": \"eum\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1205,16 +1240,16 @@
                     "name": "DELETE \/faqs",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/faqs\/:id",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/faqs\/:id",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/faqs\/:id",
                             "variable": [
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "odit",
+                                    "value": "temporibus",
                                     "description": ""
                                 }
                             ]
@@ -1248,11 +1283,11 @@
                     "name": "GET \/newsletter",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/newsletter-subscriptions",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/newsletter-subscriptions"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/newsletter-subscriptions"
                         },
                         "method": "GET",
                         "header": [
@@ -1276,11 +1311,11 @@
                             "name": "GET \/newsletter Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/newsletter-subscriptions",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/newsletter-subscriptions"
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/newsletter-subscriptions"
                                 },
                                 "method": "GET",
                                 "header": [
@@ -1309,11 +1344,11 @@
                     "name": "POST \/newsletter-subscribe",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/newsletter-subscribe",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/newsletter-subscribe"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/newsletter-subscribe"
                         },
                         "method": "POST",
                         "header": [
@@ -1328,7 +1363,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"non\"\n}"
+                            "raw": "{\n    \"email\": \"aperiam\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1347,11 +1382,11 @@
                     "name": "GET \/tours",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/tours",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/tours"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/tours"
                         },
                         "method": "GET",
                         "header": [
@@ -1375,11 +1410,11 @@
                             "name": "GET \/tours Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/tours",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/tours"
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/tours"
                                 },
                                 "method": "GET",
                                 "header": [
@@ -1408,16 +1443,16 @@
                     "name": "GET \/tours\/slug",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/tours\/:slug",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/tours\/:slug",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/tours\/:slug",
                             "variable": [
                                 {
                                     "id": "slug",
                                     "key": "slug",
-                                    "value": "impedit",
+                                    "value": "perferendis",
                                     "description": ""
                                 }
                             ]
@@ -1444,16 +1479,16 @@
                             "name": "GET \/tours\/slug Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/tours\/:slug",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/tours\/:slug",
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/tours\/:slug",
                                     "variable": [
                                         {
                                             "id": "slug",
                                             "key": "slug",
-                                            "value": "impedit",
+                                            "value": "perferendis",
                                             "description": ""
                                         }
                                     ]
@@ -1485,11 +1520,11 @@
                     "name": "POST \/tours",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/tours",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/tours"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/tours"
                         },
                         "method": "POST",
                         "header": [
@@ -1507,27 +1542,27 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "veritatis",
+                                    "value": "qui",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "esse",
+                                    "value": "atque",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "voluptatem",
+                                    "value": "sit",
                                     "type": "text"
                                 },
                                 {
                                     "key": "cost",
-                                    "value": "quam",
+                                    "value": "harum",
                                     "type": "text"
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "aspernatur",
+                                    "value": "mollitia",
                                     "type": "text"
                                 },
                                 {
@@ -1548,16 +1583,16 @@
                     "name": "PUT \/tours",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/tours\/:id",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/tours\/:id",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/tours\/:id",
                             "variable": [
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "alias",
+                                    "value": "eaque",
                                     "description": ""
                                 }
                             ]
@@ -1578,27 +1613,27 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "et",
+                                    "value": "ipsam",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "temporibus",
+                                    "value": "repellat",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "ut",
+                                    "value": "iusto",
                                     "type": "text"
                                 },
                                 {
                                     "key": "cost",
-                                    "value": "eveniet",
+                                    "value": "in",
                                     "type": "text"
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "ratione",
+                                    "value": "temporibus",
                                     "type": "text"
                                 },
                                 {
@@ -1619,16 +1654,16 @@
                     "name": "DELETE \/tours",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/tours\/:id",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/tours\/:id",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/tours\/:id",
                             "variable": [
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "maiores",
+                                    "value": "quisquam",
                                     "description": ""
                                 }
                             ]
@@ -1662,11 +1697,11 @@
                     "name": "POST \/register",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/register",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/register"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/register"
                         },
                         "method": "POST",
                         "header": [
@@ -1681,7 +1716,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"at\",\n    \"username\": \"quia\",\n    \"email\": \"doloribus\",\n    \"password\": \"at\",\n    \"password_confirmation\": \"vitae\"\n}"
+                            "raw": "{\n    \"name\": \"illum\",\n    \"username\": \"consequatur\",\n    \"email\": \"culpa\",\n    \"password\": \"dignissimos\",\n    \"password_confirmation\": \"est\"\n}"
                         },
                         "description": "Store a newly created user in storage.",
                         "auth": {
@@ -1693,11 +1728,11 @@
                             "name": "POST \/register Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/register",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/register"
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/register"
                                 },
                                 "method": "POST",
                                 "header": [
@@ -1712,7 +1747,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n    \"name\": \"at\",\n    \"username\": \"quia\",\n    \"email\": \"doloribus\",\n    \"password\": \"at\",\n    \"password_confirmation\": \"vitae\"\n}"
+                                    "raw": "{\n    \"name\": \"illum\",\n    \"username\": \"consequatur\",\n    \"email\": \"culpa\",\n    \"password\": \"dignissimos\",\n    \"password_confirmation\": \"est\"\n}"
                                 },
                                 "description": "Store a newly created user in storage.",
                                 "auth": {
@@ -1721,7 +1756,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"data\": {\n        \"name\": \"Major Wiza Jr.\",\n        \"username\": \"gmorissette\",\n        \"email\": \"justine14@example.net\",\n        \"email_verified_at\": \"2023-08-17T13:12:12.000000Z\",\n        \"updated_at\": \"2023-08-17T13:12:12.000000Z\",\n        \"created_at\": \"2023-08-17T13:12:12.000000Z\",\n        \"id\": 28\n    }\n}"
+                            "body": "{\n    \"data\": {\n        \"name\": \"Koby Price\",\n        \"username\": \"araceli27\",\n        \"email\": \"mittie.spinka@example.org\",\n        \"email_verified_at\": \"2023-08-30T13:54:01.000000Z\",\n        \"updated_at\": \"2023-08-30T13:54:01.000000Z\",\n        \"created_at\": \"2023-08-30T13:54:01.000000Z\",\n        \"id\": 55\n    }\n}"
                         }
                     ]
                 },
@@ -1729,11 +1764,11 @@
                     "name": "POST \/forgot-password",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/forgot-password",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/forgot-password"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/forgot-password"
                         },
                         "method": "POST",
                         "header": [
@@ -1748,7 +1783,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"aperiam\"\n}"
+                            "raw": "{\n    \"email\": \"repudiandae\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1761,11 +1796,11 @@
                     "name": "POST \/login",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/login",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/login"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/login"
                         },
                         "method": "POST",
                         "header": [
@@ -1780,7 +1815,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"voluptatem\",\n    \"password\": \"possimus\"\n}"
+                            "raw": "{\n    \"email\": \"officiis\",\n    \"password\": \"exercitationem\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1792,11 +1827,11 @@
                             "name": "POST \/login Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/login",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/login"
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/login"
                                 },
                                 "method": "POST",
                                 "header": [
@@ -1811,7 +1846,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n    \"email\": \"voluptatem\",\n    \"password\": \"possimus\"\n}"
+                                    "raw": "{\n    \"email\": \"officiis\",\n    \"password\": \"exercitationem\"\n}"
                                 },
                                 "description": "",
                                 "auth": {
@@ -1820,7 +1855,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"data\": {\n        \"name\": \"Beverly Eichmann Jr.\",\n        \"username\": \"dora15\",\n        \"email\": \"ldaniel@example.org\",\n        \"email_verified_at\": \"2023-08-17T13:12:12.000000Z\",\n        \"updated_at\": \"2023-08-17T13:12:12.000000Z\",\n        \"created_at\": \"2023-08-17T13:12:12.000000Z\",\n        \"id\": 29\n    }\n}"
+                            "body": "{\n    \"data\": {\n        \"name\": \"Ezekiel Aufderhar\",\n        \"username\": \"zkautzer\",\n        \"email\": \"koss.anibal@example.net\",\n        \"email_verified_at\": \"2023-08-30T13:54:01.000000Z\",\n        \"updated_at\": \"2023-08-30T13:54:01.000000Z\",\n        \"created_at\": \"2023-08-30T13:54:01.000000Z\",\n        \"id\": 56\n    }\n}"
                         }
                     ]
                 },
@@ -1828,11 +1863,11 @@
                     "name": "Send Verify Email Link",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/email\/verification-notification",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/email\/verification-notification"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/email\/verification-notification"
                         },
                         "method": "POST",
                         "header": [
@@ -1847,7 +1882,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"quas\"\n}"
+                            "raw": "{\n    \"email\": \"neque\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1860,22 +1895,22 @@
                     "name": "Verify Email - Backend Only",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/verify-email\/:id\/:hash",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/verify-email\/:id\/:hash",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/verify-email\/:id\/:hash",
                             "variable": [
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "in",
+                                    "value": "illum",
                                     "description": ""
                                 },
                                 {
                                     "id": "hash",
                                     "key": "hash",
-                                    "value": "ullam",
+                                    "value": "unde",
                                     "description": ""
                                 }
                             ]
@@ -1902,22 +1937,22 @@
                             "name": "Verify Email - Backend Only Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/verify-email\/:id\/:hash",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/verify-email\/:id\/:hash",
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/verify-email\/:id\/:hash",
                                     "variable": [
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "in",
+                                            "value": "illum",
                                             "description": ""
                                         },
                                         {
                                             "id": "hash",
                                             "key": "hash",
-                                            "value": "ullam",
+                                            "value": "unde",
                                             "description": ""
                                         }
                                     ]
@@ -1949,11 +1984,11 @@
                     "name": "GET \/profile",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/profile",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/profile"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/profile"
                         },
                         "method": "GET",
                         "header": [
@@ -1977,11 +2012,11 @@
                             "name": "GET \/profile Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/profile",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/profile"
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/profile"
                                 },
                                 "method": "GET",
                                 "header": [
@@ -2010,11 +2045,11 @@
                     "name": "PUT \/users",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/users",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/users"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/users"
                         },
                         "method": "PUT",
                         "header": [
@@ -2029,7 +2064,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"et\",\n    \"username\": \"saepe\"\n}"
+                            "raw": "{\n    \"name\": \"non\",\n    \"username\": \"id\"\n}"
                         },
                         "description": "Update the user in storage.",
                         "auth": {
@@ -2041,11 +2076,11 @@
                             "name": "PUT \/users Response #1",
                             "originalRequest": {
                                 "url": {
-                                    "protocol": "http",
+                                    "protocol": "https",
                                     "host": "{{baseUrl}}",
                                     "path": "api\/users",
                                     "query": [],
-                                    "raw": "http:\/\/{{baseUrl}}\/api\/users"
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/users"
                                 },
                                 "method": "PUT",
                                 "header": [
@@ -2060,7 +2095,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n    \"name\": \"et\",\n    \"username\": \"saepe\"\n}"
+                                    "raw": "{\n    \"name\": \"non\",\n    \"username\": \"id\"\n}"
                                 },
                                 "description": "Update the user in storage.",
                                 "auth": {
@@ -2069,7 +2104,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"data\": {\n        \"name\": \"Enrique Denesik\",\n        \"username\": \"giovani59\",\n        \"email\": \"zreichel@example.org\",\n        \"email_verified_at\": \"2023-08-17T13:12:12.000000Z\",\n        \"updated_at\": \"2023-08-17T13:12:12.000000Z\",\n        \"created_at\": \"2023-08-17T13:12:12.000000Z\",\n        \"id\": 30\n    }\n}"
+                            "body": "{\n    \"data\": {\n        \"name\": \"Tania Hagenes\",\n        \"username\": \"mekhi71\",\n        \"email\": \"sheridan.gerlach@example.net\",\n        \"email_verified_at\": \"2023-08-30T13:54:01.000000Z\",\n        \"updated_at\": \"2023-08-30T13:54:01.000000Z\",\n        \"created_at\": \"2023-08-30T13:54:01.000000Z\",\n        \"id\": 57\n    }\n}"
                         }
                     ]
                 },
@@ -2077,16 +2112,16 @@
                     "name": "DELETE \/users",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/users\/:id",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/users\/:id",
+                            "raw": "https:\/\/{{baseUrl}}\/api\/users\/:id",
                             "variable": [
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "tenetur",
+                                    "value": "asperiores",
                                     "description": ""
                                 }
                             ]
@@ -2114,11 +2149,11 @@
                     "name": "POST \/logout",
                     "request": {
                         "url": {
-                            "protocol": "http",
+                            "protocol": "https",
                             "host": "{{baseUrl}}",
                             "path": "api\/logout",
                             "query": [],
-                            "raw": "http:\/\/{{baseUrl}}\/api\/logout"
+                            "raw": "https:\/\/{{baseUrl}}\/api\/logout"
                         },
                         "method": "POST",
                         "header": [

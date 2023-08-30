@@ -10,14 +10,14 @@
 
 ```bash
 curl -X GET \
-    -G "http://localhost/sanctum/csrf-cookie" \
+    -G "https://onthego-api.ratecardly.com/sanctum/csrf-cookie" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/sanctum/csrf-cookie"
+    "https://onthego-api.ratecardly.com/sanctum/csrf-cookie"
 );
 
 let headers = {
@@ -64,14 +64,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "http://localhost/" \
+    -G "https://onthego-api.ratecardly.com/" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "http://localhost/"
+    "https://onthego-api.ratecardly.com/"
 );
 
 let headers = {

@@ -38,7 +38,7 @@ Route::get('/tours/{slug}', [TourController::class, 'show']);
 Route::get('password/reset/{token}', [AuthController::class, 'resetForm'])->name('password.reset');
 
 // user routes
-Route::group(['middleware' => ['auth:sanctum', 'role:user|super-admin']], function () {
+Route::group(['middleware' => ['auth:sanctum', 'role:user|super-admin|admin']], function () {
     Route::get('/profile', [AuthController::class, 'show']);
     Route::put('/users', [AuthController::class, 'update']);
     Route::get('/reservations', [ReservationController::class, 'index']);
@@ -52,9 +52,10 @@ Route::group(['middleware' => ['auth:sanctum', 'role:user|super-admin']], functi
 });
 
 // admin routes
-Route::group(['middleware' => ['auth:sanctum', 'role:super-admin']], function () {
+Route::group(['middleware' => ['auth:sanctum', 'role:super-admin|admin']], function () {
     Route::get('/users', [AdminController::class, 'userIndex']);
     Route::get('/admins', [AdminController::class, 'index']);
+    Route::post('/admins', [AdminController::class, 'store']);
     Route::get('/admins/{id}', [AdminController::class, 'show']);
     Route::put('/admins', [AdminController::class, 'update']);
     Route::delete('/admins', [AdminController::class, 'destroy']);

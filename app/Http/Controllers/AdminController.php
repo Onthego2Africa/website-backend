@@ -44,7 +44,6 @@ class AdminController extends Controller
     public function index()
     {
         $admins = User::role('admin')->get();
-
         $response = [
             'admins' => $admins
         ];
@@ -53,47 +52,136 @@ class AdminController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * POST /admins
+     * 
+     * Store a newly created admin in storage.
+     *
+     * @bodyParam name string required 
+     * @bodyParam username string required 
+     * @bodyParam email string required
+     * @bodyParam password string required
+     * @bodyParam password_confirmation string required
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
+        $fields = $request->validate([
+            'name' => ['required'],
+            'email' => ['required', 'email', Rule::unique('users', 'email')],
+            'password' => 'required|confirmed|min:8',
+            'username' => ['required', Rule::unique('users', 'username')],
+        ]);
+
+
+        $user = User::create([
+            'name' => $fields['name'],
+            'email' => $fields['email'],
+            'username' => $fields['username'],
+            'password' => bcrypt($fields['password']),
+        ]);
+
+        $user->assignRole('admin');
+
+        $user->sendEmailVerificationNotification();
+
+        $response = [
+            'admin' => $user,
+        ];
+
+        return response($response, 201);
     }
 
     /**
-     * Display the specified resource.
+     * GET /admin/id
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        //
+         $user = $request->user();
+
+        if (!$user) {
+            abort(403, 'Unauthorized Action');
+        }
+
+        $response = [
+            'admin' => $user
+        ];
+
+        return response($response, 200);
     }
 
     /**
-     * Update the specified resource in storage.
+     * PUT /admins
+     * 
+     * Update the admin in storage.
      *
+     * @bodyParam name string required 
+     * @bodyParam username string required 
+     * 
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = $request->user();
+
+        if($user->getRoleNames()[0] == 'super-admin'){
+        } elseif ($request->user()->id != $user->id) {
+            abort(403, 'Unauthorized Action');
+        }
+
+        $fields = $request->validate([
+            'name' => ['required'],
+            'username' => ['required']
+        ]);
+
+        if ($fields['email'] != $user['email']) {
+            $request->validate(['email' =>  Rule::unique('users', 'email')]);
+        }
+
+        if ($fields['password']) {
+            $request->validate( ['password' => 'required|confirmed|min:8']);
+        }
+
+        if ($fields['username'] != $user['username']) {
+            $request->validate(['username' =>  Rule::unique('users', 'username')]);
+        }
+
+        $user->update([
+            'name' => $fields['name'],
+            'username' => $fields['username'],
+            'email' => $fields['email'],
+                    'password' => bcrypt($fields['password']),
+        ]);
+
+        $response = [
+            'admin' => $user,
+        ];
+
+        return response($response, 201);
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the Admin from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        //
+         $user = User::find($id);
+
+        if($user->getRoleNames()[0] == 'super-admin'){
+        } elseif ($request->user()->id != $user->id) {
+            abort(403, 'Unauthorized Action');
+        }
+
+        $user->delete();
+
+        return response(['message' => 'Admin deleted succesfully']);
     }
 }
