@@ -75,7 +75,7 @@ curl -X POST \
     "https://onthego-api.ratecardly.com/api/faqs" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"repellendus","content":"ex"}'
+    -d '{"title":"maiores","content":"officia"}'
 
 ```
 
@@ -90,8 +90,8 @@ let headers = {
 };
 
 let body = {
-    "title": "repellendus",
-    "content": "ex"
+    "title": "maiores",
+    "content": "officia"
 }
 
 fetch(url, {
@@ -147,14 +147,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/faqs/eum" \
+    -G "https://onthego-api.ratecardly.com/api/faqs/alias" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs/eum"
+    "https://onthego-api.ratecardly.com/api/faqs/alias"
 );
 
 let headers = {
@@ -215,16 +215,16 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "https://onthego-api.ratecardly.com/api/faqs/nulla" \
+    "https://onthego-api.ratecardly.com/api/faqs/magnam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"quibusdam","content":"eum"}'
+    -d '{"title":"reprehenderit","content":"totam"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs/nulla"
+    "https://onthego-api.ratecardly.com/api/faqs/magnam"
 );
 
 let headers = {
@@ -233,8 +233,8 @@ let headers = {
 };
 
 let body = {
-    "title": "quibusdam",
-    "content": "eum"
+    "title": "reprehenderit",
+    "content": "totam"
 }
 
 fetch(url, {
@@ -297,14 +297,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/faqs/temporibus" \
+    "https://onthego-api.ratecardly.com/api/faqs/modi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs/temporibus"
+    "https://onthego-api.ratecardly.com/api/faqs/modi"
 );
 
 let headers = {

@@ -75,7 +75,7 @@ curl -X POST \
     "https://onthego-api.ratecardly.com/api/newsletter-subscribe" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"aperiam"}'
+    -d '{"email":"accusantium"}'
 
 ```
 
@@ -90,7 +90,7 @@ let headers = {
 };
 
 let body = {
-    "email": "aperiam"
+    "email": "accusantium"
 }
 
 fetch(url, {

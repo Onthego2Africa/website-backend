@@ -93,22 +93,22 @@ fetch(url, {
 <pre><code class="language-json">{
     "data": [
         {
-            "name": "Prof. Keanu Zemlak II",
-            "username": "zoe03",
-            "email": "wilburn89@example.com",
-            "email_verified_at": "2023-08-30T13:54:01.000000Z",
-            "updated_at": "2023-08-30T13:54:01.000000Z",
-            "created_at": "2023-08-30T13:54:01.000000Z",
-            "id": 58
+            "name": "Dr. Dawn Swaniawski I",
+            "username": "antwon55",
+            "email": "carolyn31@example.net",
+            "email_verified_at": "2023-08-30T13:59:18.000000Z",
+            "updated_at": "2023-08-30T13:59:18.000000Z",
+            "created_at": "2023-08-30T13:59:18.000000Z",
+            "id": 63
         },
         {
-            "name": "Nat Harris",
-            "username": "torp.torrey",
-            "email": "cole.birdie@example.net",
-            "email_verified_at": "2023-08-30T13:54:01.000000Z",
-            "updated_at": "2023-08-30T13:54:01.000000Z",
-            "created_at": "2023-08-30T13:54:01.000000Z",
-            "id": 59
+            "name": "Theodore Lehner",
+            "username": "bechtelar.adrienne",
+            "email": "fjones@example.net",
+            "email_verified_at": "2023-08-30T13:59:18.000000Z",
+            "updated_at": "2023-08-30T13:59:18.000000Z",
+            "created_at": "2023-08-30T13:59:18.000000Z",
+            "id": 64
         }
     ]
 }</code></pre>
@@ -188,7 +188,7 @@ fetch(url, {
     "https://onthego-api.ratecardly.com/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"illo","username":"est","email":"rerum","password":"rerum","password_confirmation":"quia"}'
+    -d '{"name":"eaque","username":"molestiae","email":"non","password":"non","password_confirmation":"eos"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego-api.ratecardly.com/api/admins"
@@ -200,11 +200,11 @@ let headers = {
 };
 
 let body = {
-    "name": "illo",
-    "username": "est",
-    "email": "rerum",
-    "password": "rerum",
-    "password_confirmation": "quia"
+    "name": "eaque",
+    "username": "molestiae",
+    "email": "non",
+    "password": "non",
+    "password_confirmation": "eos"
 }
 
 fetch(url, {
@@ -269,11 +269,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/admins/omnis" \
+    -G "https://onthego-api.ratecardly.com/api/admins/aspernatur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/admins/omnis"
+    "https://onthego-api.ratecardly.com/api/admins/aspernatur"
 );
 
 let headers = {
@@ -327,7 +327,7 @@ fetch(url, {
     "https://onthego-api.ratecardly.com/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"est","username":"accusamus"}'
+    -d '{"name":"autem","username":"id"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego-api.ratecardly.com/api/admins"
@@ -339,8 +339,8 @@ let headers = {
 };
 
 let body = {
-    "name": "est",
-    "username": "accusamus"
+    "name": "autem",
+    "username": "id"
 }
 
 fetch(url, {
@@ -382,7 +382,8 @@ fetch(url, {
 </p>
 
 </form>
-<h2>Remove the Admin from storage.</h2>
+<h2>DELETE /admins</h2>
+<p>Remove the Admin from storage.</p>
 <blockquote>
 <p>Example request:</p>
 </blockquote>
@@ -476,13 +477,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego-api.ratecardly.com/api/book-tour/quo" \
+    "https://onthego-api.ratecardly.com/api/book-tour/ut" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"number_of_guests":"occaecati","check_in":"ut","check_out":"nam","cost":"doloremque","paymentID":"quo"}'
+    -d '{"number_of_guests":"doloremque","check_in":"saepe","check_out":"et","cost":"in","paymentID":"numquam"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/book-tour/quo"
+    "https://onthego-api.ratecardly.com/api/book-tour/ut"
 );
 
 let headers = {
@@ -491,11 +492,11 @@ let headers = {
 };
 
 let body = {
-    "number_of_guests": "occaecati",
-    "check_in": "ut",
-    "check_out": "nam",
-    "cost": "doloremque",
-    "paymentID": "quo"
+    "number_of_guests": "doloremque",
+    "check_in": "saepe",
+    "check_out": "et",
+    "cost": "in",
+    "paymentID": "numquam"
 }
 
 fetch(url, {
@@ -567,13 +568,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego-api.ratecardly.com/api/book-event/perferendis" \
+    "https://onthego-api.ratecardly.com/api/book-event/consequatur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"number_of_guests":"recusandae","check_in":"voluptates","check_out":"maiores","cost":"non","paymentID":"maxime"}'
+    -d '{"number_of_guests":"qui","check_in":"quod","check_out":"consequatur","cost":"rerum","paymentID":"sunt"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/book-event/perferendis"
+    "https://onthego-api.ratecardly.com/api/book-event/consequatur"
 );
 
 let headers = {
@@ -582,11 +583,11 @@ let headers = {
 };
 
 let body = {
-    "number_of_guests": "recusandae",
-    "check_in": "voluptates",
-    "check_out": "maiores",
-    "cost": "non",
-    "paymentID": "maxime"
+    "number_of_guests": "qui",
+    "check_in": "quod",
+    "check_out": "consequatur",
+    "cost": "rerum",
+    "paymentID": "sunt"
 }
 
 fetch(url, {
@@ -658,11 +659,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/reservations/dicta" \
+    -G "https://onthego-api.ratecardly.com/api/reservations/quam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/reservations/dicta"
+    "https://onthego-api.ratecardly.com/api/reservations/quam"
 );
 
 let headers = {
@@ -712,11 +713,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "https://onthego-api.ratecardly.com/api/reservations/qui" \
+    "https://onthego-api.ratecardly.com/api/reservations/repellendus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/reservations/qui"
+    "https://onthego-api.ratecardly.com/api/reservations/repellendus"
 );
 
 let headers = {
@@ -760,11 +761,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/reservations/qui" \
+    "https://onthego-api.ratecardly.com/api/reservations/cupiditate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/reservations/qui"
+    "https://onthego-api.ratecardly.com/api/reservations/cupiditate"
 );
 
 let headers = {
@@ -945,11 +946,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/events/iure" \
+    -G "https://onthego-api.ratecardly.com/api/events/itaque" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/events/iure"
+    "https://onthego-api.ratecardly.com/api/events/itaque"
 );
 
 let headers = {
@@ -1013,12 +1014,12 @@ fetch(url, {
     "https://onthego-api.ratecardly.com/api/events" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=omnis" \
-    -F "overview=dolorem" \
-    -F "itenary=omnis" \
-    -F "cost=non" \
-    -F "images[]=veritatis" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php78C1.tmp" </code></pre>
+    -F "title=architecto" \
+    -F "overview=minus" \
+    -F "itenary=nam" \
+    -F "cost=quasi" \
+    -F "images[]=corporis" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php516B.tmp" </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego-api.ratecardly.com/api/events"
 );
@@ -1029,11 +1030,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'omnis');
-body.append('overview', 'dolorem');
-body.append('itenary', 'omnis');
-body.append('cost', 'non');
-body.append('images[]', 'veritatis');
+body.append('title', 'architecto');
+body.append('overview', 'minus');
+body.append('itenary', 'nam');
+body.append('cost', 'quasi');
+body.append('images[]', 'corporis');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -1104,17 +1105,17 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "https://onthego-api.ratecardly.com/api/events/ea" \
+    "https://onthego-api.ratecardly.com/api/events/aut" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=in" \
-    -F "overview=earum" \
-    -F "itenary=enim" \
-    -F "cost=fuga" \
-    -F "images[]=qui" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php78C2.tmp" </code></pre>
+    -F "title=nesciunt" \
+    -F "overview=asperiores" \
+    -F "itenary=harum" \
+    -F "cost=qui" \
+    -F "images[]=repellendus" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php516C.tmp" </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/events/ea"
+    "https://onthego-api.ratecardly.com/api/events/aut"
 );
 
 let headers = {
@@ -1123,11 +1124,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'in');
-body.append('overview', 'earum');
-body.append('itenary', 'enim');
-body.append('cost', 'fuga');
-body.append('images[]', 'qui');
+body.append('title', 'nesciunt');
+body.append('overview', 'asperiores');
+body.append('itenary', 'harum');
+body.append('cost', 'qui');
+body.append('images[]', 'repellendus');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -1205,11 +1206,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/events/eligendi" \
+    "https://onthego-api.ratecardly.com/api/events/dolore" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/events/eligendi"
+    "https://onthego-api.ratecardly.com/api/events/dolore"
 );
 
 let headers = {
@@ -1304,7 +1305,7 @@ fetch(url, {
     "https://onthego-api.ratecardly.com/api/faqs" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"repellendus","content":"ex"}'
+    -d '{"title":"maiores","content":"officia"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego-api.ratecardly.com/api/faqs"
@@ -1316,8 +1317,8 @@ let headers = {
 };
 
 let body = {
-    "title": "repellendus",
-    "content": "ex"
+    "title": "maiores",
+    "content": "officia"
 }
 
 fetch(url, {
@@ -1364,11 +1365,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/faqs/eum" \
+    -G "https://onthego-api.ratecardly.com/api/faqs/alias" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs/eum"
+    "https://onthego-api.ratecardly.com/api/faqs/alias"
 );
 
 let headers = {
@@ -1418,13 +1419,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "https://onthego-api.ratecardly.com/api/faqs/nulla" \
+    "https://onthego-api.ratecardly.com/api/faqs/magnam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"quibusdam","content":"eum"}'
+    -d '{"title":"reprehenderit","content":"totam"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs/nulla"
+    "https://onthego-api.ratecardly.com/api/faqs/magnam"
 );
 
 let headers = {
@@ -1433,8 +1434,8 @@ let headers = {
 };
 
 let body = {
-    "title": "quibusdam",
-    "content": "eum"
+    "title": "reprehenderit",
+    "content": "totam"
 }
 
 fetch(url, {
@@ -1488,11 +1489,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/faqs/temporibus" \
+    "https://onthego-api.ratecardly.com/api/faqs/modi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs/temporibus"
+    "https://onthego-api.ratecardly.com/api/faqs/modi"
 );
 
 let headers = {
@@ -1587,7 +1588,7 @@ fetch(url, {
     "https://onthego-api.ratecardly.com/api/newsletter-subscribe" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"aperiam"}'
+    -d '{"email":"accusantium"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego-api.ratecardly.com/api/newsletter-subscribe"
@@ -1599,7 +1600,7 @@ let headers = {
 };
 
 let body = {
-    "email": "aperiam"
+    "email": "accusantium"
 }
 
 fetch(url, {
@@ -1689,11 +1690,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/tours/perferendis" \
+    -G "https://onthego-api.ratecardly.com/api/tours/consequatur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/tours/perferendis"
+    "https://onthego-api.ratecardly.com/api/tours/consequatur"
 );
 
 let headers = {
@@ -1757,12 +1758,12 @@ fetch(url, {
     "https://onthego-api.ratecardly.com/api/tours" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=qui" \
-    -F "overview=atque" \
-    -F "itenary=sit" \
-    -F "cost=harum" \
-    -F "images[]=mollitia" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php7890.tmp" </code></pre>
+    -F "title=voluptatibus" \
+    -F "overview=est" \
+    -F "itenary=debitis" \
+    -F "cost=dicta" \
+    -F "images[]=nihil" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php5159.tmp" </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego-api.ratecardly.com/api/tours"
 );
@@ -1773,11 +1774,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'qui');
-body.append('overview', 'atque');
-body.append('itenary', 'sit');
-body.append('cost', 'harum');
-body.append('images[]', 'mollitia');
+body.append('title', 'voluptatibus');
+body.append('overview', 'est');
+body.append('itenary', 'debitis');
+body.append('cost', 'dicta');
+body.append('images[]', 'nihil');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -1848,17 +1849,17 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "https://onthego-api.ratecardly.com/api/tours/eaque" \
+    "https://onthego-api.ratecardly.com/api/tours/qui" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=ipsam" \
-    -F "overview=repellat" \
-    -F "itenary=iusto" \
-    -F "cost=in" \
-    -F "images[]=temporibus" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php78B1.tmp" </code></pre>
+    -F "title=voluptates" \
+    -F "overview=aut" \
+    -F "itenary=et" \
+    -F "cost=sed" \
+    -F "images[]=aperiam" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php516A.tmp" </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/tours/eaque"
+    "https://onthego-api.ratecardly.com/api/tours/qui"
 );
 
 let headers = {
@@ -1867,11 +1868,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'ipsam');
-body.append('overview', 'repellat');
-body.append('itenary', 'iusto');
-body.append('cost', 'in');
-body.append('images[]', 'temporibus');
+body.append('title', 'voluptates');
+body.append('overview', 'aut');
+body.append('itenary', 'et');
+body.append('cost', 'sed');
+body.append('images[]', 'aperiam');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -1949,11 +1950,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/tours/quisquam" \
+    "https://onthego-api.ratecardly.com/api/tours/repudiandae" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/tours/quisquam"
+    "https://onthego-api.ratecardly.com/api/tours/repudiandae"
 );
 
 let headers = {
@@ -2002,7 +2003,7 @@ fetch(url, {
     "https://onthego-api.ratecardly.com/api/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"illum","username":"consequatur","email":"culpa","password":"dignissimos","password_confirmation":"est"}'
+    -d '{"name":"nemo","username":"reprehenderit","email":"fugiat","password":"dolorum","password_confirmation":"dolorem"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego-api.ratecardly.com/api/register"
@@ -2014,11 +2015,11 @@ let headers = {
 };
 
 let body = {
-    "name": "illum",
-    "username": "consequatur",
-    "email": "culpa",
-    "password": "dignissimos",
-    "password_confirmation": "est"
+    "name": "nemo",
+    "username": "reprehenderit",
+    "email": "fugiat",
+    "password": "dolorum",
+    "password_confirmation": "dolorem"
 }
 
 fetch(url, {
@@ -2031,13 +2032,13 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
-        "name": "Koby Price",
-        "username": "araceli27",
-        "email": "mittie.spinka@example.org",
-        "email_verified_at": "2023-08-30T13:54:01.000000Z",
-        "updated_at": "2023-08-30T13:54:01.000000Z",
-        "created_at": "2023-08-30T13:54:01.000000Z",
-        "id": 55
+        "name": "Cortez Adams",
+        "username": "gusikowski.julianne",
+        "email": "america92@example.com",
+        "email_verified_at": "2023-08-30T13:59:18.000000Z",
+        "updated_at": "2023-08-30T13:59:18.000000Z",
+        "created_at": "2023-08-30T13:59:18.000000Z",
+        "id": 60
     }
 }</code></pre>
 <div id="execution-results-POSTapi-register" hidden>
@@ -2100,7 +2101,7 @@ fetch(url, {
     "https://onthego-api.ratecardly.com/api/forgot-password" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"repudiandae"}'
+    -d '{"email":"minus"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego-api.ratecardly.com/api/forgot-password"
@@ -2112,7 +2113,7 @@ let headers = {
 };
 
 let body = {
-    "email": "repudiandae"
+    "email": "minus"
 }
 
 fetch(url, {
@@ -2156,7 +2157,7 @@ fetch(url, {
     "https://onthego-api.ratecardly.com/api/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"officiis","password":"exercitationem"}'
+    -d '{"email":"at","password":"illo"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego-api.ratecardly.com/api/login"
@@ -2168,8 +2169,8 @@ let headers = {
 };
 
 let body = {
-    "email": "officiis",
-    "password": "exercitationem"
+    "email": "at",
+    "password": "illo"
 }
 
 fetch(url, {
@@ -2182,13 +2183,13 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
-        "name": "Ezekiel Aufderhar",
-        "username": "zkautzer",
-        "email": "koss.anibal@example.net",
-        "email_verified_at": "2023-08-30T13:54:01.000000Z",
-        "updated_at": "2023-08-30T13:54:01.000000Z",
-        "created_at": "2023-08-30T13:54:01.000000Z",
-        "id": 56
+        "name": "Prof. Anne Kessler",
+        "username": "casper.arnaldo",
+        "email": "hermann.clay@example.net",
+        "email_verified_at": "2023-08-30T13:59:18.000000Z",
+        "updated_at": "2023-08-30T13:59:18.000000Z",
+        "created_at": "2023-08-30T13:59:18.000000Z",
+        "id": 61
     }
 }</code></pre>
 <div id="execution-results-POSTapi-login" hidden>
@@ -2233,7 +2234,7 @@ fetch(url, {
     "https://onthego-api.ratecardly.com/api/email/verification-notification" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"neque"}'
+    -d '{"email":"enim"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego-api.ratecardly.com/api/email/verification-notification"
@@ -2245,7 +2246,7 @@ let headers = {
 };
 
 let body = {
-    "email": "neque"
+    "email": "enim"
 }
 
 fetch(url, {
@@ -2286,11 +2287,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/verify-email/illum/unde" \
+    -G "https://onthego-api.ratecardly.com/api/verify-email/ut/atque" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/verify-email/illum/unde"
+    "https://onthego-api.ratecardly.com/api/verify-email/ut/atque"
 );
 
 let headers = {
@@ -2397,7 +2398,7 @@ fetch(url, {
     "https://onthego-api.ratecardly.com/api/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"non","username":"id"}'
+    -d '{"name":"voluptatibus","username":"fugit"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego-api.ratecardly.com/api/users"
@@ -2409,8 +2410,8 @@ let headers = {
 };
 
 let body = {
-    "name": "non",
-    "username": "id"
+    "name": "voluptatibus",
+    "username": "fugit"
 }
 
 fetch(url, {
@@ -2423,13 +2424,13 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
-        "name": "Tania Hagenes",
-        "username": "mekhi71",
-        "email": "sheridan.gerlach@example.net",
-        "email_verified_at": "2023-08-30T13:54:01.000000Z",
-        "updated_at": "2023-08-30T13:54:01.000000Z",
-        "created_at": "2023-08-30T13:54:01.000000Z",
-        "id": 57
+        "name": "Krystina Crona",
+        "username": "janiya.lesch",
+        "email": "ulind@example.net",
+        "email_verified_at": "2023-08-30T13:59:18.000000Z",
+        "updated_at": "2023-08-30T13:59:18.000000Z",
+        "created_at": "2023-08-30T13:59:18.000000Z",
+        "id": 62
     }
 }</code></pre>
 <div id="execution-results-PUTapi-users" hidden>
@@ -2472,11 +2473,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/users/asperiores" \
+    "https://onthego-api.ratecardly.com/api/users/cupiditate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/users/asperiores"
+    "https://onthego-api.ratecardly.com/api/users/cupiditate"
 );
 
 let headers = {

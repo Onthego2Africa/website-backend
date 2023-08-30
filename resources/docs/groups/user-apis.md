@@ -14,7 +14,7 @@ curl -X POST \
     "https://onthego-api.ratecardly.com/api/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"illum","username":"consequatur","email":"culpa","password":"dignissimos","password_confirmation":"est"}'
+    -d '{"name":"nemo","username":"reprehenderit","email":"fugiat","password":"dolorum","password_confirmation":"dolorem"}'
 
 ```
 
@@ -29,11 +29,11 @@ let headers = {
 };
 
 let body = {
-    "name": "illum",
-    "username": "consequatur",
-    "email": "culpa",
-    "password": "dignissimos",
-    "password_confirmation": "est"
+    "name": "nemo",
+    "username": "reprehenderit",
+    "email": "fugiat",
+    "password": "dolorum",
+    "password_confirmation": "dolorem"
 }
 
 fetch(url, {
@@ -49,13 +49,13 @@ fetch(url, {
 ```json
 {
     "data": {
-        "name": "Koby Price",
-        "username": "araceli27",
-        "email": "mittie.spinka@example.org",
-        "email_verified_at": "2023-08-30T13:54:01.000000Z",
-        "updated_at": "2023-08-30T13:54:01.000000Z",
-        "created_at": "2023-08-30T13:54:01.000000Z",
-        "id": 55
+        "name": "Cortez Adams",
+        "username": "gusikowski.julianne",
+        "email": "america92@example.com",
+        "email_verified_at": "2023-08-30T13:59:18.000000Z",
+        "updated_at": "2023-08-30T13:59:18.000000Z",
+        "created_at": "2023-08-30T13:59:18.000000Z",
+        "id": 60
     }
 }
 ```
@@ -125,7 +125,7 @@ curl -X POST \
     "https://onthego-api.ratecardly.com/api/forgot-password" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"repudiandae"}'
+    -d '{"email":"minus"}'
 
 ```
 
@@ -140,7 +140,7 @@ let headers = {
 };
 
 let body = {
-    "email": "repudiandae"
+    "email": "minus"
 }
 
 fetch(url, {
@@ -193,7 +193,7 @@ curl -X POST \
     "https://onthego-api.ratecardly.com/api/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"officiis","password":"exercitationem"}'
+    -d '{"email":"at","password":"illo"}'
 
 ```
 
@@ -208,8 +208,8 @@ let headers = {
 };
 
 let body = {
-    "email": "officiis",
-    "password": "exercitationem"
+    "email": "at",
+    "password": "illo"
 }
 
 fetch(url, {
@@ -225,13 +225,13 @@ fetch(url, {
 ```json
 {
     "data": {
-        "name": "Ezekiel Aufderhar",
-        "username": "zkautzer",
-        "email": "koss.anibal@example.net",
-        "email_verified_at": "2023-08-30T13:54:01.000000Z",
-        "updated_at": "2023-08-30T13:54:01.000000Z",
-        "created_at": "2023-08-30T13:54:01.000000Z",
-        "id": 56
+        "name": "Prof. Anne Kessler",
+        "username": "casper.arnaldo",
+        "email": "hermann.clay@example.net",
+        "email_verified_at": "2023-08-30T13:59:18.000000Z",
+        "updated_at": "2023-08-30T13:59:18.000000Z",
+        "created_at": "2023-08-30T13:59:18.000000Z",
+        "id": 61
     }
 }
 ```
@@ -283,7 +283,7 @@ curl -X POST \
     "https://onthego-api.ratecardly.com/api/email/verification-notification" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"neque"}'
+    -d '{"email":"enim"}'
 
 ```
 
@@ -298,7 +298,7 @@ let headers = {
 };
 
 let body = {
-    "email": "neque"
+    "email": "enim"
 }
 
 fetch(url, {
@@ -348,14 +348,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/verify-email/illum/unde" \
+    -G "https://onthego-api.ratecardly.com/api/verify-email/ut/atque" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/verify-email/illum/unde"
+    "https://onthego-api.ratecardly.com/api/verify-email/ut/atque"
 );
 
 let headers = {
@@ -486,7 +486,7 @@ curl -X PUT \
     "https://onthego-api.ratecardly.com/api/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"non","username":"id"}'
+    -d '{"name":"voluptatibus","username":"fugit"}'
 
 ```
 
@@ -501,8 +501,8 @@ let headers = {
 };
 
 let body = {
-    "name": "non",
-    "username": "id"
+    "name": "voluptatibus",
+    "username": "fugit"
 }
 
 fetch(url, {
@@ -518,13 +518,13 @@ fetch(url, {
 ```json
 {
     "data": {
-        "name": "Tania Hagenes",
-        "username": "mekhi71",
-        "email": "sheridan.gerlach@example.net",
-        "email_verified_at": "2023-08-30T13:54:01.000000Z",
-        "updated_at": "2023-08-30T13:54:01.000000Z",
-        "created_at": "2023-08-30T13:54:01.000000Z",
-        "id": 57
+        "name": "Krystina Crona",
+        "username": "janiya.lesch",
+        "email": "ulind@example.net",
+        "email_verified_at": "2023-08-30T13:59:18.000000Z",
+        "updated_at": "2023-08-30T13:59:18.000000Z",
+        "created_at": "2023-08-30T13:59:18.000000Z",
+        "id": 62
     }
 }
 ```
@@ -573,14 +573,14 @@ Remove the specified resource from storage.
 
 ```bash
 curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/users/asperiores" \
+    "https://onthego-api.ratecardly.com/api/users/cupiditate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/users/asperiores"
+    "https://onthego-api.ratecardly.com/api/users/cupiditate"
 );
 
 let headers = {

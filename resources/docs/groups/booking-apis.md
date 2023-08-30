@@ -72,16 +72,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "https://onthego-api.ratecardly.com/api/book-tour/quo" \
+    "https://onthego-api.ratecardly.com/api/book-tour/ut" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"number_of_guests":"occaecati","check_in":"ut","check_out":"nam","cost":"doloremque","paymentID":"quo"}'
+    -d '{"number_of_guests":"doloremque","check_in":"saepe","check_out":"et","cost":"in","paymentID":"numquam"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/book-tour/quo"
+    "https://onthego-api.ratecardly.com/api/book-tour/ut"
 );
 
 let headers = {
@@ -90,11 +90,11 @@ let headers = {
 };
 
 let body = {
-    "number_of_guests": "occaecati",
-    "check_in": "ut",
-    "check_out": "nam",
-    "cost": "doloremque",
-    "paymentID": "quo"
+    "number_of_guests": "doloremque",
+    "check_in": "saepe",
+    "check_out": "et",
+    "cost": "in",
+    "paymentID": "numquam"
 }
 
 fetch(url, {
@@ -175,16 +175,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "https://onthego-api.ratecardly.com/api/book-event/perferendis" \
+    "https://onthego-api.ratecardly.com/api/book-event/consequatur" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"number_of_guests":"recusandae","check_in":"voluptates","check_out":"maiores","cost":"non","paymentID":"maxime"}'
+    -d '{"number_of_guests":"qui","check_in":"quod","check_out":"consequatur","cost":"rerum","paymentID":"sunt"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/book-event/perferendis"
+    "https://onthego-api.ratecardly.com/api/book-event/consequatur"
 );
 
 let headers = {
@@ -193,11 +193,11 @@ let headers = {
 };
 
 let body = {
-    "number_of_guests": "recusandae",
-    "check_in": "voluptates",
-    "check_out": "maiores",
-    "cost": "non",
-    "paymentID": "maxime"
+    "number_of_guests": "qui",
+    "check_in": "quod",
+    "check_out": "consequatur",
+    "cost": "rerum",
+    "paymentID": "sunt"
 }
 
 fetch(url, {
@@ -278,14 +278,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/reservations/dicta" \
+    -G "https://onthego-api.ratecardly.com/api/reservations/quam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/reservations/dicta"
+    "https://onthego-api.ratecardly.com/api/reservations/quam"
 );
 
 let headers = {
@@ -346,14 +346,14 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "https://onthego-api.ratecardly.com/api/reservations/qui" \
+    "https://onthego-api.ratecardly.com/api/reservations/repellendus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/reservations/qui"
+    "https://onthego-api.ratecardly.com/api/reservations/repellendus"
 );
 
 let headers = {
@@ -407,14 +407,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/reservations/qui" \
+    "https://onthego-api.ratecardly.com/api/reservations/cupiditate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/reservations/qui"
+    "https://onthego-api.ratecardly.com/api/reservations/cupiditate"
 );
 
 let headers = {
