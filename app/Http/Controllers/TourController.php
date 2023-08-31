@@ -55,8 +55,7 @@ class TourController extends Controller
         ]);
 
         $request->validate(['cover_image' => 'required|image:jpeg,png,jpg,gif']);
-        $fields['cover_image'] = 'http://127.0.0.1:8000/storage/' . $request->file('cover_image')->store('cover_images', 'public');
-        // $fields['cover_image'] = 'https://api.ratecard.ly/storage/' . $request->file('cover_image')->store('cover_images', 'public');
+        $fields['cover_image'] = env("APP_URL", "http://127.0.0.1:8000"). "/storage/" .  $request->file('cover_image')->store('cover_images', 'public');
 
         $tour = Tour::create([
             'title' => $fields['title'],
@@ -67,7 +66,7 @@ class TourController extends Controller
             'cover_image' => ($request->hasFile('cover_image') ? $fields['cover_image'] : null)
         ]);
 
-
+        
         $imageUrls = [];
 
         foreach ($request->file('images') as $image) {
@@ -78,7 +77,6 @@ class TourController extends Controller
         }
 
         // Attach the image URLs to the product
-        // $imageUrls = $request->input('image_urls');
         foreach ($imageUrls as $imageUrl) {
             $tour->images()->create([
                 'url' => $imageUrl,
@@ -147,6 +145,7 @@ class TourController extends Controller
      */
     public function update(Request $request, $id)
     {
+        
         $tour = Tour::find($id);
 
         $fields = $request->validate([
@@ -158,9 +157,9 @@ class TourController extends Controller
 
         if ($request->hasFile('cover_image')) {
             $request->validate(['cover_image' => 'required|image:jpeg,png,jpg,gif']);
-            $fields['cover_image'] = 'http://127.0.0.1:8000/storage/' . $request->file('cover_image')->store('cover_images', 'public');
-            if (File::exists(substr($tour['cover_image'], 22))) {
-                File::delete(substr($tour['cover_image'], 22));
+            $fields['cover_image'] = env("APP_URL", "http://127.0.0.1:8000")."/storage/". $request->file('cover_image')->store('cover_images', 'public');
+            if (File::exists(substr($tour['cover_image'],  strlen(env("APP_URL", "http://127.0.0.1:8000"))+1))) {
+                File::delete(substr($tour['cover_image'],  strlen(env("APP_URL", "http://127.0.0.1:8000"))+1));
             };
         }
 

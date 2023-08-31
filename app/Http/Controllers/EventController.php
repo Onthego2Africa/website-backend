@@ -57,8 +57,7 @@ class EventController extends Controller
         ]);
 
         $request->validate(['cover_image' => 'required|image:jpeg,png,jpg,gif']);
-        $fields['cover_image'] = 'http://127.0.0.1:8000/storage/' . $request->file('cover_image')->store('cover_images', 'public');
-        // $fields['cover_image'] = 'https://api.ratecard.ly/storage/' . $request->file('cover_image')->store('cover_images', 'public');
+        $fields['cover_image'] = env("APP_URL", "http://127.0.0.1:8000"). "/storage/" .  $request->file('cover_image')->store('cover_images', 'public');
 
         $event = Event::create([
             'title' => $fields['title'],
@@ -161,11 +160,10 @@ class EventController extends Controller
 
         if ($request->hasFile('cover_image')) {
             $request->validate(['cover_image' => 'required|image:jpeg,png,jpg,gif']);
-            $fields['cover_image'] = 'http://127.0.0.1:8000/storage/' . $request->file('cover_image')->store('cover_images', 'public');
-            if (File::exists(substr($event['cover_image'], 22))) {
-                File::delete(substr($event['cover_image'], 22));
+            $fields['cover_image'] = env("APP_URL", "http://127.0.0.1:8000")."/storage/". $request->file('cover_image')->store('cover_images', 'public');
+            if (File::exists(substr($tour['cover_image'],  strlen(env("APP_URL", "http://127.0.0.1:8000"))+1))) {
+                File::delete(substr($tour['cover_image'],  strlen(env("APP_URL", "http://127.0.0.1:8000"))+1));
             };
-            // $fields['cover_image'] = 'https://api.ratecard.ly/storage/' . $request->file('cover_image')->store('cover_images', 'public');
         }
 
         $event->update([

@@ -30,6 +30,6 @@ class Tour extends Model
     // Relationship to Images
     public function images()
     {
-        return $this->hasMany(Image::class, 'event_id');
+        return $this->hasMany(Image::class, 'tour_id');
     }
 }
