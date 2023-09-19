@@ -75,7 +75,7 @@ curl -X POST \
     "https://onthego2africa.com/api/faqs" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"aut","content":"eligendi"}'
+    -d '{"title":"officia","content":"impedit"}'
 
 ```
 
@@ -90,8 +90,8 @@ let headers = {
 };
 
 let body = {
-    "title": "aut",
-    "content": "eligendi"
+    "title": "officia",
+    "content": "impedit"
 }
 
 fetch(url, {
@@ -147,14 +147,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/faqs/vel" \
+    -G "https://onthego2africa.com/api/faqs/perspiciatis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/faqs/vel"
+    "https://onthego2africa.com/api/faqs/perspiciatis"
 );
 
 let headers = {
@@ -215,16 +215,16 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "https://onthego2africa.com/api/faqs/rerum" \
+    "https://onthego2africa.com/api/faqs/suscipit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"natus","content":"quasi"}'
+    -d '{"title":"autem","content":"assumenda"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/faqs/rerum"
+    "https://onthego2africa.com/api/faqs/suscipit"
 );
 
 let headers = {
@@ -233,8 +233,8 @@ let headers = {
 };
 
 let body = {
-    "title": "natus",
-    "content": "quasi"
+    "title": "autem",
+    "content": "assumenda"
 }
 
 fetch(url, {
@@ -297,14 +297,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "https://onthego2africa.com/api/faqs/sequi" \
+    "https://onthego2africa.com/api/faqs/commodi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/faqs/sequi"
+    "https://onthego2africa.com/api/faqs/commodi"
 );
 
 let headers = {

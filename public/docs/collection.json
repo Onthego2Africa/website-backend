@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "OnTheGo2Africa",
-        "_postman_id": "1bc34eb0-8b89-4647-a2aa-7f86b2b2e4f6",
+        "_postman_id": "895d7554-a67c-4998-8da4-fb7aac79481b",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -76,7 +76,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"data\": [\n        {\n            \"name\": \"Mrs. Kaia Stroman II\",\n            \"username\": \"swilderman\",\n            \"email\": \"gbergstrom@example.net\",\n            \"email_verified_at\": \"2023-09-19T09:56:49.000000Z\",\n            \"updated_at\": \"2023-09-19T09:56:49.000000Z\",\n            \"created_at\": \"2023-09-19T09:56:49.000000Z\",\n            \"id\": 5\n        },\n        {\n            \"name\": \"Prof. Elaina Daugherty\",\n            \"username\": \"genevieve.von\",\n            \"email\": \"morton35@example.org\",\n            \"email_verified_at\": \"2023-09-19T09:56:49.000000Z\",\n            \"updated_at\": \"2023-09-19T09:56:49.000000Z\",\n            \"created_at\": \"2023-09-19T09:56:49.000000Z\",\n            \"id\": 6\n        }\n    ]\n}"
+                            "body": "{\n    \"data\": [\n        {\n            \"name\": \"Fern Howell\",\n            \"username\": \"trobel\",\n            \"email\": \"hodkiewicz.lucie@example.org\",\n            \"email_verified_at\": \"2023-09-19T23:06:17.000000Z\",\n            \"updated_at\": \"2023-09-19T23:06:17.000000Z\",\n            \"created_at\": \"2023-09-19T23:06:17.000000Z\",\n            \"id\": 5\n        },\n        {\n            \"name\": \"Vilma Dietrich\",\n            \"username\": \"alene.bosco\",\n            \"email\": \"schroeder.agustin@example.org\",\n            \"email_verified_at\": \"2023-09-19T23:06:17.000000Z\",\n            \"updated_at\": \"2023-09-19T23:06:17.000000Z\",\n            \"created_at\": \"2023-09-19T23:06:17.000000Z\",\n            \"id\": 6\n        }\n    ]\n}"
                         }
                     ]
                 },
@@ -164,7 +164,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"ut\",\n    \"username\": \"consequatur\",\n    \"email\": \"et\",\n    \"password\": \"enim\",\n    \"password_confirmation\": \"aut\"\n}"
+                            "raw": "{\n    \"name\": \"cum\",\n    \"username\": \"qui\",\n    \"email\": \"vel\",\n    \"password\": \"quod\",\n    \"password_confirmation\": \"dicta\"\n}"
                         },
                         "description": "Store a newly created admin in storage.",
                         "auth": {
@@ -186,7 +186,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "dolore",
+                                    "value": "fuga",
                                     "description": ""
                                 }
                             ]
@@ -222,7 +222,7 @@
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "dolore",
+                                            "value": "fuga",
                                             "description": ""
                                         }
                                     ]
@@ -273,7 +273,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"ea\",\n    \"username\": \"enim\"\n}"
+                            "raw": "{\n    \"name\": \"quia\",\n    \"username\": \"debitis\"\n}"
                         },
                         "description": "Update the admin in storage.",
                         "auth": {
@@ -391,7 +391,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "et",
+                                    "value": "autem",
                                     "description": ""
                                 }
                             ]
@@ -409,7 +409,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"number_of_guests\": \"illo\",\n    \"check_in\": \"ducimus\",\n    \"check_out\": \"cupiditate\",\n    \"cost\": \"voluptatem\",\n    \"paymentID\": \"at\"\n}"
+                            "raw": "{\n    \"number_of_guests\": \"est\",\n    \"check_in\": \"aliquid\",\n    \"check_out\": \"est\",\n    \"cost\": \"adipisci\",\n    \"paymentID\": \"vel\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -431,7 +431,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "mollitia",
+                                    "value": "libero",
                                     "description": ""
                                 }
                             ]
@@ -449,7 +449,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"number_of_guests\": \"error\",\n    \"check_in\": \"animi\",\n    \"check_out\": \"excepturi\",\n    \"cost\": \"ducimus\",\n    \"paymentID\": \"aspernatur\"\n}"
+                            "raw": "{\n    \"number_of_guests\": \"illo\",\n    \"check_in\": \"dolorem\",\n    \"check_out\": \"autem\",\n    \"cost\": \"rem\",\n    \"paymentID\": \"laborum\",\n    \"package_id\": \"temporibus\",\n    \"name\": \"ipsum\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -471,7 +471,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "delectus",
+                                    "value": "autem",
                                     "description": ""
                                 }
                             ]
@@ -507,7 +507,7 @@
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "delectus",
+                                            "value": "autem",
                                             "description": ""
                                         }
                                     ]
@@ -548,7 +548,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "dolores",
+                                    "value": "quos",
                                     "description": ""
                                 }
                             ]
@@ -585,7 +585,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "autem",
+                                    "value": "aliquam",
                                     "description": ""
                                 }
                             ]
@@ -608,6 +608,83 @@
                         }
                     },
                     "response": []
+                },
+                {
+                    "name": "POST \/reservations\/toggle-paid",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/togglepaid\/:id",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/togglepaid\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "est",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "POST \/reservations\/toggle-paid Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "https",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/togglepaid\/:id",
+                                    "query": [],
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/togglepaid\/:id",
+                                    "variable": [
+                                        {
+                                            "id": "id",
+                                            "key": "id",
+                                            "value": "est",
+                                            "description": ""
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"message\": \"Unauthenticated.\"\n}"
+                        }
+                    ]
                 }
             ]
         },
@@ -785,7 +862,7 @@
                                 {
                                     "id": "slug",
                                     "key": "slug",
-                                    "value": "sed",
+                                    "value": "sequi",
                                     "description": ""
                                 }
                             ]
@@ -821,7 +898,7 @@
                                         {
                                             "id": "slug",
                                             "key": "slug",
-                                            "value": "sed",
+                                            "value": "sequi",
                                             "description": ""
                                         }
                                     ]
@@ -875,32 +952,32 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "iste",
+                                    "value": "autem",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "adipisci",
+                                    "value": "sint",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "consequatur",
+                                    "value": "corporis",
                                     "type": "text"
                                 },
                                 {
                                     "key": "cost",
-                                    "value": "dolores",
+                                    "value": "quas",
                                     "type": "text"
                                 },
                                 {
                                     "key": "packages[]",
-                                    "value": "reprehenderit",
+                                    "value": "sunt",
                                     "type": "text"
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "magnam",
+                                    "value": "officiis",
                                     "type": "text"
                                 },
                                 {
@@ -930,7 +1007,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "et",
+                                    "value": "quae",
                                     "description": ""
                                 }
                             ]
@@ -951,27 +1028,27 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "eum",
+                                    "value": "nam",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "quos",
+                                    "value": "doloribus",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "in",
+                                    "value": "consequatur",
                                     "type": "text"
                                 },
                                 {
                                     "key": "cost",
-                                    "value": "tempora",
+                                    "value": "maiores",
                                     "type": "text"
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "qui",
+                                    "value": "quae",
                                     "type": "text"
                                 },
                                 {
@@ -1001,7 +1078,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "nihil",
+                                    "value": "velit",
                                     "description": ""
                                 }
                             ]
@@ -1088,7 +1165,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"packages\": [\n        {\n            \"id\": 1,\n            \"title\": \"Gye Nyame Package\",\n            \"plan_1_name\": \"Single\",\n            \"image\": \"https:\\\/\\\/onthego-api.ratecardly.com\\\/assets\\\/images\\\/gyenyame.jpg\",\n            \"plan_1_price\": \"$4,150.00 per person\",\n            \"plan_2_name\": \"Twin\",\n            \"plan_2_price\": \"$3,685.00 per person\",\n            \"plan_3_name\": null,\n            \"plan_3_price\": null,\n            \"plan_4_name\": null,\n            \"plan_4_price\": null,\n            \"created_at\": \"2023-09-13T23:58:38.000000Z\",\n            \"updated_at\": \"2023-09-13T23:58:38.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Fawohodie Package\",\n            \"plan_1_name\": \"Single\",\n            \"image\": \"https:\\\/\\\/onthego-api.ratecardly.com\\\/assets\\\/images\\\/fawohodie.jpg\",\n            \"plan_1_price\": \"$3,790.00\",\n            \"plan_2_name\": \"Twin\",\n            \"plan_2_price\": \"$3,443.00\",\n            \"plan_3_name\": null,\n            \"plan_3_price\": null,\n            \"plan_4_name\": null,\n            \"plan_4_price\": null,\n            \"created_at\": \"2023-09-13T23:58:38.000000Z\",\n            \"updated_at\": \"2023-09-13T23:58:38.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Sankofa Package\",\n            \"plan_1_name\": \"Hotel - Single\",\n            \"image\": \"https:\\\/\\\/onthego-api.ratecardly.com\\\/assets\\\/images\\\/sankofa.jpg\",\n            \"plan_1_price\": \"$3,400.00\",\n            \"plan_2_name\": \"Hotel - Twin\",\n            \"plan_2_price\": \"$2,520.00\",\n            \"plan_3_name\": \"Apartment (The Signature) - Single\",\n            \"plan_3_price\": \"$3,000.00\",\n            \"plan_4_name\": \"Apartment (The Signature) - Twin\",\n            \"plan_4_price\": \"$2,200.00\",\n            \"created_at\": \"2023-09-13T23:58:38.000000Z\",\n            \"updated_at\": \"2023-09-13T23:58:38.000000Z\"\n        }\n    ]\n}"
+                            "body": "{\n    \"packages\": [\n        {\n            \"id\": 1,\n            \"title\": \"Gye Nyame Package\",\n            \"plan_1_name\": \"Single\",\n            \"image\": \"https:\\\/\\\/onthego2africa.com\\\/assets\\\/images\\\/gyenyame.jpg\",\n            \"plan_1_price\": \"$4,150.00 per person\",\n            \"plan_2_name\": \"Twin\",\n            \"plan_2_price\": \"$3,685.00 per person\",\n            \"plan_3_name\": null,\n            \"plan_3_price\": null,\n            \"plan_4_name\": null,\n            \"plan_4_price\": null,\n            \"created_at\": \"2023-09-19T22:50:22.000000Z\",\n            \"updated_at\": \"2023-09-19T22:50:22.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Fawohodie Package\",\n            \"plan_1_name\": \"Single\",\n            \"image\": \"https:\\\/\\\/onthego2africa.com\\\/assets\\\/images\\\/fawohodie.jpg\",\n            \"plan_1_price\": \"$3,790.00\",\n            \"plan_2_name\": \"Twin\",\n            \"plan_2_price\": \"$3,443.00\",\n            \"plan_3_name\": null,\n            \"plan_3_price\": null,\n            \"plan_4_name\": null,\n            \"plan_4_price\": null,\n            \"created_at\": \"2023-09-19T22:50:22.000000Z\",\n            \"updated_at\": \"2023-09-19T22:50:22.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Sankofa Package\",\n            \"plan_1_name\": \"Hotel - Single\",\n            \"image\": \"https:\\\/\\\/onthego2africa.com\\\/assets\\\/images\\\/sankofa.jpg\",\n            \"plan_1_price\": \"$3,400.00\",\n            \"plan_2_name\": \"Hotel - Twin\",\n            \"plan_2_price\": \"$2,520.00\",\n            \"plan_3_name\": \"Apartment (The Signature) - Single\",\n            \"plan_3_price\": \"$3,000.00\",\n            \"plan_4_name\": \"Apartment (The Signature) - Twin\",\n            \"plan_4_price\": \"$2,200.00\",\n            \"created_at\": \"2023-09-19T22:50:22.000000Z\",\n            \"updated_at\": \"2023-09-19T22:50:22.000000Z\"\n        }\n    ]\n}"
                         }
                     ]
                 },
@@ -1105,7 +1182,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "magni",
+                                    "value": "corrupti",
                                     "description": ""
                                 }
                             ]
@@ -1141,7 +1218,7 @@
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "magni",
+                                            "value": "corrupti",
                                             "description": ""
                                         }
                                     ]
@@ -1259,7 +1336,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"aut\",\n    \"content\": \"eligendi\"\n}"
+                            "raw": "{\n    \"title\": \"officia\",\n    \"content\": \"impedit\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1281,7 +1358,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "vel",
+                                    "value": "perspiciatis",
                                     "description": ""
                                 }
                             ]
@@ -1317,7 +1394,7 @@
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "vel",
+                                            "value": "perspiciatis",
                                             "description": ""
                                         }
                                     ]
@@ -1358,7 +1435,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "rerum",
+                                    "value": "suscipit",
                                     "description": ""
                                 }
                             ]
@@ -1376,7 +1453,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"natus\",\n    \"content\": \"quasi\"\n}"
+                            "raw": "{\n    \"title\": \"autem\",\n    \"content\": \"assumenda\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1398,7 +1475,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "sequi",
+                                    "value": "commodi",
                                     "description": ""
                                 }
                             ]
@@ -1512,7 +1589,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"similique\"\n}"
+                            "raw": "{\n    \"email\": \"aliquid\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1601,7 +1678,7 @@
                                 {
                                     "id": "slug",
                                     "key": "slug",
-                                    "value": "voluptas",
+                                    "value": "non",
                                     "description": ""
                                 }
                             ]
@@ -1637,7 +1714,7 @@
                                         {
                                             "id": "slug",
                                             "key": "slug",
-                                            "value": "voluptas",
+                                            "value": "non",
                                             "description": ""
                                         }
                                     ]
@@ -1691,27 +1768,27 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "inventore",
+                                    "value": "cum",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "pariatur",
+                                    "value": "occaecati",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "maiores",
+                                    "value": "tempora",
                                     "type": "text"
                                 },
                                 {
                                     "key": "cost",
-                                    "value": "nesciunt",
+                                    "value": "debitis",
                                     "type": "text"
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "maiores",
+                                    "value": "omnis",
                                     "type": "text"
                                 },
                                 {
@@ -1741,7 +1818,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "sit",
+                                    "value": "dolorem",
                                     "description": ""
                                 }
                             ]
@@ -1762,27 +1839,27 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "labore",
+                                    "value": "impedit",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "ut",
+                                    "value": "beatae",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "occaecati",
+                                    "value": "corrupti",
                                     "type": "text"
                                 },
                                 {
                                     "key": "cost",
-                                    "value": "iste",
+                                    "value": "non",
                                     "type": "text"
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "quis",
+                                    "value": "natus",
                                     "type": "text"
                                 },
                                 {
@@ -1812,7 +1889,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "nihil",
+                                    "value": "natus",
                                     "description": ""
                                 }
                             ]
@@ -1865,7 +1942,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"labore\",\n    \"username\": \"facere\",\n    \"email\": \"eum\",\n    \"password\": \"aut\",\n    \"password_confirmation\": \"vel\"\n}"
+                            "raw": "{\n    \"name\": \"voluptas\",\n    \"username\": \"soluta\",\n    \"email\": \"sit\",\n    \"password\": \"et\",\n    \"password_confirmation\": \"omnis\"\n}"
                         },
                         "description": "Store a newly created user in storage.",
                         "auth": {
@@ -1896,7 +1973,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n    \"name\": \"labore\",\n    \"username\": \"facere\",\n    \"email\": \"eum\",\n    \"password\": \"aut\",\n    \"password_confirmation\": \"vel\"\n}"
+                                    "raw": "{\n    \"name\": \"voluptas\",\n    \"username\": \"soluta\",\n    \"email\": \"sit\",\n    \"password\": \"et\",\n    \"password_confirmation\": \"omnis\"\n}"
                                 },
                                 "description": "Store a newly created user in storage.",
                                 "auth": {
@@ -1905,7 +1982,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"data\": {\n        \"name\": \"Dortha Turner\",\n        \"username\": \"willard43\",\n        \"email\": \"gerhard80@example.net\",\n        \"email_verified_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"updated_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"created_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"id\": 2\n    }\n}"
+                            "body": "{\n    \"data\": {\n        \"name\": \"Lincoln Boyle\",\n        \"username\": \"zachariah.weissnat\",\n        \"email\": \"wvonrueden@example.org\",\n        \"email_verified_at\": \"2023-09-19T23:06:17.000000Z\",\n        \"updated_at\": \"2023-09-19T23:06:17.000000Z\",\n        \"created_at\": \"2023-09-19T23:06:17.000000Z\",\n        \"id\": 2\n    }\n}"
                         }
                     ]
                 },
@@ -1932,7 +2009,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"et\"\n}"
+                            "raw": "{\n    \"email\": \"dolore\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1964,7 +2041,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"ullam\",\n    \"password\": \"nulla\"\n}"
+                            "raw": "{\n    \"email\": \"nihil\",\n    \"password\": \"cum\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1995,7 +2072,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n    \"email\": \"ullam\",\n    \"password\": \"nulla\"\n}"
+                                    "raw": "{\n    \"email\": \"nihil\",\n    \"password\": \"cum\"\n}"
                                 },
                                 "description": "",
                                 "auth": {
@@ -2004,7 +2081,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"data\": {\n        \"name\": \"Prof. Marion Stokes DDS\",\n        \"username\": \"crenner\",\n        \"email\": \"ohintz@example.org\",\n        \"email_verified_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"updated_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"created_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"id\": 3\n    }\n}"
+                            "body": "{\n    \"data\": {\n        \"name\": \"Allene Ratke\",\n        \"username\": \"hodkiewicz.toni\",\n        \"email\": \"wilkinson.eudora@example.org\",\n        \"email_verified_at\": \"2023-09-19T23:06:17.000000Z\",\n        \"updated_at\": \"2023-09-19T23:06:17.000000Z\",\n        \"created_at\": \"2023-09-19T23:06:17.000000Z\",\n        \"id\": 3\n    }\n}"
                         }
                     ]
                 },
@@ -2031,7 +2108,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"ea\"\n}"
+                            "raw": "{\n    \"email\": \"atque\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -2053,13 +2130,13 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "veritatis",
+                                    "value": "consequatur",
                                     "description": ""
                                 },
                                 {
                                     "id": "hash",
                                     "key": "hash",
-                                    "value": "nobis",
+                                    "value": "accusamus",
                                     "description": ""
                                 }
                             ]
@@ -2095,13 +2172,13 @@
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "veritatis",
+                                            "value": "consequatur",
                                             "description": ""
                                         },
                                         {
                                             "id": "hash",
                                             "key": "hash",
-                                            "value": "nobis",
+                                            "value": "accusamus",
                                             "description": ""
                                         }
                                     ]
@@ -2213,7 +2290,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"veritatis\",\n    \"username\": \"quasi\"\n}"
+                            "raw": "{\n    \"name\": \"sit\",\n    \"username\": \"doloremque\"\n}"
                         },
                         "description": "Update the user in storage.",
                         "auth": {
@@ -2244,7 +2321,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n    \"name\": \"veritatis\",\n    \"username\": \"quasi\"\n}"
+                                    "raw": "{\n    \"name\": \"sit\",\n    \"username\": \"doloremque\"\n}"
                                 },
                                 "description": "Update the user in storage.",
                                 "auth": {
@@ -2253,7 +2330,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"data\": {\n        \"name\": \"Aryanna Kuhlman DVM\",\n        \"username\": \"celia39\",\n        \"email\": \"julia41@example.org\",\n        \"email_verified_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"updated_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"created_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"id\": 4\n    }\n}"
+                            "body": "{\n    \"data\": {\n        \"name\": \"Richmond Weissnat\",\n        \"username\": \"satterfield.dean\",\n        \"email\": \"sophie88@example.com\",\n        \"email_verified_at\": \"2023-09-19T23:06:17.000000Z\",\n        \"updated_at\": \"2023-09-19T23:06:17.000000Z\",\n        \"created_at\": \"2023-09-19T23:06:17.000000Z\",\n        \"id\": 4\n    }\n}"
                         }
                     ]
                 },
@@ -2270,7 +2347,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "deserunt",
+                                    "value": "suscipit",
                                     "description": ""
                                 }
                             ]

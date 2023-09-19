@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Package;
 use App\Models\Reservation;
 use Illuminate\Http\Request;
 
@@ -40,6 +41,8 @@ class ReservationController extends Controller
      * @bodyParam check_out string required 
      * @bodyParam cost string required
      * @bodyParam paymentID string required
+     * @bodyParam package_id string required
+     * @bodyParam name string required
      * 
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -52,6 +55,8 @@ class ReservationController extends Controller
             'check_out' => 'required',
             'cost' => 'required',
             'paymentID' => 'required',
+            'package_id' => 'required',
+            'name' => 'required'
         ]);
 
         $fields['event_id'] = $id;
@@ -112,9 +117,17 @@ class ReservationController extends Controller
             abort(404, 'Not Found');
         }
 
+        $package = Package::find($id);
+
+        if (!$package) {
+            abort(404, 'Not Found');
+        }
+
         $reservation->tour;
 
         $reservation->event;
+
+        $reservation['package'] = $package;
 
         $response = [
             'reservation' => $reservation
@@ -141,6 +154,8 @@ class ReservationController extends Controller
             'check_out' => 'required',
             'cost' => 'required',
             'paymentID' => 'required',
+            'package_id' => 'required',
+            'name' => 'required'
         ]);
 
         $fields['tour_id'] = $request['tour_id'];
@@ -148,6 +163,32 @@ class ReservationController extends Controller
         $fields['event_id'] = $request['event_id'];
 
         $reservation->update($fields);
+
+        $response = [
+            'reservation' => $reservation,
+        ];
+
+        return response($response, 201);
+    }
+
+    /**
+     * POST /reservations/toggle-paid
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function togglePaid($id)
+    {
+
+        $reservation = Reservation::find($id);
+        if ($reservation['confirm_paid'] == 'no') {
+            $reservation->confirm_paid = 'yes';
+        } else {
+            $reservation->confirm_paid = 'no';
+        }
+
+        $reservation->save();
 
         $response = [
             'reservation' => $reservation,

@@ -43,7 +43,7 @@ fetch(url, {
             "id": 1,
             "title": "Gye Nyame Package",
             "plan_1_name": "Single",
-            "image": "https:\/\/onthego-api.ratecardly.com\/assets\/images\/gyenyame.jpg",
+            "image": "https:\/\/onthego2africa.com\/assets\/images\/gyenyame.jpg",
             "plan_1_price": "$4,150.00 per person",
             "plan_2_name": "Twin",
             "plan_2_price": "$3,685.00 per person",
@@ -51,14 +51,14 @@ fetch(url, {
             "plan_3_price": null,
             "plan_4_name": null,
             "plan_4_price": null,
-            "created_at": "2023-09-13T23:58:38.000000Z",
-            "updated_at": "2023-09-13T23:58:38.000000Z"
+            "created_at": "2023-09-19T22:50:22.000000Z",
+            "updated_at": "2023-09-19T22:50:22.000000Z"
         },
         {
             "id": 2,
             "title": "Fawohodie Package",
             "plan_1_name": "Single",
-            "image": "https:\/\/onthego-api.ratecardly.com\/assets\/images\/fawohodie.jpg",
+            "image": "https:\/\/onthego2africa.com\/assets\/images\/fawohodie.jpg",
             "plan_1_price": "$3,790.00",
             "plan_2_name": "Twin",
             "plan_2_price": "$3,443.00",
@@ -66,14 +66,14 @@ fetch(url, {
             "plan_3_price": null,
             "plan_4_name": null,
             "plan_4_price": null,
-            "created_at": "2023-09-13T23:58:38.000000Z",
-            "updated_at": "2023-09-13T23:58:38.000000Z"
+            "created_at": "2023-09-19T22:50:22.000000Z",
+            "updated_at": "2023-09-19T22:50:22.000000Z"
         },
         {
             "id": 3,
             "title": "Sankofa Package",
             "plan_1_name": "Hotel - Single",
-            "image": "https:\/\/onthego-api.ratecardly.com\/assets\/images\/sankofa.jpg",
+            "image": "https:\/\/onthego2africa.com\/assets\/images\/sankofa.jpg",
             "plan_1_price": "$3,400.00",
             "plan_2_name": "Hotel - Twin",
             "plan_2_price": "$2,520.00",
@@ -81,8 +81,8 @@ fetch(url, {
             "plan_3_price": "$3,000.00",
             "plan_4_name": "Apartment (The Signature) - Twin",
             "plan_4_price": "$2,200.00",
-            "created_at": "2023-09-13T23:58:38.000000Z",
-            "updated_at": "2023-09-13T23:58:38.000000Z"
+            "created_at": "2023-09-19T22:50:22.000000Z",
+            "updated_at": "2023-09-19T22:50:22.000000Z"
         }
     ]
 }
@@ -118,14 +118,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/packages/magni" \
+    -G "https://onthego2africa.com/api/packages/corrupti" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/packages/magni"
+    "https://onthego2africa.com/api/packages/corrupti"
 );
 
 let headers = {

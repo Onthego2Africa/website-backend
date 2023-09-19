@@ -58,6 +58,7 @@ Route::group(['middleware' => ['auth:sanctum', 'role:user|super-admin|admin']], 
 Route::group(['middleware' => ['auth:sanctum', 'role:super-admin|admin']], function () {
     Route::get('/users', [AdminController::class, 'userIndex']);
     Route::get('/admins', [AdminController::class, 'index']);
+    Route::get('/togglepaid/{id}', [ReservationController::class, 'togglePaid']);
     Route::post('/admins', [AdminController::class, 'store']);
     Route::get('/admins/{id}', [AdminController::class, 'show']);
     Route::put('/admins', [AdminController::class, 'update']);

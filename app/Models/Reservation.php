@@ -15,9 +15,12 @@ class Reservation extends Model
         'paymentID',
         'check_in',
         'check_out',
+        'package_id',
         'cost',
         'event_id',
-        'tour_id'
+        'tour_id',
+        'confirm_paid',
+        'name'
     ];
 
     // Relationship to User

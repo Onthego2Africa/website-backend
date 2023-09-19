@@ -18,8 +18,11 @@ class CreateReservationsTable extends Migration
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->foreignId('event_id')->constrained()->onDelete('cascade');
             $table->foreignId('tour_id')->constrained()->onDelete('cascade');
+            $table->foreignId('package_id');
+            $table->foreignId('name');
             $table->string('number_of_guests');
             $table->string('paymentID');
+            $table->string('confirm_paid')->default('no');
             $table->date('check_in');
             $table->date('check_out');
             $table->string('cost');

@@ -72,16 +72,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "https://onthego2africa.com/api/book-tour/et" \
+    "https://onthego2africa.com/api/book-tour/autem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"number_of_guests":"illo","check_in":"ducimus","check_out":"cupiditate","cost":"voluptatem","paymentID":"at"}'
+    -d '{"number_of_guests":"est","check_in":"aliquid","check_out":"est","cost":"adipisci","paymentID":"vel"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/book-tour/et"
+    "https://onthego2africa.com/api/book-tour/autem"
 );
 
 let headers = {
@@ -90,11 +90,11 @@ let headers = {
 };
 
 let body = {
-    "number_of_guests": "illo",
-    "check_in": "ducimus",
-    "check_out": "cupiditate",
-    "cost": "voluptatem",
-    "paymentID": "at"
+    "number_of_guests": "est",
+    "check_in": "aliquid",
+    "check_out": "est",
+    "cost": "adipisci",
+    "paymentID": "vel"
 }
 
 fetch(url, {
@@ -175,16 +175,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "https://onthego2africa.com/api/book-event/mollitia" \
+    "https://onthego2africa.com/api/book-event/libero" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"number_of_guests":"error","check_in":"animi","check_out":"excepturi","cost":"ducimus","paymentID":"aspernatur"}'
+    -d '{"number_of_guests":"illo","check_in":"dolorem","check_out":"autem","cost":"rem","paymentID":"laborum","package_id":"temporibus","name":"ipsum"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/book-event/mollitia"
+    "https://onthego2africa.com/api/book-event/libero"
 );
 
 let headers = {
@@ -193,11 +193,13 @@ let headers = {
 };
 
 let body = {
-    "number_of_guests": "error",
-    "check_in": "animi",
-    "check_out": "excepturi",
-    "cost": "ducimus",
-    "paymentID": "aspernatur"
+    "number_of_guests": "illo",
+    "check_in": "dolorem",
+    "check_out": "autem",
+    "cost": "rem",
+    "paymentID": "laborum",
+    "package_id": "temporibus",
+    "name": "ipsum"
 }
 
 fetch(url, {
@@ -265,6 +267,18 @@ fetch(url, {
 <br>
 
 </p>
+<p>
+<b><code>package_id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="package_id" data-endpoint="POSTapi-book-event--id-" data-component="body" required  hidden>
+<br>
+
+</p>
+<p>
+<b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="name" data-endpoint="POSTapi-book-event--id-" data-component="body" required  hidden>
+<br>
+
+</p>
 
 </form>
 
@@ -278,14 +292,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/reservations/delectus" \
+    -G "https://onthego2africa.com/api/reservations/autem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/reservations/delectus"
+    "https://onthego2africa.com/api/reservations/autem"
 );
 
 let headers = {
@@ -346,14 +360,14 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "https://onthego2africa.com/api/reservations/dolores" \
+    "https://onthego2africa.com/api/reservations/quos" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/reservations/dolores"
+    "https://onthego2africa.com/api/reservations/quos"
 );
 
 let headers = {
@@ -407,14 +421,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "https://onthego2africa.com/api/reservations/autem" \
+    "https://onthego2africa.com/api/reservations/aliquam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/reservations/autem"
+    "https://onthego2africa.com/api/reservations/aliquam"
 );
 
 let headers = {
@@ -453,6 +467,74 @@ fetch(url, {
 <p>
 <b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
 <input type="text" name="id" data-endpoint="DELETEapi-reservations--id-" data-component="url" required  hidden>
+<br>
+
+</p>
+</form>
+
+
+## POST /reservations/toggle-paid
+
+
+
+
+> Example request:
+
+```bash
+curl -X GET \
+    -G "https://onthego2africa.com/api/togglepaid/est" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"
+```
+
+```javascript
+const url = new URL(
+    "https://onthego2africa.com/api/togglepaid/est"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response => response.json());
+```
+
+
+> Example response (401):
+
+```json
+{
+    "message": "Unauthenticated."
+}
+```
+<div id="execution-results-GETapi-togglepaid--id-" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETapi-togglepaid--id-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-togglepaid--id-"></code></pre>
+</div>
+<div id="execution-error-GETapi-togglepaid--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-togglepaid--id-"></code></pre>
+</div>
+<form id="form-GETapi-togglepaid--id-" data-method="GET" data-path="api/togglepaid/{id}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETapi-togglepaid--id-', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETapi-togglepaid--id-" onclick="tryItOut('GETapi-togglepaid--id-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETapi-togglepaid--id-" onclick="cancelTryOut('GETapi-togglepaid--id-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETapi-togglepaid--id-" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-green">GET</small>
+ <b><code>api/togglepaid/{id}</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+<p>
+<b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="id" data-endpoint="GETapi-togglepaid--id-" data-component="url" required  hidden>
 <br>
 
 </p>
