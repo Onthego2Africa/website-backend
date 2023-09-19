@@ -47,6 +47,7 @@ class TourController extends Controller
      */
     public function store(Request $request)
     {
+        
         $fields = $request->validate([
             'title' => 'string|required',
             'overview' => 'string|required',
@@ -55,7 +56,7 @@ class TourController extends Controller
         ]);
 
         $request->validate(['cover_image' => 'required|image:jpeg,png,jpg,gif']);
-        $fields['cover_image'] = env("APP_URL", "http://127.0.0.1:8000"). "/storage/" .  $request->file('cover_image')->store('cover_images', 'public');
+        $fields['cover_image'] = env("APP_URL", "http://127.0.0.1:8000") . "/storage/" .  $request->file('cover_image')->store('cover_images', 'public');
 
         $tour = Tour::create([
             'title' => $fields['title'],
@@ -66,21 +67,23 @@ class TourController extends Controller
             'cover_image' => ($request->hasFile('cover_image') ? $fields['cover_image'] : null)
         ]);
 
-        
         $imageUrls = [];
 
-        foreach ($request->file('images') as $image) {
-            // $path = $image->store('feature_images', 'public'); // Store image and get the path
-            // $imageUrl = Storage::url($path); // Get URL for the stored image
-            $imageUrl = 'http://127.0.0.1:8000/storage/' . $request->file('cover_image')->store('feature_images', 'public');
-            $imageUrls[] = $imageUrl;
-        }
+        if ($request->file('images')) {
 
-        // Attach the image URLs to the product
-        foreach ($imageUrls as $imageUrl) {
-            $tour->images()->create([
-                'url' => $imageUrl,
-            ]);
+            foreach ($request->file('images') as $image) {
+                // $path = $image->store('feature_images', 'public'); // Store image and get the path
+                // $imageUrl = Storage::url($path); // Get URL for the stored image
+                $imageUrl = env("APP_URL", "http://127.0.0.1:8000") . "/storage/" . $image->store('feature_images', 'public');
+                $imageUrls[] = $imageUrl;
+            }
+
+            // Attach the image URLs to the product
+            foreach ($imageUrls as $imageUrl) {
+                $tour->images()->create([
+                    'url' => $imageUrl,
+                ]);
+            }
         }
 
         $tour->images;
@@ -145,7 +148,7 @@ class TourController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
+
         $tour = Tour::find($id);
 
         $fields = $request->validate([
@@ -157,9 +160,9 @@ class TourController extends Controller
 
         if ($request->hasFile('cover_image')) {
             $request->validate(['cover_image' => 'required|image:jpeg,png,jpg,gif']);
-            $fields['cover_image'] = env("APP_URL", "http://127.0.0.1:8000")."/storage/". $request->file('cover_image')->store('cover_images', 'public');
-            if (File::exists(substr($tour['cover_image'],  strlen(env("APP_URL", "http://127.0.0.1:8000"))+1))) {
-                File::delete(substr($tour['cover_image'],  strlen(env("APP_URL", "http://127.0.0.1:8000"))+1));
+            $fields['cover_image'] = env("APP_URL", "http://127.0.0.1:8000") . "/storage/" . $request->file('cover_image')->store('cover_images', 'public');
+            if (File::exists(substr($tour['cover_image'],  strlen(env("APP_URL", "http://127.0.0.1:8000")) + 1))) {
+                File::delete(substr($tour['cover_image'],  strlen(env("APP_URL", "http://127.0.0.1:8000")) + 1));
             };
         }
 

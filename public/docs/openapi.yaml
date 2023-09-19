@@ -5,7 +5,7 @@ info:
     version: 1.0.0
 servers:
     -
-        url: 'https://onthego-api.ratecardly.com'
+        url: 'https://onthego2africa.com'
 paths:
     /api/users:
         get:
@@ -34,9 +34,9 @@ paths:
                             schema:
                                 type: object
                                 example:
-                                    data: [{ name: 'Dr. Dawn Swaniawski I', username: antwon55, email: carolyn31@example.net, email_verified_at: '2023-08-30T13:59:18.000000Z', updated_at: '2023-08-30T13:59:18.000000Z', created_at: '2023-08-30T13:59:18.000000Z', id: 63 }, { name: 'Theodore Lehner', username: bechtelar.adrienne, email: fjones@example.net, email_verified_at: '2023-08-30T13:59:18.000000Z', updated_at: '2023-08-30T13:59:18.000000Z', created_at: '2023-08-30T13:59:18.000000Z', id: 64 }]
+                                    data: [{ name: 'Mrs. Kaia Stroman II', username: swilderman, email: gbergstrom@example.net, email_verified_at: '2023-09-19T09:56:49.000000Z', updated_at: '2023-09-19T09:56:49.000000Z', created_at: '2023-09-19T09:56:49.000000Z', id: 5 }, { name: 'Prof. Elaina Daugherty', username: genevieve.von, email: morton35@example.org, email_verified_at: '2023-09-19T09:56:49.000000Z', updated_at: '2023-09-19T09:56:49.000000Z', created_at: '2023-09-19T09:56:49.000000Z', id: 6 }]
                                 properties:
-                                    data: { type: array, example: [{ name: 'Dr. Dawn Swaniawski I', username: antwon55, email: carolyn31@example.net, email_verified_at: '2023-08-30T13:59:18.000000Z', updated_at: '2023-08-30T13:59:18.000000Z', created_at: '2023-08-30T13:59:18.000000Z', id: 63 }, { name: 'Theodore Lehner', username: bechtelar.adrienne, email: fjones@example.net, email_verified_at: '2023-08-30T13:59:18.000000Z', updated_at: '2023-08-30T13:59:18.000000Z', created_at: '2023-08-30T13:59:18.000000Z', id: 64 }], items: { type: object } }
+                                    data: { type: array, example: [{ name: 'Mrs. Kaia Stroman II', username: swilderman, email: gbergstrom@example.net, email_verified_at: '2023-09-19T09:56:49.000000Z', updated_at: '2023-09-19T09:56:49.000000Z', created_at: '2023-09-19T09:56:49.000000Z', id: 5 }, { name: 'Prof. Elaina Daugherty', username: genevieve.von, email: morton35@example.org, email_verified_at: '2023-09-19T09:56:49.000000Z', updated_at: '2023-09-19T09:56:49.000000Z', created_at: '2023-09-19T09:56:49.000000Z', id: 6 }], items: { type: object } }
             tags:
                 - 'Admin APIs'
             security: []
@@ -66,9 +66,9 @@ paths:
                             schema:
                                 type: object
                                 example:
-                                    data: { name: 'Krystina Crona', username: janiya.lesch, email: ulind@example.net, email_verified_at: '2023-08-30T13:59:18.000000Z', updated_at: '2023-08-30T13:59:18.000000Z', created_at: '2023-08-30T13:59:18.000000Z', id: 62 }
+                                    data: { name: 'Aryanna Kuhlman DVM', username: celia39, email: julia41@example.org, email_verified_at: '2023-09-19T09:56:49.000000Z', updated_at: '2023-09-19T09:56:49.000000Z', created_at: '2023-09-19T09:56:49.000000Z', id: 4 }
                                 properties:
-                                    data: { type: object, example: { name: 'Krystina Crona', username: janiya.lesch, email: ulind@example.net, email_verified_at: '2023-08-30T13:59:18.000000Z', updated_at: '2023-08-30T13:59:18.000000Z', created_at: '2023-08-30T13:59:18.000000Z', id: 62 } }
+                                    data: { type: object, example: { name: 'Aryanna Kuhlman DVM', username: celia39, email: julia41@example.org, email_verified_at: '2023-09-19T09:56:49.000000Z', updated_at: '2023-09-19T09:56:49.000000Z', created_at: '2023-09-19T09:56:49.000000Z', id: 4 } }
             tags:
                 - 'User APIs'
             requestBody:
@@ -81,11 +81,11 @@ paths:
                                 name:
                                     type: string
                                     description: ''
-                                    example: voluptatibus
+                                    example: veritatis
                                 username:
                                     type: string
                                     description: ''
-                                    example: fugit
+                                    example: quasi
                             required:
                                 - name
                                 - username
@@ -154,23 +154,23 @@ paths:
                                 name:
                                     type: string
                                     description: ''
-                                    example: eaque
+                                    example: ut
                                 username:
                                     type: string
                                     description: ''
-                                    example: molestiae
+                                    example: consequatur
                                 email:
                                     type: string
                                     description: ''
-                                    example: non
+                                    example: et
                                 password:
                                     type: string
                                     description: ''
-                                    example: non
+                                    example: enim
                                 password_confirmation:
                                     type: string
                                     description: ''
-                                    example: eos
+                                    example: aut
                             required:
                                 - name
                                 - username
@@ -209,11 +209,11 @@ paths:
                                 name:
                                     type: string
                                     description: ''
-                                    example: autem
+                                    example: ea
                                 username:
                                     type: string
                                     description: ''
-                                    example: id
+                                    example: enim
                             required:
                                 - name
                                 - username
@@ -278,7 +278,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: aspernatur
+                example: dolore
                 required: true
                 schema:
                     type: string
@@ -347,23 +347,23 @@ paths:
                                 number_of_guests:
                                     type: string
                                     description: ''
-                                    example: doloremque
+                                    example: illo
                                 check_in:
                                     type: string
                                     description: ''
-                                    example: saepe
+                                    example: ducimus
                                 check_out:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: cupiditate
                                 cost:
                                     type: string
                                     description: ''
-                                    example: in
+                                    example: voluptatem
                                 paymentID:
                                     type: string
                                     description: ''
-                                    example: numquam
+                                    example: at
                             required:
                                 - number_of_guests
                                 - check_in
@@ -376,7 +376,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: ut
+                example: et
                 required: true
                 schema:
                     type: string
@@ -412,23 +412,23 @@ paths:
                                 number_of_guests:
                                     type: string
                                     description: ''
-                                    example: qui
+                                    example: error
                                 check_in:
                                     type: string
                                     description: ''
-                                    example: quod
+                                    example: animi
                                 check_out:
                                     type: string
                                     description: ''
-                                    example: consequatur
+                                    example: excepturi
                                 cost:
                                     type: string
                                     description: ''
-                                    example: rerum
+                                    example: ducimus
                                 paymentID:
                                     type: string
                                     description: ''
-                                    example: sunt
+                                    example: aspernatur
                             required:
                                 - number_of_guests
                                 - check_in
@@ -441,7 +441,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: consequatur
+                example: mollitia
                 required: true
                 schema:
                     type: string
@@ -527,7 +527,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: quam
+                example: delectus
                 required: true
                 schema:
                     type: string
@@ -651,7 +651,7 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: architecto
+                                    example: iste
                                 cover_image:
                                     type: string
                                     format: binary
@@ -659,25 +659,30 @@ paths:
                                 overview:
                                     type: string
                                     description: ''
-                                    example: minus
+                                    example: adipisci
                                 itenary:
                                     type: string
                                     description: ''
-                                    example: nam
+                                    example: consequatur
                                 cost:
                                     type: string
                                     description: ''
-                                    example: quasi
+                                    example: dolores
+                                'packages[]':
+                                    type: array
+                                    description: ''
+                                    example: reprehenderit
                                 'images[]':
                                     type: array
                                     description: ''
-                                    example: corporis
+                                    example: magnam
                             required:
                                 - title
                                 - cover_image
                                 - overview
                                 - itenary
                                 - cost
+                                - 'packages[]'
                                 - 'images[]'
             security: []
     '/api/events/{slug}':
@@ -703,13 +708,10 @@ paths:
                 200:
                     description: '200'
                     content:
-                        application/json:
+                        text/plain:
                             schema:
-                                type: object
-                                example:
-                                    event: { id: 1, title: dgs, slug: dgs, cover_image: 'http://127.0.0.1:8000/storage/cover_images/lheicfYAjrZTfqlbDutpqUIpS9ueefojUyYDsDYx.jpg', overview: skflalkjflfkj, itenary: dsfsf, cost: dsf, created_at: '2023-08-16T14:11:19.000000Z', updated_at: '2023-08-16T14:11:19.000000Z', images: [] }
-                                properties:
-                                    event: { type: object, example: { id: 1, title: dgs, slug: dgs, cover_image: 'http://127.0.0.1:8000/storage/cover_images/lheicfYAjrZTfqlbDutpqUIpS9ueefojUyYDsDYx.jpg', overview: skflalkjflfkj, itenary: dsfsf, cost: dsf, created_at: '2023-08-16T14:11:19.000000Z', updated_at: '2023-08-16T14:11:19.000000Z', images: [] } }
+                                type: string
+                                example: "{\n\"event\":  {\n     \"id\": 1,\n     \"title\": \"dgs\",\n     \"slug\": \"dgs\",\n     \"cover_image\": \"http:\\/\\/127.0.0.1:8000\\/storage\\/cover_images\\/lheicfYAjrZTfqlbDutpqUIpS9ueefojUyYDsDYx.jpg\",\n     \"overview\": \"skflalkjflfkj\",\n     \"itenary\": \"dsfsf\",\n     \"cost\": \"dsf\",\n     \"packages\": \"[\"dsf\",\"sdf\"]\",\n     \"created_at\": \"2023-08-16T14:11:19.000000Z\",\n     \"updated_at\": \"2023-08-16T14:11:19.000000Z\",\n     \"images\": []\n }\n}"
             tags:
                 - 'Event APIs'
             security: []
@@ -718,7 +720,7 @@ paths:
                 in: path
                 name: slug
                 description: ''
-                example: itaque
+                example: sed
                 required: true
                 schema:
                     type: string
@@ -754,7 +756,7 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: nesciunt
+                                    example: eum
                                 cover_image:
                                     type: string
                                     format: binary
@@ -762,19 +764,19 @@ paths:
                                 overview:
                                     type: string
                                     description: ''
-                                    example: asperiores
+                                    example: quos
                                 itenary:
                                     type: string
                                     description: ''
-                                    example: harum
+                                    example: in
                                 cost:
                                     type: string
                                     description: ''
-                                    example: qui
+                                    example: tempora
                                 'images[]':
                                     type: array
                                     description: ''
-                                    example: repellendus
+                                    example: qui
                             required:
                                 - title
                                 - cover_image
@@ -810,7 +812,90 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: aut
+                example: et
+                required: true
+                schema:
+                    type: string
+    /api/packages:
+        get:
+            summary: 'GET /packages.'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+            responses:
+                200:
+                    description: ''
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                example:
+                                    packages: [{ id: 1, title: 'Gye Nyame Package', plan_1_name: Single, image: 'https://onthego-api.ratecardly.com/assets/images/gyenyame.jpg', plan_1_price: '$4,150.00 per person', plan_2_name: Twin, plan_2_price: '$3,685.00 per person', plan_3_name: null, plan_3_price: null, plan_4_name: null, plan_4_price: null, created_at: '2023-09-13T23:58:38.000000Z', updated_at: '2023-09-13T23:58:38.000000Z' }, { id: 2, title: 'Fawohodie Package', plan_1_name: Single, image: 'https://onthego-api.ratecardly.com/assets/images/fawohodie.jpg', plan_1_price: '$3,790.00', plan_2_name: Twin, plan_2_price: '$3,443.00', plan_3_name: null, plan_3_price: null, plan_4_name: null, plan_4_price: null, created_at: '2023-09-13T23:58:38.000000Z', updated_at: '2023-09-13T23:58:38.000000Z' }, { id: 3, title: 'Sankofa Package', plan_1_name: 'Hotel - Single', image: 'https://onthego-api.ratecardly.com/assets/images/sankofa.jpg', plan_1_price: '$3,400.00', plan_2_name: 'Hotel - Twin', plan_2_price: '$2,520.00', plan_3_name: 'Apartment (The Signature) - Single', plan_3_price: '$3,000.00', plan_4_name: 'Apartment (The Signature) - Twin', plan_4_price: '$2,200.00', created_at: '2023-09-13T23:58:38.000000Z', updated_at: '2023-09-13T23:58:38.000000Z' }]
+                                properties:
+                                    packages: { type: array, example: [{ id: 1, title: 'Gye Nyame Package', plan_1_name: Single, image: 'https://onthego-api.ratecardly.com/assets/images/gyenyame.jpg', plan_1_price: '$4,150.00 per person', plan_2_name: Twin, plan_2_price: '$3,685.00 per person', plan_3_name: null, plan_3_price: null, plan_4_name: null, plan_4_price: null, created_at: '2023-09-13T23:58:38.000000Z', updated_at: '2023-09-13T23:58:38.000000Z' }, { id: 2, title: 'Fawohodie Package', plan_1_name: Single, image: 'https://onthego-api.ratecardly.com/assets/images/fawohodie.jpg', plan_1_price: '$3,790.00', plan_2_name: Twin, plan_2_price: '$3,443.00', plan_3_name: null, plan_3_price: null, plan_4_name: null, plan_4_price: null, created_at: '2023-09-13T23:58:38.000000Z', updated_at: '2023-09-13T23:58:38.000000Z' }, { id: 3, title: 'Sankofa Package', plan_1_name: 'Hotel - Single', image: 'https://onthego-api.ratecardly.com/assets/images/sankofa.jpg', plan_1_price: '$3,400.00', plan_2_name: 'Hotel - Twin', plan_2_price: '$2,520.00', plan_3_name: 'Apartment (The Signature) - Single', plan_3_price: '$3,000.00', plan_4_name: 'Apartment (The Signature) - Twin', plan_4_price: '$2,200.00', created_at: '2023-09-13T23:58:38.000000Z', updated_at: '2023-09-13T23:58:38.000000Z' }], items: { type: object } }
+            tags:
+                - 'Event Package APIs'
+            security: []
+    '/api/packages/{id}':
+        get:
+            summary: 'GET /packages/id'
+            description: ''
+            parameters:
+                -
+                    in: header
+                    name: Content-Type
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+                -
+                    in: header
+                    name: Accept
+                    description: ''
+                    example: application/json
+                    schema:
+                        type: string
+            responses:
+                404:
+                    description: ''
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                example:
+                                    message: 'Not Found'
+                                    exception: Symfony\Component\HttpKernel\Exception\NotFoundHttpException
+                                    file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php'
+                                    line: 1129
+                                    trace: [{ file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php', line: 44, function: abort, class: Illuminate\Foundation\Application, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\app\Http\Controllers\PackageController.php', line: 56, function: abort }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Controller.php', line: 54, function: show, class: App\Http\Controllers\PackageController, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php', line: 45, function: callAction, class: Illuminate\Routing\Controller, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Route.php', line: 262, function: dispatch, class: Illuminate\Routing\ControllerDispatcher, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Route.php', line: 205, function: runController, class: Illuminate\Routing\Route, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Router.php', line: 721, function: run, class: Illuminate\Routing\Route, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 128, function: 'Illuminate\Routing\{closure}', class: Illuminate\Routing\Router, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php', line: 50, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Illuminate\Routing\Middleware\SubstituteBindings, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php', line: 127, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php', line: 103, function: handleRequest, class: Illuminate\Routing\Middleware\ThrottleRequests, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php', line: 55, function: handleRequestUsingNamedLimiter, class: Illuminate\Routing\Middleware\ThrottleRequests, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Illuminate\Routing\Middleware\ThrottleRequests, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\sanctum\src\Http\Middleware\EnsureFrontendRequestsAreStateful.php', line: 33, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 128, function: 'Laravel\Sanctum\Http\Middleware\{closure}', class: Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 103, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\sanctum\src\Http\Middleware\EnsureFrontendRequestsAreStateful.php', line: 34, function: then, class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 103, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Router.php', line: 723, function: then, class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Router.php', line: 698, function: runRouteWithinStack, class: Illuminate\Routing\Router, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Router.php', line: 662, function: runRoute, class: Illuminate\Routing\Router, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Router.php', line: 651, function: dispatchToRoute, class: Illuminate\Routing\Router, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php', line: 167, function: dispatch, class: Illuminate\Routing\Router, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 128, function: 'Illuminate\Foundation\Http\{closure}', class: Illuminate\Foundation\Http\Kernel, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php', line: 21, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php', line: 31, function: handle, class: Illuminate\Foundation\Http\Middleware\TransformsRequest, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php', line: 21, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php', line: 40, function: handle, class: Illuminate\Foundation\Http\Middleware\TransformsRequest, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Illuminate\Foundation\Http\Middleware\TrimStrings, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ValidatePostSize.php', line: 27, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Illuminate\Foundation\Http\Middleware\ValidatePostSize, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php', line: 86, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\fruitcake\laravel-cors\src\HandleCors.php', line: 52, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Fruitcake\Cors\HandleCors, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php', line: 39, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Illuminate\Http\Middleware\TrustProxies, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 103, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php', line: 142, function: then, class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php', line: 111, function: sendRequestThroughRouter, class: Illuminate\Foundation\Http\Kernel, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php', line: 324, function: handle, class: Illuminate\Foundation\Http\Kernel, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php', line: 305, function: callLaravelOrLumenRoute, class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php', line: 76, function: makeApiCall, class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php', line: 51, function: makeResponseCall, class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php', line: 41, function: makeResponseCallIfEnabledAndNoSuccessResponses, class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Generator.php', line: 236, function: __invoke, class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Generator.php', line: 172, function: iterateThroughStrategies, class: Knuckles\Scribe\Extracting\Generator, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Generator.php', line: 127, function: fetchResponses, class: Knuckles\Scribe\Extracting\Generator, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Commands\GenerateDocumentation.php', line: 119, function: processRoute, class: Knuckles\Scribe\Extracting\Generator, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Commands\GenerateDocumentation.php', line: 73, function: processRoutes, class: Knuckles\Scribe\Commands\GenerateDocumentation, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php', line: 36, function: handle, class: Knuckles\Scribe\Commands\GenerateDocumentation, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Container\Util.php', line: 40, function: 'Illuminate\Container\{closure}', class: Illuminate\Container\BoundMethod, type: '::' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php', line: 93, function: unwrapIfClosure, class: Illuminate\Container\Util, type: '::' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php', line: 37, function: callBoundMethod, class: Illuminate\Container\BoundMethod, type: '::' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Container\Container.php', line: 653, function: call, class: Illuminate\Container\BoundMethod, type: '::' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Console\Command.php', line: 136, function: call, class: Illuminate\Container\Container, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\symfony\console\Command\Command.php', line: 298, function: execute, class: Illuminate\Console\Command, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Console\Command.php', line: 121, function: run, class: Symfony\Component\Console\Command\Command, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\symfony\console\Application.php', line: 1040, function: run, class: Illuminate\Console\Command, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\symfony\console\Application.php', line: 301, function: doRunCommand, class: Symfony\Component\Console\Application, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\symfony\console\Application.php', line: 171, function: doRun, class: Symfony\Component\Console\Application, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Console\Application.php', line: 94, function: run, class: Symfony\Component\Console\Application, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php', line: 129, function: run, class: Illuminate\Console\Application, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\artisan', line: 37, function: handle, class: Illuminate\Foundation\Console\Kernel, type: '->' }]
+                                properties:
+                                    message: { type: string, example: 'Not Found' }
+                                    exception: { type: string, example: Symfony\Component\HttpKernel\Exception\NotFoundHttpException }
+                                    file: { type: string, example: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Application.php' }
+                                    line: { type: integer, example: 1129 }
+                                    trace: { type: array, example: [{ file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php', line: 44, function: abort, class: Illuminate\Foundation\Application, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\app\Http\Controllers\PackageController.php', line: 56, function: abort }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Controller.php', line: 54, function: show, class: App\Http\Controllers\PackageController, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php', line: 45, function: callAction, class: Illuminate\Routing\Controller, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Route.php', line: 262, function: dispatch, class: Illuminate\Routing\ControllerDispatcher, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Route.php', line: 205, function: runController, class: Illuminate\Routing\Route, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Router.php', line: 721, function: run, class: Illuminate\Routing\Route, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 128, function: 'Illuminate\Routing\{closure}', class: Illuminate\Routing\Router, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php', line: 50, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Illuminate\Routing\Middleware\SubstituteBindings, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php', line: 127, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php', line: 103, function: handleRequest, class: Illuminate\Routing\Middleware\ThrottleRequests, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php', line: 55, function: handleRequestUsingNamedLimiter, class: Illuminate\Routing\Middleware\ThrottleRequests, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Illuminate\Routing\Middleware\ThrottleRequests, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\sanctum\src\Http\Middleware\EnsureFrontendRequestsAreStateful.php', line: 33, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 128, function: 'Laravel\Sanctum\Http\Middleware\{closure}', class: Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 103, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\sanctum\src\Http\Middleware\EnsureFrontendRequestsAreStateful.php', line: 34, function: then, class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 103, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Router.php', line: 723, function: then, class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Router.php', line: 698, function: runRouteWithinStack, class: Illuminate\Routing\Router, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Router.php', line: 662, function: runRoute, class: Illuminate\Routing\Router, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Routing\Router.php', line: 651, function: dispatchToRoute, class: Illuminate\Routing\Router, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php', line: 167, function: dispatch, class: Illuminate\Routing\Router, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 128, function: 'Illuminate\Foundation\Http\{closure}', class: Illuminate\Foundation\Http\Kernel, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php', line: 21, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php', line: 31, function: handle, class: Illuminate\Foundation\Http\Middleware\TransformsRequest, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php', line: 21, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php', line: 40, function: handle, class: Illuminate\Foundation\Http\Middleware\TransformsRequest, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Illuminate\Foundation\Http\Middleware\TrimStrings, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ValidatePostSize.php', line: 27, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Illuminate\Foundation\Http\Middleware\ValidatePostSize, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php', line: 86, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\fruitcake\laravel-cors\src\HandleCors.php', line: 52, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Fruitcake\Cors\HandleCors, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php', line: 39, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 167, function: handle, class: Illuminate\Http\Middleware\TrustProxies, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php', line: 103, function: 'Illuminate\Pipeline\{closure}', class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php', line: 142, function: then, class: Illuminate\Pipeline\Pipeline, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php', line: 111, function: sendRequestThroughRouter, class: Illuminate\Foundation\Http\Kernel, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php', line: 324, function: handle, class: Illuminate\Foundation\Http\Kernel, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php', line: 305, function: callLaravelOrLumenRoute, class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php', line: 76, function: makeApiCall, class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php', line: 51, function: makeResponseCall, class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php', line: 41, function: makeResponseCallIfEnabledAndNoSuccessResponses, class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Generator.php', line: 236, function: __invoke, class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Generator.php', line: 172, function: iterateThroughStrategies, class: Knuckles\Scribe\Extracting\Generator, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Extracting\Generator.php', line: 127, function: fetchResponses, class: Knuckles\Scribe\Extracting\Generator, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Commands\GenerateDocumentation.php', line: 119, function: processRoute, class: Knuckles\Scribe\Extracting\Generator, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\knuckleswtf\scribe\src\Commands\GenerateDocumentation.php', line: 73, function: processRoutes, class: Knuckles\Scribe\Commands\GenerateDocumentation, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php', line: 36, function: handle, class: Knuckles\Scribe\Commands\GenerateDocumentation, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Container\Util.php', line: 40, function: 'Illuminate\Container\{closure}', class: Illuminate\Container\BoundMethod, type: '::' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php', line: 93, function: unwrapIfClosure, class: Illuminate\Container\Util, type: '::' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php', line: 37, function: callBoundMethod, class: Illuminate\Container\BoundMethod, type: '::' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Container\Container.php', line: 653, function: call, class: Illuminate\Container\BoundMethod, type: '::' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Console\Command.php', line: 136, function: call, class: Illuminate\Container\Container, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\symfony\console\Command\Command.php', line: 298, function: execute, class: Illuminate\Console\Command, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Console\Command.php', line: 121, function: run, class: Symfony\Component\Console\Command\Command, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\symfony\console\Application.php', line: 1040, function: run, class: Illuminate\Console\Command, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\symfony\console\Application.php', line: 301, function: doRunCommand, class: Symfony\Component\Console\Application, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\symfony\console\Application.php', line: 171, function: doRun, class: Symfony\Component\Console\Application, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Console\Application.php', line: 94, function: run, class: Symfony\Component\Console\Application, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php', line: 129, function: run, class: Illuminate\Console\Application, type: '->' }, { file: 'C:\xampp\htdocs\onthego-api\artisan', line: 37, function: handle, class: Illuminate\Foundation\Console\Kernel, type: '->' }], items: { type: object } }
+            tags:
+                - 'Event Package APIs'
+            security: []
+        parameters:
+            -
+                in: path
+                name: id
+                description: ''
+                example: magni
                 required: true
                 schema:
                     type: string
@@ -878,11 +963,11 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: maiores
+                                    example: aut
                                 content:
                                     type: string
                                     description: ''
-                                    example: officia
+                                    example: eligendi
                             required:
                                 - title
                                 - content
@@ -951,11 +1036,11 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: reprehenderit
+                                    example: natus
                                 content:
                                     type: string
                                     description: ''
-                                    example: totam
+                                    example: quasi
                             required:
                                 - title
                                 - content
@@ -987,7 +1072,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: alias
+                example: vel
                 required: true
                 schema:
                     type: string
@@ -1056,7 +1141,7 @@ paths:
                                 email:
                                     type: string
                                     description: ''
-                                    example: accusantium
+                                    example: similique
                             required:
                                 - email
             security: []
@@ -1124,7 +1209,7 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: voluptatibus
+                                    example: inventore
                                 cover_image:
                                     type: string
                                     format: binary
@@ -1132,19 +1217,19 @@ paths:
                                 overview:
                                     type: string
                                     description: ''
-                                    example: est
+                                    example: pariatur
                                 itenary:
                                     type: string
                                     description: ''
-                                    example: debitis
+                                    example: maiores
                                 cost:
                                     type: string
                                     description: ''
-                                    example: dicta
+                                    example: nesciunt
                                 'images[]':
                                     type: array
                                     description: ''
-                                    example: nihil
+                                    example: maiores
                             required:
                                 - title
                                 - cover_image
@@ -1191,7 +1276,7 @@ paths:
                 in: path
                 name: slug
                 description: ''
-                example: consequatur
+                example: voluptas
                 required: true
                 schema:
                     type: string
@@ -1227,7 +1312,7 @@ paths:
                                 title:
                                     type: string
                                     description: ''
-                                    example: voluptates
+                                    example: labore
                                 cover_image:
                                     type: string
                                     format: binary
@@ -1235,19 +1320,19 @@ paths:
                                 overview:
                                     type: string
                                     description: ''
-                                    example: aut
+                                    example: ut
                                 itenary:
                                     type: string
                                     description: ''
-                                    example: et
+                                    example: occaecati
                                 cost:
                                     type: string
                                     description: ''
-                                    example: sed
+                                    example: iste
                                 'images[]':
                                     type: array
                                     description: ''
-                                    example: aperiam
+                                    example: quis
                             required:
                                 - title
                                 - cover_image
@@ -1283,7 +1368,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: qui
+                example: sit
                 required: true
                 schema:
                     type: string
@@ -1314,9 +1399,9 @@ paths:
                             schema:
                                 type: object
                                 example:
-                                    data: { name: 'Cortez Adams', username: gusikowski.julianne, email: america92@example.com, email_verified_at: '2023-08-30T13:59:18.000000Z', updated_at: '2023-08-30T13:59:18.000000Z', created_at: '2023-08-30T13:59:18.000000Z', id: 60 }
+                                    data: { name: 'Dortha Turner', username: willard43, email: gerhard80@example.net, email_verified_at: '2023-09-19T09:56:49.000000Z', updated_at: '2023-09-19T09:56:49.000000Z', created_at: '2023-09-19T09:56:49.000000Z', id: 2 }
                                 properties:
-                                    data: { type: object, example: { name: 'Cortez Adams', username: gusikowski.julianne, email: america92@example.com, email_verified_at: '2023-08-30T13:59:18.000000Z', updated_at: '2023-08-30T13:59:18.000000Z', created_at: '2023-08-30T13:59:18.000000Z', id: 60 } }
+                                    data: { type: object, example: { name: 'Dortha Turner', username: willard43, email: gerhard80@example.net, email_verified_at: '2023-09-19T09:56:49.000000Z', updated_at: '2023-09-19T09:56:49.000000Z', created_at: '2023-09-19T09:56:49.000000Z', id: 2 } }
             tags:
                 - 'User APIs'
             requestBody:
@@ -1329,23 +1414,23 @@ paths:
                                 name:
                                     type: string
                                     description: ''
-                                    example: nemo
+                                    example: labore
                                 username:
                                     type: string
                                     description: ''
-                                    example: reprehenderit
+                                    example: facere
                                 email:
                                     type: string
                                     description: ''
-                                    example: fugiat
+                                    example: eum
                                 password:
                                     type: string
                                     description: ''
-                                    example: dolorum
+                                    example: aut
                                 password_confirmation:
                                     type: string
                                     description: ''
-                                    example: dolorem
+                                    example: vel
                             required:
                                 - name
                                 - username
@@ -1385,7 +1470,7 @@ paths:
                                 email:
                                     type: string
                                     description: ''
-                                    example: minus
+                                    example: et
                             required:
                                 - email
             security: []
@@ -1416,9 +1501,9 @@ paths:
                             schema:
                                 type: object
                                 example:
-                                    data: { name: 'Prof. Anne Kessler', username: casper.arnaldo, email: hermann.clay@example.net, email_verified_at: '2023-08-30T13:59:18.000000Z', updated_at: '2023-08-30T13:59:18.000000Z', created_at: '2023-08-30T13:59:18.000000Z', id: 61 }
+                                    data: { name: 'Prof. Marion Stokes DDS', username: crenner, email: ohintz@example.org, email_verified_at: '2023-09-19T09:56:49.000000Z', updated_at: '2023-09-19T09:56:49.000000Z', created_at: '2023-09-19T09:56:49.000000Z', id: 3 }
                                 properties:
-                                    data: { type: object, example: { name: 'Prof. Anne Kessler', username: casper.arnaldo, email: hermann.clay@example.net, email_verified_at: '2023-08-30T13:59:18.000000Z', updated_at: '2023-08-30T13:59:18.000000Z', created_at: '2023-08-30T13:59:18.000000Z', id: 61 } }
+                                    data: { type: object, example: { name: 'Prof. Marion Stokes DDS', username: crenner, email: ohintz@example.org, email_verified_at: '2023-09-19T09:56:49.000000Z', updated_at: '2023-09-19T09:56:49.000000Z', created_at: '2023-09-19T09:56:49.000000Z', id: 3 } }
             tags:
                 - 'User APIs'
             requestBody:
@@ -1431,11 +1516,11 @@ paths:
                                 email:
                                     type: string
                                     description: ''
-                                    example: at
+                                    example: ullam
                                 password:
                                     type: string
                                     description: ''
-                                    example: illo
+                                    example: nulla
                             required:
                                 - email
                                 - password
@@ -1472,7 +1557,7 @@ paths:
                                 email:
                                     type: string
                                     description: ''
-                                    example: enim
+                                    example: ea
                             required:
                                 - email
             security: []
@@ -1514,7 +1599,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: ut
+                example: veritatis
                 required: true
                 schema:
                     type: string
@@ -1522,7 +1607,7 @@ paths:
                 in: path
                 name: hash
                 description: ''
-                example: atque
+                example: nobis
                 required: true
                 schema:
                     type: string
@@ -1587,7 +1672,7 @@ paths:
                 in: path
                 name: id
                 description: ''
-                example: cupiditate
+                example: deserunt
                 required: true
                 schema:
                     type: string

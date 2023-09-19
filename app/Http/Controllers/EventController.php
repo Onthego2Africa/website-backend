@@ -40,6 +40,7 @@ class EventController extends Controller
      * @bodyParam overview string required 
      * @bodyParam itenary string required
      * @bodyParam cost string required
+     * @bodyParam packages[] array required
      * @bodyParam images[] array required
      * 
      * @param  \Illuminate\Http\Request  $request
@@ -49,6 +50,7 @@ class EventController extends Controller
     public function store(Request $request)
     {
 
+
         $fields = $request->validate([
             'title' => 'string|required',
             'overview' => 'string|required',
@@ -56,8 +58,15 @@ class EventController extends Controller
             'cost' => 'required',
         ]);
 
+        $packages = '[]';
+
+        if ($request['packages'] != []) {
+            // $fromRequest  = implode(",", $request['packages']);
+            $packages = json_encode($request['packages']);
+        }
+
         $request->validate(['cover_image' => 'required|image:jpeg,png,jpg,gif']);
-        $fields['cover_image'] = env("APP_URL", "http://127.0.0.1:8000"). "/storage/" .  $request->file('cover_image')->store('cover_images', 'public');
+        $fields['cover_image'] = env("APP_URL", "http://127.0.0.1:8000") . "/storage/" .  $request->file('cover_image')->store('cover_images', 'public');
 
         $event = Event::create([
             'title' => $fields['title'],
@@ -65,25 +74,34 @@ class EventController extends Controller
             'overview' => $fields['overview'],
             'itenary' => $fields['itenary'],
             'cost' => $fields['cost'],
+            'packages' => $packages,
             'cover_image' => ($request->hasFile('cover_image') ? $fields['cover_image'] : null)
         ]);
 
-
         $imageUrls = [];
 
-        foreach ($request->file('images') as $image) {
-            // $path = $image->store('feature_images', 'public'); // Store image and get the path
-            // $imageUrl = Storage::url($path); // Get URL for the stored image
-            $imageUrl = 'http://127.0.0.1:8000/storage/' . $request->file('cover_image')->store('feature_images', 'public');
-            $imageUrls[] = $imageUrl;
-        }
+        if ($request['length'] != '0') {
 
-        // Attach the image URLs to the product
-        // $imageUrls = $request->input('image_urls');
-        foreach ($imageUrls as $imageUrl) {
-            $event->images()->create([
-                'url' => $imageUrl,
-            ]);
+            // foreach ($request->file('images') as $image) {
+            //     // $path = $image->store('feature_images', 'public'); // Store image and get the path
+            //     // $imageUrl = Storage::url($path); // Get URL for the stored image
+            //     $imageUrl = env("APP_URL", "http://127.0.0.1:8000") . "/storage/" . $image->store('feature_images', 'public');
+            //     $imageUrls[] = $imageUrl;
+            // }
+
+            for ($i = 0; $i < $request['length']; $i++) {
+                $img[$i] = $request->file('images' . $i);
+                $imageUrl = env("APP_URL", "http://127.0.0.1:8000") . "/storage/" . $img[$i]->store('feature_images', 'public');
+                $imageUrls[] = $imageUrl;
+            };
+
+            // Attach the image URLs to the product
+            // $imageUrls = $request->input('image_urls');
+            foreach ($imageUrls as $imageUrl) {
+                $event->images()->create([
+                    'url' => $imageUrl,
+                ]);
+            }
         }
 
         $event->images;
@@ -109,6 +127,7 @@ class EventController extends Controller
      *      "overview": "skflalkjflfkj",
      *      "itenary": "dsfsf",
      *      "cost": "dsf",
+     *      "packages": "["dsf","sdf"]",
      *      "created_at": "2023-08-16T14:11:19.000000Z",
      *      "updated_at": "2023-08-16T14:11:19.000000Z",
      *      "images": []
@@ -160,10 +179,16 @@ class EventController extends Controller
 
         if ($request->hasFile('cover_image')) {
             $request->validate(['cover_image' => 'required|image:jpeg,png,jpg,gif']);
-            $fields['cover_image'] = env("APP_URL", "http://127.0.0.1:8000")."/storage/". $request->file('cover_image')->store('cover_images', 'public');
-            if (File::exists(substr($tour['cover_image'],  strlen(env("APP_URL", "http://127.0.0.1:8000"))+1))) {
-                File::delete(substr($tour['cover_image'],  strlen(env("APP_URL", "http://127.0.0.1:8000"))+1));
+            $fields['cover_image'] = env("APP_URL", "http://127.0.0.1:8000") . "/storage/" . $request->file('cover_image')->store('cover_images', 'public');
+            if (File::exists(substr($event['cover_image'],  strlen(env("APP_URL", "http://127.0.0.1:8000")) + 1))) {
+                File::delete(substr($event['cover_image'],  strlen(env("APP_URL", "http://127.0.0.1:8000")) + 1));
             };
+        }
+
+        $packages = '[]';
+
+        if ($request['packages'] != []) {
+            $packages = json_encode($request['packages']);
         }
 
         $event->update([
@@ -172,6 +197,7 @@ class EventController extends Controller
             'overview' => $fields['overview'],
             'itenary' => $fields['itenary'],
             'cost' => $fields['cost'],
+            'packages' => $packages,
             'cover_image' => ($request->hasFile('cover_image') ? $fields['cover_image'] : $event['cover_image'])
         ]);
 

@@ -5,12 +5,12 @@
             "key": "baseUrl",
             "type": "string",
             "name": "string",
-            "value": "onthego-api.ratecardly.com"
+            "value": "onthego2africa.com"
         }
     ],
     "info": {
         "name": "OnTheGo2Africa",
-        "_postman_id": "08e678d5-68cf-46e7-a9cb-f0b4a16a5bfe",
+        "_postman_id": "1bc34eb0-8b89-4647-a2aa-7f86b2b2e4f6",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -76,7 +76,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"data\": [\n        {\n            \"name\": \"Dr. Dawn Swaniawski I\",\n            \"username\": \"antwon55\",\n            \"email\": \"carolyn31@example.net\",\n            \"email_verified_at\": \"2023-08-30T13:59:18.000000Z\",\n            \"updated_at\": \"2023-08-30T13:59:18.000000Z\",\n            \"created_at\": \"2023-08-30T13:59:18.000000Z\",\n            \"id\": 63\n        },\n        {\n            \"name\": \"Theodore Lehner\",\n            \"username\": \"bechtelar.adrienne\",\n            \"email\": \"fjones@example.net\",\n            \"email_verified_at\": \"2023-08-30T13:59:18.000000Z\",\n            \"updated_at\": \"2023-08-30T13:59:18.000000Z\",\n            \"created_at\": \"2023-08-30T13:59:18.000000Z\",\n            \"id\": 64\n        }\n    ]\n}"
+                            "body": "{\n    \"data\": [\n        {\n            \"name\": \"Mrs. Kaia Stroman II\",\n            \"username\": \"swilderman\",\n            \"email\": \"gbergstrom@example.net\",\n            \"email_verified_at\": \"2023-09-19T09:56:49.000000Z\",\n            \"updated_at\": \"2023-09-19T09:56:49.000000Z\",\n            \"created_at\": \"2023-09-19T09:56:49.000000Z\",\n            \"id\": 5\n        },\n        {\n            \"name\": \"Prof. Elaina Daugherty\",\n            \"username\": \"genevieve.von\",\n            \"email\": \"morton35@example.org\",\n            \"email_verified_at\": \"2023-09-19T09:56:49.000000Z\",\n            \"updated_at\": \"2023-09-19T09:56:49.000000Z\",\n            \"created_at\": \"2023-09-19T09:56:49.000000Z\",\n            \"id\": 6\n        }\n    ]\n}"
                         }
                     ]
                 },
@@ -164,7 +164,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"eaque\",\n    \"username\": \"molestiae\",\n    \"email\": \"non\",\n    \"password\": \"non\",\n    \"password_confirmation\": \"eos\"\n}"
+                            "raw": "{\n    \"name\": \"ut\",\n    \"username\": \"consequatur\",\n    \"email\": \"et\",\n    \"password\": \"enim\",\n    \"password_confirmation\": \"aut\"\n}"
                         },
                         "description": "Store a newly created admin in storage.",
                         "auth": {
@@ -186,7 +186,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "aspernatur",
+                                    "value": "dolore",
                                     "description": ""
                                 }
                             ]
@@ -222,7 +222,7 @@
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "aspernatur",
+                                            "value": "dolore",
                                             "description": ""
                                         }
                                     ]
@@ -273,7 +273,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"autem\",\n    \"username\": \"id\"\n}"
+                            "raw": "{\n    \"name\": \"ea\",\n    \"username\": \"enim\"\n}"
                         },
                         "description": "Update the admin in storage.",
                         "auth": {
@@ -391,7 +391,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "ut",
+                                    "value": "et",
                                     "description": ""
                                 }
                             ]
@@ -409,7 +409,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"number_of_guests\": \"doloremque\",\n    \"check_in\": \"saepe\",\n    \"check_out\": \"et\",\n    \"cost\": \"in\",\n    \"paymentID\": \"numquam\"\n}"
+                            "raw": "{\n    \"number_of_guests\": \"illo\",\n    \"check_in\": \"ducimus\",\n    \"check_out\": \"cupiditate\",\n    \"cost\": \"voluptatem\",\n    \"paymentID\": \"at\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -431,7 +431,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "consequatur",
+                                    "value": "mollitia",
                                     "description": ""
                                 }
                             ]
@@ -449,7 +449,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"number_of_guests\": \"qui\",\n    \"check_in\": \"quod\",\n    \"check_out\": \"consequatur\",\n    \"cost\": \"rerum\",\n    \"paymentID\": \"sunt\"\n}"
+                            "raw": "{\n    \"number_of_guests\": \"error\",\n    \"check_in\": \"animi\",\n    \"check_out\": \"excepturi\",\n    \"cost\": \"ducimus\",\n    \"paymentID\": \"aspernatur\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -471,7 +471,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "quam",
+                                    "value": "delectus",
                                     "description": ""
                                 }
                             ]
@@ -507,7 +507,7 @@
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "quam",
+                                            "value": "delectus",
                                             "description": ""
                                         }
                                     ]
@@ -548,7 +548,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "repellendus",
+                                    "value": "dolores",
                                     "description": ""
                                 }
                             ]
@@ -585,7 +585,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "cupiditate",
+                                    "value": "autem",
                                     "description": ""
                                 }
                             ]
@@ -785,7 +785,7 @@
                                 {
                                     "id": "slug",
                                     "key": "slug",
-                                    "value": "itaque",
+                                    "value": "sed",
                                     "description": ""
                                 }
                             ]
@@ -821,7 +821,7 @@
                                         {
                                             "id": "slug",
                                             "key": "slug",
-                                            "value": "itaque",
+                                            "value": "sed",
                                             "description": ""
                                         }
                                     ]
@@ -845,7 +845,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"event\": {\n        \"id\": 1,\n        \"title\": \"dgs\",\n        \"slug\": \"dgs\",\n        \"cover_image\": \"http:\\\/\\\/127.0.0.1:8000\\\/storage\\\/cover_images\\\/lheicfYAjrZTfqlbDutpqUIpS9ueefojUyYDsDYx.jpg\",\n        \"overview\": \"skflalkjflfkj\",\n        \"itenary\": \"dsfsf\",\n        \"cost\": \"dsf\",\n        \"created_at\": \"2023-08-16T14:11:19.000000Z\",\n        \"updated_at\": \"2023-08-16T14:11:19.000000Z\",\n        \"images\": []\n    }\n}"
+                            "body": "null"
                         }
                     ]
                 },
@@ -875,27 +875,32 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "architecto",
+                                    "value": "iste",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "minus",
+                                    "value": "adipisci",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "nam",
+                                    "value": "consequatur",
                                     "type": "text"
                                 },
                                 {
                                     "key": "cost",
-                                    "value": "quasi",
+                                    "value": "dolores",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "packages[]",
+                                    "value": "reprehenderit",
                                     "type": "text"
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "corporis",
+                                    "value": "magnam",
                                     "type": "text"
                                 },
                                 {
@@ -925,7 +930,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "aut",
+                                    "value": "et",
                                     "description": ""
                                 }
                             ]
@@ -946,27 +951,27 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "nesciunt",
+                                    "value": "eum",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "asperiores",
+                                    "value": "quos",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "harum",
+                                    "value": "in",
                                     "type": "text"
                                 },
                                 {
                                     "key": "cost",
-                                    "value": "qui",
+                                    "value": "tempora",
                                     "type": "text"
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "repellendus",
+                                    "value": "qui",
                                     "type": "text"
                                 },
                                 {
@@ -996,7 +1001,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "dolore",
+                                    "value": "nihil",
                                     "description": ""
                                 }
                             ]
@@ -1019,6 +1024,150 @@
                         }
                     },
                     "response": []
+                }
+            ]
+        },
+        {
+            "name": "Event Package APIs",
+            "description": "\nApis for managing event package resource",
+            "item": [
+                {
+                    "name": "GET \/packages.",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/packages",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/packages"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "GET \/packages. Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "https",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/packages",
+                                    "query": [],
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/packages"
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"packages\": [\n        {\n            \"id\": 1,\n            \"title\": \"Gye Nyame Package\",\n            \"plan_1_name\": \"Single\",\n            \"image\": \"https:\\\/\\\/onthego-api.ratecardly.com\\\/assets\\\/images\\\/gyenyame.jpg\",\n            \"plan_1_price\": \"$4,150.00 per person\",\n            \"plan_2_name\": \"Twin\",\n            \"plan_2_price\": \"$3,685.00 per person\",\n            \"plan_3_name\": null,\n            \"plan_3_price\": null,\n            \"plan_4_name\": null,\n            \"plan_4_price\": null,\n            \"created_at\": \"2023-09-13T23:58:38.000000Z\",\n            \"updated_at\": \"2023-09-13T23:58:38.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Fawohodie Package\",\n            \"plan_1_name\": \"Single\",\n            \"image\": \"https:\\\/\\\/onthego-api.ratecardly.com\\\/assets\\\/images\\\/fawohodie.jpg\",\n            \"plan_1_price\": \"$3,790.00\",\n            \"plan_2_name\": \"Twin\",\n            \"plan_2_price\": \"$3,443.00\",\n            \"plan_3_name\": null,\n            \"plan_3_price\": null,\n            \"plan_4_name\": null,\n            \"plan_4_price\": null,\n            \"created_at\": \"2023-09-13T23:58:38.000000Z\",\n            \"updated_at\": \"2023-09-13T23:58:38.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Sankofa Package\",\n            \"plan_1_name\": \"Hotel - Single\",\n            \"image\": \"https:\\\/\\\/onthego-api.ratecardly.com\\\/assets\\\/images\\\/sankofa.jpg\",\n            \"plan_1_price\": \"$3,400.00\",\n            \"plan_2_name\": \"Hotel - Twin\",\n            \"plan_2_price\": \"$2,520.00\",\n            \"plan_3_name\": \"Apartment (The Signature) - Single\",\n            \"plan_3_price\": \"$3,000.00\",\n            \"plan_4_name\": \"Apartment (The Signature) - Twin\",\n            \"plan_4_price\": \"$2,200.00\",\n            \"created_at\": \"2023-09-13T23:58:38.000000Z\",\n            \"updated_at\": \"2023-09-13T23:58:38.000000Z\"\n        }\n    ]\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "GET \/packages\/id",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/packages\/:id",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/api\/packages\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "magni",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "GET \/packages\/id Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "https",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/packages\/:id",
+                                    "query": [],
+                                    "raw": "https:\/\/{{baseUrl}}\/api\/packages\/:id",
+                                    "variable": [
+                                        {
+                                            "id": "id",
+                                            "key": "id",
+                                            "value": "magni",
+                                            "description": ""
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"message\": \"Not Found\",\n    \"exception\": \"Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\NotFoundHttpException\",\n    \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Application.php\",\n    \"line\": 1129,\n    \"trace\": [\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\helpers.php\",\n            \"line\": 44,\n            \"function\": \"abort\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\app\\\\Http\\\\Controllers\\\\PackageController.php\",\n            \"line\": 56,\n            \"function\": \"abort\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Controller.php\",\n            \"line\": 54,\n            \"function\": \"show\",\n            \"class\": \"App\\\\Http\\\\Controllers\\\\PackageController\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\ControllerDispatcher.php\",\n            \"line\": 45,\n            \"function\": \"callAction\",\n            \"class\": \"Illuminate\\\\Routing\\\\Controller\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Route.php\",\n            \"line\": 262,\n            \"function\": \"dispatch\",\n            \"class\": \"Illuminate\\\\Routing\\\\ControllerDispatcher\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Route.php\",\n            \"line\": 205,\n            \"function\": \"runController\",\n            \"class\": \"Illuminate\\\\Routing\\\\Route\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 721,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Routing\\\\Route\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 128,\n            \"function\": \"Illuminate\\\\Routing\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\SubstituteBindings.php\",\n            \"line\": 50,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\SubstituteBindings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 127,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 103,\n            \"function\": \"handleRequest\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 55,\n            \"function\": \"handleRequestUsingNamedLimiter\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\sanctum\\\\src\\\\Http\\\\Middleware\\\\EnsureFrontendRequestsAreStateful.php\",\n            \"line\": 33,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 128,\n            \"function\": \"Laravel\\\\Sanctum\\\\Http\\\\Middleware\\\\{closure}\",\n            \"class\": \"Laravel\\\\Sanctum\\\\Http\\\\Middleware\\\\EnsureFrontendRequestsAreStateful\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 103,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\sanctum\\\\src\\\\Http\\\\Middleware\\\\EnsureFrontendRequestsAreStateful.php\",\n            \"line\": 34,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Laravel\\\\Sanctum\\\\Http\\\\Middleware\\\\EnsureFrontendRequestsAreStateful\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 103,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 723,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 698,\n            \"function\": \"runRouteWithinStack\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 662,\n            \"function\": \"runRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 651,\n            \"function\": \"dispatchToRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 167,\n            \"function\": \"dispatch\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 128,\n            \"function\": \"Illuminate\\\\Foundation\\\\Http\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull.php\",\n            \"line\": 31,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings.php\",\n            \"line\": 40,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize.php\",\n            \"line\": 27,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance.php\",\n            \"line\": 86,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\fruitcake\\\\laravel-cors\\\\src\\\\HandleCors.php\",\n            \"line\": 52,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Fruitcake\\\\Cors\\\\HandleCors\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\TrustProxies.php\",\n            \"line\": 39,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\TrustProxies\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 103,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 142,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 111,\n            \"function\": \"sendRequestThroughRouter\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 324,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 305,\n            \"function\": \"callLaravelOrLumenRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 76,\n            \"function\": \"makeApiCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 51,\n            \"function\": \"makeResponseCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 41,\n            \"function\": \"makeResponseCallIfEnabledAndNoSuccessResponses\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Generator.php\",\n            \"line\": 236,\n            \"function\": \"__invoke\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Generator.php\",\n            \"line\": 172,\n            \"function\": \"iterateThroughStrategies\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Generator\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Generator.php\",\n            \"line\": 127,\n            \"function\": \"fetchResponses\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Generator\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Commands\\\\GenerateDocumentation.php\",\n            \"line\": 119,\n            \"function\": \"processRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Generator\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Commands\\\\GenerateDocumentation.php\",\n            \"line\": 73,\n            \"function\": \"processRoutes\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Commands\\\\GenerateDocumentation\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 36,\n            \"function\": \"handle\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Commands\\\\GenerateDocumentation\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Util.php\",\n            \"line\": 40,\n            \"function\": \"Illuminate\\\\Container\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 93,\n            \"function\": \"unwrapIfClosure\",\n            \"class\": \"Illuminate\\\\Container\\\\Util\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 37,\n            \"function\": \"callBoundMethod\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Container.php\",\n            \"line\": 653,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 136,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\Container\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\symfony\\\\console\\\\Command\\\\Command.php\",\n            \"line\": 298,\n            \"function\": \"execute\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 121,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Command\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 1040,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 301,\n            \"function\": \"doRunCommand\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 171,\n            \"function\": \"doRun\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Application.php\",\n            \"line\": 94,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Console\\\\Kernel.php\",\n            \"line\": 129,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\xampp\\\\htdocs\\\\onthego-api\\\\artisan\",\n            \"line\": 37,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Console\\\\Kernel\",\n            \"type\": \"->\"\n        }\n    ]\n}"
+                        }
+                    ]
                 }
             ]
         },
@@ -1110,7 +1259,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"maiores\",\n    \"content\": \"officia\"\n}"
+                            "raw": "{\n    \"title\": \"aut\",\n    \"content\": \"eligendi\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1132,7 +1281,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "alias",
+                                    "value": "vel",
                                     "description": ""
                                 }
                             ]
@@ -1168,7 +1317,7 @@
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "alias",
+                                            "value": "vel",
                                             "description": ""
                                         }
                                     ]
@@ -1209,7 +1358,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "magnam",
+                                    "value": "rerum",
                                     "description": ""
                                 }
                             ]
@@ -1227,7 +1376,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"title\": \"reprehenderit\",\n    \"content\": \"totam\"\n}"
+                            "raw": "{\n    \"title\": \"natus\",\n    \"content\": \"quasi\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1249,7 +1398,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "modi",
+                                    "value": "sequi",
                                     "description": ""
                                 }
                             ]
@@ -1363,7 +1512,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"accusantium\"\n}"
+                            "raw": "{\n    \"email\": \"similique\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1452,7 +1601,7 @@
                                 {
                                     "id": "slug",
                                     "key": "slug",
-                                    "value": "consequatur",
+                                    "value": "voluptas",
                                     "description": ""
                                 }
                             ]
@@ -1488,7 +1637,7 @@
                                         {
                                             "id": "slug",
                                             "key": "slug",
-                                            "value": "consequatur",
+                                            "value": "voluptas",
                                             "description": ""
                                         }
                                     ]
@@ -1542,27 +1691,27 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "voluptatibus",
+                                    "value": "inventore",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "est",
+                                    "value": "pariatur",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "debitis",
+                                    "value": "maiores",
                                     "type": "text"
                                 },
                                 {
                                     "key": "cost",
-                                    "value": "dicta",
+                                    "value": "nesciunt",
                                     "type": "text"
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "nihil",
+                                    "value": "maiores",
                                     "type": "text"
                                 },
                                 {
@@ -1592,7 +1741,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "qui",
+                                    "value": "sit",
                                     "description": ""
                                 }
                             ]
@@ -1613,27 +1762,27 @@
                             "formdata": [
                                 {
                                     "key": "title",
-                                    "value": "voluptates",
+                                    "value": "labore",
                                     "type": "text"
                                 },
                                 {
                                     "key": "overview",
-                                    "value": "aut",
+                                    "value": "ut",
                                     "type": "text"
                                 },
                                 {
                                     "key": "itenary",
-                                    "value": "et",
+                                    "value": "occaecati",
                                     "type": "text"
                                 },
                                 {
                                     "key": "cost",
-                                    "value": "sed",
+                                    "value": "iste",
                                     "type": "text"
                                 },
                                 {
                                     "key": "images[]",
-                                    "value": "aperiam",
+                                    "value": "quis",
                                     "type": "text"
                                 },
                                 {
@@ -1663,7 +1812,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "repudiandae",
+                                    "value": "nihil",
                                     "description": ""
                                 }
                             ]
@@ -1716,7 +1865,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"nemo\",\n    \"username\": \"reprehenderit\",\n    \"email\": \"fugiat\",\n    \"password\": \"dolorum\",\n    \"password_confirmation\": \"dolorem\"\n}"
+                            "raw": "{\n    \"name\": \"labore\",\n    \"username\": \"facere\",\n    \"email\": \"eum\",\n    \"password\": \"aut\",\n    \"password_confirmation\": \"vel\"\n}"
                         },
                         "description": "Store a newly created user in storage.",
                         "auth": {
@@ -1747,7 +1896,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n    \"name\": \"nemo\",\n    \"username\": \"reprehenderit\",\n    \"email\": \"fugiat\",\n    \"password\": \"dolorum\",\n    \"password_confirmation\": \"dolorem\"\n}"
+                                    "raw": "{\n    \"name\": \"labore\",\n    \"username\": \"facere\",\n    \"email\": \"eum\",\n    \"password\": \"aut\",\n    \"password_confirmation\": \"vel\"\n}"
                                 },
                                 "description": "Store a newly created user in storage.",
                                 "auth": {
@@ -1756,7 +1905,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"data\": {\n        \"name\": \"Cortez Adams\",\n        \"username\": \"gusikowski.julianne\",\n        \"email\": \"america92@example.com\",\n        \"email_verified_at\": \"2023-08-30T13:59:18.000000Z\",\n        \"updated_at\": \"2023-08-30T13:59:18.000000Z\",\n        \"created_at\": \"2023-08-30T13:59:18.000000Z\",\n        \"id\": 60\n    }\n}"
+                            "body": "{\n    \"data\": {\n        \"name\": \"Dortha Turner\",\n        \"username\": \"willard43\",\n        \"email\": \"gerhard80@example.net\",\n        \"email_verified_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"updated_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"created_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"id\": 2\n    }\n}"
                         }
                     ]
                 },
@@ -1783,7 +1932,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"minus\"\n}"
+                            "raw": "{\n    \"email\": \"et\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1815,7 +1964,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"at\",\n    \"password\": \"illo\"\n}"
+                            "raw": "{\n    \"email\": \"ullam\",\n    \"password\": \"nulla\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1846,7 +1995,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n    \"email\": \"at\",\n    \"password\": \"illo\"\n}"
+                                    "raw": "{\n    \"email\": \"ullam\",\n    \"password\": \"nulla\"\n}"
                                 },
                                 "description": "",
                                 "auth": {
@@ -1855,7 +2004,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"data\": {\n        \"name\": \"Prof. Anne Kessler\",\n        \"username\": \"casper.arnaldo\",\n        \"email\": \"hermann.clay@example.net\",\n        \"email_verified_at\": \"2023-08-30T13:59:18.000000Z\",\n        \"updated_at\": \"2023-08-30T13:59:18.000000Z\",\n        \"created_at\": \"2023-08-30T13:59:18.000000Z\",\n        \"id\": 61\n    }\n}"
+                            "body": "{\n    \"data\": {\n        \"name\": \"Prof. Marion Stokes DDS\",\n        \"username\": \"crenner\",\n        \"email\": \"ohintz@example.org\",\n        \"email_verified_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"updated_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"created_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"id\": 3\n    }\n}"
                         }
                     ]
                 },
@@ -1882,7 +2031,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"email\": \"enim\"\n}"
+                            "raw": "{\n    \"email\": \"ea\"\n}"
                         },
                         "description": "",
                         "auth": {
@@ -1904,13 +2053,13 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "ut",
+                                    "value": "veritatis",
                                     "description": ""
                                 },
                                 {
                                     "id": "hash",
                                     "key": "hash",
-                                    "value": "atque",
+                                    "value": "nobis",
                                     "description": ""
                                 }
                             ]
@@ -1946,13 +2095,13 @@
                                         {
                                             "id": "id",
                                             "key": "id",
-                                            "value": "ut",
+                                            "value": "veritatis",
                                             "description": ""
                                         },
                                         {
                                             "id": "hash",
                                             "key": "hash",
-                                            "value": "atque",
+                                            "value": "nobis",
                                             "description": ""
                                         }
                                     ]
@@ -2064,7 +2213,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\n    \"name\": \"voluptatibus\",\n    \"username\": \"fugit\"\n}"
+                            "raw": "{\n    \"name\": \"veritatis\",\n    \"username\": \"quasi\"\n}"
                         },
                         "description": "Update the user in storage.",
                         "auth": {
@@ -2095,7 +2244,7 @@
                                 ],
                                 "body": {
                                     "mode": "raw",
-                                    "raw": "{\n    \"name\": \"voluptatibus\",\n    \"username\": \"fugit\"\n}"
+                                    "raw": "{\n    \"name\": \"veritatis\",\n    \"username\": \"quasi\"\n}"
                                 },
                                 "description": "Update the user in storage.",
                                 "auth": {
@@ -2104,7 +2253,7 @@
                             },
                             "header": null,
                             "cookie": [],
-                            "body": "{\n    \"data\": {\n        \"name\": \"Krystina Crona\",\n        \"username\": \"janiya.lesch\",\n        \"email\": \"ulind@example.net\",\n        \"email_verified_at\": \"2023-08-30T13:59:18.000000Z\",\n        \"updated_at\": \"2023-08-30T13:59:18.000000Z\",\n        \"created_at\": \"2023-08-30T13:59:18.000000Z\",\n        \"id\": 62\n    }\n}"
+                            "body": "{\n    \"data\": {\n        \"name\": \"Aryanna Kuhlman DVM\",\n        \"username\": \"celia39\",\n        \"email\": \"julia41@example.org\",\n        \"email_verified_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"updated_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"created_at\": \"2023-09-19T09:56:49.000000Z\",\n        \"id\": 4\n    }\n}"
                         }
                     ]
                 },
@@ -2121,7 +2270,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "cupiditate",
+                                    "value": "deserunt",
                                     "description": ""
                                 }
                             ]

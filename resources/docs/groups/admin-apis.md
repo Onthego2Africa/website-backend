@@ -11,14 +11,14 @@ Get a list of all users
 
 ```bash
 curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/users" \
+    -G "https://onthego2africa.com/api/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/users"
+    "https://onthego2africa.com/api/users"
 );
 
 let headers = {
@@ -40,22 +40,22 @@ fetch(url, {
 {
     "data": [
         {
-            "name": "Dr. Dawn Swaniawski I",
-            "username": "antwon55",
-            "email": "carolyn31@example.net",
-            "email_verified_at": "2023-08-30T13:59:18.000000Z",
-            "updated_at": "2023-08-30T13:59:18.000000Z",
-            "created_at": "2023-08-30T13:59:18.000000Z",
-            "id": 63
+            "name": "Mrs. Kaia Stroman II",
+            "username": "swilderman",
+            "email": "gbergstrom@example.net",
+            "email_verified_at": "2023-09-19T09:56:49.000000Z",
+            "updated_at": "2023-09-19T09:56:49.000000Z",
+            "created_at": "2023-09-19T09:56:49.000000Z",
+            "id": 5
         },
         {
-            "name": "Theodore Lehner",
-            "username": "bechtelar.adrienne",
-            "email": "fjones@example.net",
-            "email_verified_at": "2023-08-30T13:59:18.000000Z",
-            "updated_at": "2023-08-30T13:59:18.000000Z",
-            "created_at": "2023-08-30T13:59:18.000000Z",
-            "id": 64
+            "name": "Prof. Elaina Daugherty",
+            "username": "genevieve.von",
+            "email": "morton35@example.org",
+            "email_verified_at": "2023-09-19T09:56:49.000000Z",
+            "updated_at": "2023-09-19T09:56:49.000000Z",
+            "created_at": "2023-09-19T09:56:49.000000Z",
+            "id": 6
         }
     ]
 }
@@ -91,14 +91,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/admins" \
+    -G "https://onthego2africa.com/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/admins"
+    "https://onthego2africa.com/api/admins"
 );
 
 let headers = {
@@ -152,16 +152,16 @@ Store a newly created admin in storage.
 
 ```bash
 curl -X POST \
-    "https://onthego-api.ratecardly.com/api/admins" \
+    "https://onthego2africa.com/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"eaque","username":"molestiae","email":"non","password":"non","password_confirmation":"eos"}'
+    -d '{"name":"ut","username":"consequatur","email":"et","password":"enim","password_confirmation":"aut"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/admins"
+    "https://onthego2africa.com/api/admins"
 );
 
 let headers = {
@@ -170,11 +170,11 @@ let headers = {
 };
 
 let body = {
-    "name": "eaque",
-    "username": "molestiae",
-    "email": "non",
-    "password": "non",
-    "password_confirmation": "eos"
+    "name": "ut",
+    "username": "consequatur",
+    "email": "et",
+    "password": "enim",
+    "password_confirmation": "aut"
 }
 
 fetch(url, {
@@ -248,14 +248,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/admins/aspernatur" \
+    -G "https://onthego2africa.com/api/admins/dolore" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/admins/aspernatur"
+    "https://onthego2africa.com/api/admins/dolore"
 );
 
 let headers = {
@@ -316,16 +316,16 @@ Update the admin in storage.
 
 ```bash
 curl -X PUT \
-    "https://onthego-api.ratecardly.com/api/admins" \
+    "https://onthego2africa.com/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"autem","username":"id"}'
+    -d '{"name":"ea","username":"enim"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/admins"
+    "https://onthego2africa.com/api/admins"
 );
 
 let headers = {
@@ -334,8 +334,8 @@ let headers = {
 };
 
 let body = {
-    "name": "autem",
-    "username": "id"
+    "name": "ea",
+    "username": "enim"
 }
 
 fetch(url, {
@@ -391,14 +391,14 @@ Remove the Admin from storage.
 
 ```bash
 curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/admins" \
+    "https://onthego2africa.com/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/admins"
+    "https://onthego2africa.com/api/admins"
 );
 
 let headers = {

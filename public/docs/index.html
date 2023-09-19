@@ -44,7 +44,7 @@
                             <li><a href='http://github.com/knuckleswtf/scribe'>Documentation powered by Scribe ✍</a></li>
                     </ul>
             <ul class="toc-footer" id="last-updated">
-            <li>Last updated: August 30 2023</li>
+            <li>Last updated: September 19 2023</li>
         </ul>
 </div>
 <div class="page-wrapper">
@@ -56,13 +56,13 @@
 You can switch the language used with the tabs at the top right (or from the nav menu at the top left on mobile).</aside>
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
 <script>
-    var baseUrl = "https://onthego-api.ratecardly.com";
+    var baseUrl = "https://onthego2africa.com";
 </script>
 <script src="js/tryitout-2.7.10.js"></script>
 <blockquote>
 <p>Base URL</p>
 </blockquote>
-<pre><code class="language-yaml">https://onthego-api.ratecardly.com</code></pre><h1>Authenticating requests</h1>
+<pre><code class="language-yaml">https://onthego2africa.com</code></pre><h1>Authenticating requests</h1>
 <p>This API is not authenticated.</p><h1>Admin APIs</h1>
 <p>Apis for managing user resource</p>
 <h2>GET /users</h2>
@@ -71,11 +71,11 @@ You can switch the language used with the tabs at the top right (or from the nav
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/users" \
+    -G "https://onthego2africa.com/api/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/users"
+    "https://onthego2africa.com/api/users"
 );
 
 let headers = {
@@ -93,22 +93,22 @@ fetch(url, {
 <pre><code class="language-json">{
     "data": [
         {
-            "name": "Dr. Dawn Swaniawski I",
-            "username": "antwon55",
-            "email": "carolyn31@example.net",
-            "email_verified_at": "2023-08-30T13:59:18.000000Z",
-            "updated_at": "2023-08-30T13:59:18.000000Z",
-            "created_at": "2023-08-30T13:59:18.000000Z",
-            "id": 63
+            "name": "Mrs. Kaia Stroman II",
+            "username": "swilderman",
+            "email": "gbergstrom@example.net",
+            "email_verified_at": "2023-09-19T09:56:49.000000Z",
+            "updated_at": "2023-09-19T09:56:49.000000Z",
+            "created_at": "2023-09-19T09:56:49.000000Z",
+            "id": 5
         },
         {
-            "name": "Theodore Lehner",
-            "username": "bechtelar.adrienne",
-            "email": "fjones@example.net",
-            "email_verified_at": "2023-08-30T13:59:18.000000Z",
-            "updated_at": "2023-08-30T13:59:18.000000Z",
-            "created_at": "2023-08-30T13:59:18.000000Z",
-            "id": 64
+            "name": "Prof. Elaina Daugherty",
+            "username": "genevieve.von",
+            "email": "morton35@example.org",
+            "email_verified_at": "2023-09-19T09:56:49.000000Z",
+            "updated_at": "2023-09-19T09:56:49.000000Z",
+            "created_at": "2023-09-19T09:56:49.000000Z",
+            "id": 6
         }
     ]
 }</code></pre>
@@ -137,11 +137,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/admins" \
+    -G "https://onthego2africa.com/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/admins"
+    "https://onthego2africa.com/api/admins"
 );
 
 let headers = {
@@ -185,13 +185,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego-api.ratecardly.com/api/admins" \
+    "https://onthego2africa.com/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"eaque","username":"molestiae","email":"non","password":"non","password_confirmation":"eos"}'
+    -d '{"name":"ut","username":"consequatur","email":"et","password":"enim","password_confirmation":"aut"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/admins"
+    "https://onthego2africa.com/api/admins"
 );
 
 let headers = {
@@ -200,11 +200,11 @@ let headers = {
 };
 
 let body = {
-    "name": "eaque",
-    "username": "molestiae",
-    "email": "non",
-    "password": "non",
-    "password_confirmation": "eos"
+    "name": "ut",
+    "username": "consequatur",
+    "email": "et",
+    "password": "enim",
+    "password_confirmation": "aut"
 }
 
 fetch(url, {
@@ -269,11 +269,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/admins/aspernatur" \
+    -G "https://onthego2africa.com/api/admins/dolore" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/admins/aspernatur"
+    "https://onthego2africa.com/api/admins/dolore"
 );
 
 let headers = {
@@ -324,13 +324,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "https://onthego-api.ratecardly.com/api/admins" \
+    "https://onthego2africa.com/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"autem","username":"id"}'
+    -d '{"name":"ea","username":"enim"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/admins"
+    "https://onthego2africa.com/api/admins"
 );
 
 let headers = {
@@ -339,8 +339,8 @@ let headers = {
 };
 
 let body = {
-    "name": "autem",
-    "username": "id"
+    "name": "ea",
+    "username": "enim"
 }
 
 fetch(url, {
@@ -388,11 +388,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/admins" \
+    "https://onthego2africa.com/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/admins"
+    "https://onthego2africa.com/api/admins"
 );
 
 let headers = {
@@ -430,11 +430,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/reservations" \
+    -G "https://onthego2africa.com/api/reservations" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/reservations"
+    "https://onthego2africa.com/api/reservations"
 );
 
 let headers = {
@@ -477,13 +477,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego-api.ratecardly.com/api/book-tour/ut" \
+    "https://onthego2africa.com/api/book-tour/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"number_of_guests":"doloremque","check_in":"saepe","check_out":"et","cost":"in","paymentID":"numquam"}'
+    -d '{"number_of_guests":"illo","check_in":"ducimus","check_out":"cupiditate","cost":"voluptatem","paymentID":"at"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/book-tour/ut"
+    "https://onthego2africa.com/api/book-tour/et"
 );
 
 let headers = {
@@ -492,11 +492,11 @@ let headers = {
 };
 
 let body = {
-    "number_of_guests": "doloremque",
-    "check_in": "saepe",
-    "check_out": "et",
-    "cost": "in",
-    "paymentID": "numquam"
+    "number_of_guests": "illo",
+    "check_in": "ducimus",
+    "check_out": "cupiditate",
+    "cost": "voluptatem",
+    "paymentID": "at"
 }
 
 fetch(url, {
@@ -568,13 +568,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego-api.ratecardly.com/api/book-event/consequatur" \
+    "https://onthego2africa.com/api/book-event/mollitia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"number_of_guests":"qui","check_in":"quod","check_out":"consequatur","cost":"rerum","paymentID":"sunt"}'
+    -d '{"number_of_guests":"error","check_in":"animi","check_out":"excepturi","cost":"ducimus","paymentID":"aspernatur"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/book-event/consequatur"
+    "https://onthego2africa.com/api/book-event/mollitia"
 );
 
 let headers = {
@@ -583,11 +583,11 @@ let headers = {
 };
 
 let body = {
-    "number_of_guests": "qui",
-    "check_in": "quod",
-    "check_out": "consequatur",
-    "cost": "rerum",
-    "paymentID": "sunt"
+    "number_of_guests": "error",
+    "check_in": "animi",
+    "check_out": "excepturi",
+    "cost": "ducimus",
+    "paymentID": "aspernatur"
 }
 
 fetch(url, {
@@ -659,11 +659,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/reservations/quam" \
+    -G "https://onthego2africa.com/api/reservations/delectus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/reservations/quam"
+    "https://onthego2africa.com/api/reservations/delectus"
 );
 
 let headers = {
@@ -713,11 +713,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "https://onthego-api.ratecardly.com/api/reservations/repellendus" \
+    "https://onthego2africa.com/api/reservations/dolores" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/reservations/repellendus"
+    "https://onthego2africa.com/api/reservations/dolores"
 );
 
 let headers = {
@@ -761,11 +761,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/reservations/cupiditate" \
+    "https://onthego2africa.com/api/reservations/autem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/reservations/cupiditate"
+    "https://onthego2africa.com/api/reservations/autem"
 );
 
 let headers = {
@@ -809,11 +809,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/sanctum/csrf-cookie" \
+    -G "https://onthego2africa.com/sanctum/csrf-cookie" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/sanctum/csrf-cookie"
+    "https://onthego2africa.com/sanctum/csrf-cookie"
 );
 
 let headers = {
@@ -850,11 +850,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/" \
+    -G "https://onthego2africa.com/" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/"
+    "https://onthego2africa.com/"
 );
 
 let headers = {
@@ -898,11 +898,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/events" \
+    -G "https://onthego2africa.com/api/events" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/events"
+    "https://onthego2africa.com/api/events"
 );
 
 let headers = {
@@ -946,11 +946,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/events/itaque" \
+    -G "https://onthego2africa.com/api/events/sed" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/events/itaque"
+    "https://onthego2africa.com/api/events/sed"
 );
 
 let headers = {
@@ -965,19 +965,21 @@ fetch(url, {
 <blockquote>
 <p>Example response (200):</p>
 </blockquote>
-<pre><code class="language-json">{
-    "event": {
-        "id": 1,
-        "title": "dgs",
-        "slug": "dgs",
-        "cover_image": "http:\/\/127.0.0.1:8000\/storage\/cover_images\/lheicfYAjrZTfqlbDutpqUIpS9ueefojUyYDsDYx.jpg",
-        "overview": "skflalkjflfkj",
-        "itenary": "dsfsf",
-        "cost": "dsf",
-        "created_at": "2023-08-16T14:11:19.000000Z",
-        "updated_at": "2023-08-16T14:11:19.000000Z",
-        "images": []
-    }
+<pre><code class="language-json">
+{
+"event":  {
+     "id": 1,
+     "title": "dgs",
+     "slug": "dgs",
+     "cover_image": "http:\/\/127.0.0.1:8000\/storage\/cover_images\/lheicfYAjrZTfqlbDutpqUIpS9ueefojUyYDsDYx.jpg",
+     "overview": "skflalkjflfkj",
+     "itenary": "dsfsf",
+     "cost": "dsf",
+     "packages": "["dsf","sdf"]",
+     "created_at": "2023-08-16T14:11:19.000000Z",
+     "updated_at": "2023-08-16T14:11:19.000000Z",
+     "images": []
+ }
 }</code></pre>
 <div id="execution-results-GETapi-events--slug-" hidden>
     <blockquote>Received response<span id="execution-response-status-GETapi-events--slug-"></span>:</blockquote>
@@ -1011,17 +1013,18 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego-api.ratecardly.com/api/events" \
+    "https://onthego2africa.com/api/events" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=architecto" \
-    -F "overview=minus" \
-    -F "itenary=nam" \
-    -F "cost=quasi" \
-    -F "images[]=corporis" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php516B.tmp" </code></pre>
+    -F "title=iste" \
+    -F "overview=adipisci" \
+    -F "itenary=consequatur" \
+    -F "cost=dolores" \
+    -F "packages[]=reprehenderit" \
+    -F "images[]=magnam" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpE6C.tmp" </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/events"
+    "https://onthego2africa.com/api/events"
 );
 
 let headers = {
@@ -1030,11 +1033,12 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'architecto');
-body.append('overview', 'minus');
-body.append('itenary', 'nam');
-body.append('cost', 'quasi');
-body.append('images[]', 'corporis');
+body.append('title', 'iste');
+body.append('overview', 'adipisci');
+body.append('itenary', 'consequatur');
+body.append('cost', 'dolores');
+body.append('packages[]', 'reprehenderit');
+body.append('images[]', 'magnam');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -1093,6 +1097,12 @@ fetch(url, {
 
 </p>
 <p>
+<b><code>packages[]</code></b>&nbsp;&nbsp;<small>array</small>  &nbsp;
+<input type="text" name="packages.0" data-endpoint="POSTapi-events" data-component="body" required  hidden>
+<br>
+
+</p>
+<p>
 <b><code>images[]</code></b>&nbsp;&nbsp;<small>array</small>  &nbsp;
 <input type="text" name="images.0" data-endpoint="POSTapi-events" data-component="body" required  hidden>
 <br>
@@ -1105,17 +1115,17 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "https://onthego-api.ratecardly.com/api/events/aut" \
+    "https://onthego2africa.com/api/events/et" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=nesciunt" \
-    -F "overview=asperiores" \
-    -F "itenary=harum" \
-    -F "cost=qui" \
-    -F "images[]=repellendus" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php516C.tmp" </code></pre>
+    -F "title=eum" \
+    -F "overview=quos" \
+    -F "itenary=in" \
+    -F "cost=tempora" \
+    -F "images[]=qui" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpE6D.tmp" </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/events/aut"
+    "https://onthego2africa.com/api/events/et"
 );
 
 let headers = {
@@ -1124,11 +1134,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'nesciunt');
-body.append('overview', 'asperiores');
-body.append('itenary', 'harum');
-body.append('cost', 'qui');
-body.append('images[]', 'repellendus');
+body.append('title', 'eum');
+body.append('overview', 'quos');
+body.append('itenary', 'in');
+body.append('cost', 'tempora');
+body.append('images[]', 'qui');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -1206,11 +1216,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/events/dolore" \
+    "https://onthego2africa.com/api/events/nihil" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/events/dolore"
+    "https://onthego2africa.com/api/events/nihil"
 );
 
 let headers = {
@@ -1248,6 +1258,626 @@ fetch(url, {
 <br>
 
 </p>
+</form><h1>Event Package APIs</h1>
+<p>Apis for managing event package resource</p>
+<h2>GET /packages.</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "https://onthego2africa.com/api/packages" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "https://onthego2africa.com/api/packages"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "packages": [
+        {
+            "id": 1,
+            "title": "Gye Nyame Package",
+            "plan_1_name": "Single",
+            "image": "https:\/\/onthego-api.ratecardly.com\/assets\/images\/gyenyame.jpg",
+            "plan_1_price": "$4,150.00 per person",
+            "plan_2_name": "Twin",
+            "plan_2_price": "$3,685.00 per person",
+            "plan_3_name": null,
+            "plan_3_price": null,
+            "plan_4_name": null,
+            "plan_4_price": null,
+            "created_at": "2023-09-13T23:58:38.000000Z",
+            "updated_at": "2023-09-13T23:58:38.000000Z"
+        },
+        {
+            "id": 2,
+            "title": "Fawohodie Package",
+            "plan_1_name": "Single",
+            "image": "https:\/\/onthego-api.ratecardly.com\/assets\/images\/fawohodie.jpg",
+            "plan_1_price": "$3,790.00",
+            "plan_2_name": "Twin",
+            "plan_2_price": "$3,443.00",
+            "plan_3_name": null,
+            "plan_3_price": null,
+            "plan_4_name": null,
+            "plan_4_price": null,
+            "created_at": "2023-09-13T23:58:38.000000Z",
+            "updated_at": "2023-09-13T23:58:38.000000Z"
+        },
+        {
+            "id": 3,
+            "title": "Sankofa Package",
+            "plan_1_name": "Hotel - Single",
+            "image": "https:\/\/onthego-api.ratecardly.com\/assets\/images\/sankofa.jpg",
+            "plan_1_price": "$3,400.00",
+            "plan_2_name": "Hotel - Twin",
+            "plan_2_price": "$2,520.00",
+            "plan_3_name": "Apartment (The Signature) - Single",
+            "plan_3_price": "$3,000.00",
+            "plan_4_name": "Apartment (The Signature) - Twin",
+            "plan_4_price": "$2,200.00",
+            "created_at": "2023-09-13T23:58:38.000000Z",
+            "updated_at": "2023-09-13T23:58:38.000000Z"
+        }
+    ]
+}</code></pre>
+<div id="execution-results-GETapi-packages" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETapi-packages"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-packages"></code></pre>
+</div>
+<div id="execution-error-GETapi-packages" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-packages"></code></pre>
+</div>
+<form id="form-GETapi-packages" data-method="GET" data-path="api/packages" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETapi-packages', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETapi-packages" onclick="tryItOut('GETapi-packages');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETapi-packages" onclick="cancelTryOut('GETapi-packages');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETapi-packages" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-green">GET</small>
+ <b><code>api/packages</code></b>
+</p>
+</form>
+<h2>GET /packages/id</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "https://onthego2africa.com/api/packages/magni" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "https://onthego2africa.com/api/packages/magni"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+<blockquote>
+<p>Example response (404):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Not Found",
+    "exception": "Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException",
+    "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php",
+    "line": 1129,
+    "trace": [
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php",
+            "line": 44,
+            "function": "abort",
+            "class": "Illuminate\\Foundation\\Application",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\app\\Http\\Controllers\\PackageController.php",
+            "line": 56,
+            "function": "abort"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php",
+            "line": 54,
+            "function": "show",
+            "class": "App\\Http\\Controllers\\PackageController",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php",
+            "line": 45,
+            "function": "callAction",
+            "class": "Illuminate\\Routing\\Controller",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+            "line": 262,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\ControllerDispatcher",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php",
+            "line": 205,
+            "function": "runController",
+            "class": "Illuminate\\Routing\\Route",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 721,
+            "function": "run",
+            "class": "Illuminate\\Routing\\Route",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 128,
+            "function": "Illuminate\\Routing\\{closure}",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php",
+            "line": 50,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 167,
+            "function": "handle",
+            "class": "Illuminate\\Routing\\Middleware\\SubstituteBindings",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+            "line": 127,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+            "line": 103,
+            "function": "handleRequest",
+            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php",
+            "line": 55,
+            "function": "handleRequestUsingNamedLimiter",
+            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 167,
+            "function": "handle",
+            "class": "Illuminate\\Routing\\Middleware\\ThrottleRequests",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\sanctum\\src\\Http\\Middleware\\EnsureFrontendRequestsAreStateful.php",
+            "line": 33,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 128,
+            "function": "Laravel\\Sanctum\\Http\\Middleware\\{closure}",
+            "class": "Laravel\\Sanctum\\Http\\Middleware\\EnsureFrontendRequestsAreStateful",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 103,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\sanctum\\src\\Http\\Middleware\\EnsureFrontendRequestsAreStateful.php",
+            "line": 34,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 167,
+            "function": "handle",
+            "class": "Laravel\\Sanctum\\Http\\Middleware\\EnsureFrontendRequestsAreStateful",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 103,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 723,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 698,
+            "function": "runRouteWithinStack",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 662,
+            "function": "runRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php",
+            "line": 651,
+            "function": "dispatchToRoute",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+            "line": 167,
+            "function": "dispatch",
+            "class": "Illuminate\\Routing\\Router",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 128,
+            "function": "Illuminate\\Foundation\\Http\\{closure}",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+            "line": 21,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php",
+            "line": 31,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 167,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php",
+            "line": 21,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php",
+            "line": 40,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 167,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\TrimStrings",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php",
+            "line": 27,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 167,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php",
+            "line": 86,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 167,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php",
+            "line": 52,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 167,
+            "function": "handle",
+            "class": "Fruitcake\\Cors\\HandleCors",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php",
+            "line": 39,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 167,
+            "function": "handle",
+            "class": "Illuminate\\Http\\Middleware\\TrustProxies",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php",
+            "line": 103,
+            "function": "Illuminate\\Pipeline\\{closure}",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+            "line": 142,
+            "function": "then",
+            "class": "Illuminate\\Pipeline\\Pipeline",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php",
+            "line": 111,
+            "function": "sendRequestThroughRouter",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+            "line": 324,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Http\\Kernel",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+            "line": 305,
+            "function": "callLaravelOrLumenRoute",
+            "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+            "line": 76,
+            "function": "makeApiCall",
+            "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+            "line": 51,
+            "function": "makeResponseCall",
+            "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php",
+            "line": 41,
+            "function": "makeResponseCallIfEnabledAndNoSuccessResponses",
+            "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Generator.php",
+            "line": 236,
+            "function": "__invoke",
+            "class": "Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Generator.php",
+            "line": 172,
+            "function": "iterateThroughStrategies",
+            "class": "Knuckles\\Scribe\\Extracting\\Generator",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Generator.php",
+            "line": 127,
+            "function": "fetchResponses",
+            "class": "Knuckles\\Scribe\\Extracting\\Generator",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\knuckleswtf\\scribe\\src\\Commands\\GenerateDocumentation.php",
+            "line": 119,
+            "function": "processRoute",
+            "class": "Knuckles\\Scribe\\Extracting\\Generator",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\knuckleswtf\\scribe\\src\\Commands\\GenerateDocumentation.php",
+            "line": 73,
+            "function": "processRoutes",
+            "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+            "line": 36,
+            "function": "handle",
+            "class": "Knuckles\\Scribe\\Commands\\GenerateDocumentation",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php",
+            "line": 40,
+            "function": "Illuminate\\Container\\{closure}",
+            "class": "Illuminate\\Container\\BoundMethod",
+            "type": "::"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+            "line": 93,
+            "function": "unwrapIfClosure",
+            "class": "Illuminate\\Container\\Util",
+            "type": "::"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php",
+            "line": 37,
+            "function": "callBoundMethod",
+            "class": "Illuminate\\Container\\BoundMethod",
+            "type": "::"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php",
+            "line": 653,
+            "function": "call",
+            "class": "Illuminate\\Container\\BoundMethod",
+            "type": "::"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
+            "line": 136,
+            "function": "call",
+            "class": "Illuminate\\Container\\Container",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\symfony\\console\\Command\\Command.php",
+            "line": 298,
+            "function": "execute",
+            "class": "Illuminate\\Console\\Command",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php",
+            "line": 121,
+            "function": "run",
+            "class": "Symfony\\Component\\Console\\Command\\Command",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\symfony\\console\\Application.php",
+            "line": 1040,
+            "function": "run",
+            "class": "Illuminate\\Console\\Command",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\symfony\\console\\Application.php",
+            "line": 301,
+            "function": "doRunCommand",
+            "class": "Symfony\\Component\\Console\\Application",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\symfony\\console\\Application.php",
+            "line": 171,
+            "function": "doRun",
+            "class": "Symfony\\Component\\Console\\Application",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php",
+            "line": 94,
+            "function": "run",
+            "class": "Symfony\\Component\\Console\\Application",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php",
+            "line": 129,
+            "function": "run",
+            "class": "Illuminate\\Console\\Application",
+            "type": "-&gt;"
+        },
+        {
+            "file": "C:\\xampp\\htdocs\\onthego-api\\artisan",
+            "line": 37,
+            "function": "handle",
+            "class": "Illuminate\\Foundation\\Console\\Kernel",
+            "type": "-&gt;"
+        }
+    ]
+}</code></pre>
+<div id="execution-results-GETapi-packages--id-" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETapi-packages--id-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-packages--id-"></code></pre>
+</div>
+<div id="execution-error-GETapi-packages--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-packages--id-"></code></pre>
+</div>
+<form id="form-GETapi-packages--id-" data-method="GET" data-path="api/packages/{id}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETapi-packages--id-', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETapi-packages--id-" onclick="tryItOut('GETapi-packages--id-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETapi-packages--id-" onclick="cancelTryOut('GETapi-packages--id-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETapi-packages--id-" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-green">GET</small>
+ <b><code>api/packages/{id}</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+<p>
+<b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="id" data-endpoint="GETapi-packages--id-" data-component="url" required  hidden>
+<br>
+
+</p>
 </form><h1>FAQ APIs</h1>
 <p>Apis for managing event resource</p>
 <h2>GET /faqs</h2>
@@ -1255,11 +1885,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/faqs" \
+    -G "https://onthego2africa.com/api/faqs" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs"
+    "https://onthego2africa.com/api/faqs"
 );
 
 let headers = {
@@ -1302,13 +1932,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego-api.ratecardly.com/api/faqs" \
+    "https://onthego2africa.com/api/faqs" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"maiores","content":"officia"}'
+    -d '{"title":"aut","content":"eligendi"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs"
+    "https://onthego2africa.com/api/faqs"
 );
 
 let headers = {
@@ -1317,8 +1947,8 @@ let headers = {
 };
 
 let body = {
-    "title": "maiores",
-    "content": "officia"
+    "title": "aut",
+    "content": "eligendi"
 }
 
 fetch(url, {
@@ -1365,11 +1995,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/faqs/alias" \
+    -G "https://onthego2africa.com/api/faqs/vel" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs/alias"
+    "https://onthego2africa.com/api/faqs/vel"
 );
 
 let headers = {
@@ -1419,13 +2049,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "https://onthego-api.ratecardly.com/api/faqs/magnam" \
+    "https://onthego2africa.com/api/faqs/rerum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"reprehenderit","content":"totam"}'
+    -d '{"title":"natus","content":"quasi"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs/magnam"
+    "https://onthego2africa.com/api/faqs/rerum"
 );
 
 let headers = {
@@ -1434,8 +2064,8 @@ let headers = {
 };
 
 let body = {
-    "title": "reprehenderit",
-    "content": "totam"
+    "title": "natus",
+    "content": "quasi"
 }
 
 fetch(url, {
@@ -1489,11 +2119,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/faqs/modi" \
+    "https://onthego2africa.com/api/faqs/sequi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs/modi"
+    "https://onthego2africa.com/api/faqs/sequi"
 );
 
 let headers = {
@@ -1538,11 +2168,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/newsletter-subscriptions" \
+    -G "https://onthego2africa.com/api/newsletter-subscriptions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/newsletter-subscriptions"
+    "https://onthego2africa.com/api/newsletter-subscriptions"
 );
 
 let headers = {
@@ -1585,13 +2215,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego-api.ratecardly.com/api/newsletter-subscribe" \
+    "https://onthego2africa.com/api/newsletter-subscribe" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"accusantium"}'
+    -d '{"email":"similique"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/newsletter-subscribe"
+    "https://onthego2africa.com/api/newsletter-subscribe"
 );
 
 let headers = {
@@ -1600,7 +2230,7 @@ let headers = {
 };
 
 let body = {
-    "email": "accusantium"
+    "email": "similique"
 }
 
 fetch(url, {
@@ -1642,11 +2272,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/tours" \
+    -G "https://onthego2africa.com/api/tours" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/tours"
+    "https://onthego2africa.com/api/tours"
 );
 
 let headers = {
@@ -1690,11 +2320,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/tours/consequatur" \
+    -G "https://onthego2africa.com/api/tours/voluptas" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/tours/consequatur"
+    "https://onthego2africa.com/api/tours/voluptas"
 );
 
 let headers = {
@@ -1755,17 +2385,17 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego-api.ratecardly.com/api/tours" \
+    "https://onthego2africa.com/api/tours" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=voluptatibus" \
-    -F "overview=est" \
-    -F "itenary=debitis" \
-    -F "cost=dicta" \
-    -F "images[]=nihil" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php5159.tmp" </code></pre>
+    -F "title=inventore" \
+    -F "overview=pariatur" \
+    -F "itenary=maiores" \
+    -F "cost=nesciunt" \
+    -F "images[]=maiores" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpE4B.tmp" </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/tours"
+    "https://onthego2africa.com/api/tours"
 );
 
 let headers = {
@@ -1774,11 +2404,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'voluptatibus');
-body.append('overview', 'est');
-body.append('itenary', 'debitis');
-body.append('cost', 'dicta');
-body.append('images[]', 'nihil');
+body.append('title', 'inventore');
+body.append('overview', 'pariatur');
+body.append('itenary', 'maiores');
+body.append('cost', 'nesciunt');
+body.append('images[]', 'maiores');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -1849,17 +2479,17 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "https://onthego-api.ratecardly.com/api/tours/qui" \
+    "https://onthego2africa.com/api/tours/sit" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=voluptates" \
-    -F "overview=aut" \
-    -F "itenary=et" \
-    -F "cost=sed" \
-    -F "images[]=aperiam" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php516A.tmp" </code></pre>
+    -F "title=labore" \
+    -F "overview=ut" \
+    -F "itenary=occaecati" \
+    -F "cost=iste" \
+    -F "images[]=quis" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpE5B.tmp" </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/tours/qui"
+    "https://onthego2africa.com/api/tours/sit"
 );
 
 let headers = {
@@ -1868,11 +2498,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'voluptates');
-body.append('overview', 'aut');
-body.append('itenary', 'et');
-body.append('cost', 'sed');
-body.append('images[]', 'aperiam');
+body.append('title', 'labore');
+body.append('overview', 'ut');
+body.append('itenary', 'occaecati');
+body.append('cost', 'iste');
+body.append('images[]', 'quis');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -1950,11 +2580,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/tours/repudiandae" \
+    "https://onthego2africa.com/api/tours/nihil" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/tours/repudiandae"
+    "https://onthego2africa.com/api/tours/nihil"
 );
 
 let headers = {
@@ -2000,13 +2630,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego-api.ratecardly.com/api/register" \
+    "https://onthego2africa.com/api/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"nemo","username":"reprehenderit","email":"fugiat","password":"dolorum","password_confirmation":"dolorem"}'
+    -d '{"name":"labore","username":"facere","email":"eum","password":"aut","password_confirmation":"vel"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/register"
+    "https://onthego2africa.com/api/register"
 );
 
 let headers = {
@@ -2015,11 +2645,11 @@ let headers = {
 };
 
 let body = {
-    "name": "nemo",
-    "username": "reprehenderit",
-    "email": "fugiat",
-    "password": "dolorum",
-    "password_confirmation": "dolorem"
+    "name": "labore",
+    "username": "facere",
+    "email": "eum",
+    "password": "aut",
+    "password_confirmation": "vel"
 }
 
 fetch(url, {
@@ -2032,13 +2662,13 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
-        "name": "Cortez Adams",
-        "username": "gusikowski.julianne",
-        "email": "america92@example.com",
-        "email_verified_at": "2023-08-30T13:59:18.000000Z",
-        "updated_at": "2023-08-30T13:59:18.000000Z",
-        "created_at": "2023-08-30T13:59:18.000000Z",
-        "id": 60
+        "name": "Dortha Turner",
+        "username": "willard43",
+        "email": "gerhard80@example.net",
+        "email_verified_at": "2023-09-19T09:56:49.000000Z",
+        "updated_at": "2023-09-19T09:56:49.000000Z",
+        "created_at": "2023-09-19T09:56:49.000000Z",
+        "id": 2
     }
 }</code></pre>
 <div id="execution-results-POSTapi-register" hidden>
@@ -2098,13 +2728,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego-api.ratecardly.com/api/forgot-password" \
+    "https://onthego2africa.com/api/forgot-password" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"minus"}'
+    -d '{"email":"et"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/forgot-password"
+    "https://onthego2africa.com/api/forgot-password"
 );
 
 let headers = {
@@ -2113,7 +2743,7 @@ let headers = {
 };
 
 let body = {
-    "email": "minus"
+    "email": "et"
 }
 
 fetch(url, {
@@ -2154,13 +2784,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego-api.ratecardly.com/api/login" \
+    "https://onthego2africa.com/api/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"at","password":"illo"}'
+    -d '{"email":"ullam","password":"nulla"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/login"
+    "https://onthego2africa.com/api/login"
 );
 
 let headers = {
@@ -2169,8 +2799,8 @@ let headers = {
 };
 
 let body = {
-    "email": "at",
-    "password": "illo"
+    "email": "ullam",
+    "password": "nulla"
 }
 
 fetch(url, {
@@ -2183,13 +2813,13 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
-        "name": "Prof. Anne Kessler",
-        "username": "casper.arnaldo",
-        "email": "hermann.clay@example.net",
-        "email_verified_at": "2023-08-30T13:59:18.000000Z",
-        "updated_at": "2023-08-30T13:59:18.000000Z",
-        "created_at": "2023-08-30T13:59:18.000000Z",
-        "id": 61
+        "name": "Prof. Marion Stokes DDS",
+        "username": "crenner",
+        "email": "ohintz@example.org",
+        "email_verified_at": "2023-09-19T09:56:49.000000Z",
+        "updated_at": "2023-09-19T09:56:49.000000Z",
+        "created_at": "2023-09-19T09:56:49.000000Z",
+        "id": 3
     }
 }</code></pre>
 <div id="execution-results-POSTapi-login" hidden>
@@ -2231,13 +2861,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego-api.ratecardly.com/api/email/verification-notification" \
+    "https://onthego2africa.com/api/email/verification-notification" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"enim"}'
+    -d '{"email":"ea"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/email/verification-notification"
+    "https://onthego2africa.com/api/email/verification-notification"
 );
 
 let headers = {
@@ -2246,7 +2876,7 @@ let headers = {
 };
 
 let body = {
-    "email": "enim"
+    "email": "ea"
 }
 
 fetch(url, {
@@ -2287,11 +2917,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/verify-email/ut/atque" \
+    -G "https://onthego2africa.com/api/verify-email/veritatis/nobis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/verify-email/ut/atque"
+    "https://onthego2africa.com/api/verify-email/veritatis/nobis"
 );
 
 let headers = {
@@ -2347,11 +2977,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/profile" \
+    -G "https://onthego2africa.com/api/profile" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/profile"
+    "https://onthego2africa.com/api/profile"
 );
 
 let headers = {
@@ -2395,13 +3025,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "https://onthego-api.ratecardly.com/api/users" \
+    "https://onthego2africa.com/api/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"voluptatibus","username":"fugit"}'
+    -d '{"name":"veritatis","username":"quasi"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/users"
+    "https://onthego2africa.com/api/users"
 );
 
 let headers = {
@@ -2410,8 +3040,8 @@ let headers = {
 };
 
 let body = {
-    "name": "voluptatibus",
-    "username": "fugit"
+    "name": "veritatis",
+    "username": "quasi"
 }
 
 fetch(url, {
@@ -2424,13 +3054,13 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
-        "name": "Krystina Crona",
-        "username": "janiya.lesch",
-        "email": "ulind@example.net",
-        "email_verified_at": "2023-08-30T13:59:18.000000Z",
-        "updated_at": "2023-08-30T13:59:18.000000Z",
-        "created_at": "2023-08-30T13:59:18.000000Z",
-        "id": 62
+        "name": "Aryanna Kuhlman DVM",
+        "username": "celia39",
+        "email": "julia41@example.org",
+        "email_verified_at": "2023-09-19T09:56:49.000000Z",
+        "updated_at": "2023-09-19T09:56:49.000000Z",
+        "created_at": "2023-09-19T09:56:49.000000Z",
+        "id": 4
     }
 }</code></pre>
 <div id="execution-results-PUTapi-users" hidden>
@@ -2473,11 +3103,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/users/cupiditate" \
+    "https://onthego2africa.com/api/users/deserunt" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/users/cupiditate"
+    "https://onthego2africa.com/api/users/deserunt"
 );
 
 let headers = {
@@ -2521,11 +3151,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego-api.ratecardly.com/api/logout" \
+    "https://onthego2africa.com/api/logout" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego-api.ratecardly.com/api/logout"
+    "https://onthego2africa.com/api/logout"
 );
 
 let headers = {

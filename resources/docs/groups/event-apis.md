@@ -11,14 +11,14 @@ Apis for managing event resource
 
 ```bash
 curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/events" \
+    -G "https://onthego2africa.com/api/events" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/events"
+    "https://onthego2africa.com/api/events"
 );
 
 let headers = {
@@ -72,14 +72,14 @@ Fetch event with slug
 
 ```bash
 curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/events/itaque" \
+    -G "https://onthego2africa.com/api/events/sed" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/events/itaque"
+    "https://onthego2africa.com/api/events/sed"
 );
 
 let headers = {
@@ -98,19 +98,21 @@ fetch(url, {
 > Example response (200):
 
 ```json
+
 {
-    "event": {
-        "id": 1,
-        "title": "dgs",
-        "slug": "dgs",
-        "cover_image": "http:\/\/127.0.0.1:8000\/storage\/cover_images\/lheicfYAjrZTfqlbDutpqUIpS9ueefojUyYDsDYx.jpg",
-        "overview": "skflalkjflfkj",
-        "itenary": "dsfsf",
-        "cost": "dsf",
-        "created_at": "2023-08-16T14:11:19.000000Z",
-        "updated_at": "2023-08-16T14:11:19.000000Z",
-        "images": []
-    }
+"event":  {
+     "id": 1,
+     "title": "dgs",
+     "slug": "dgs",
+     "cover_image": "http:\/\/127.0.0.1:8000\/storage\/cover_images\/lheicfYAjrZTfqlbDutpqUIpS9ueefojUyYDsDYx.jpg",
+     "overview": "skflalkjflfkj",
+     "itenary": "dsfsf",
+     "cost": "dsf",
+     "packages": "["dsf","sdf"]",
+     "created_at": "2023-08-16T14:11:19.000000Z",
+     "updated_at": "2023-08-16T14:11:19.000000Z",
+     "images": []
+ }
 }
 ```
 <div id="execution-results-GETapi-events--slug-" hidden>
@@ -151,20 +153,21 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "https://onthego-api.ratecardly.com/api/events" \
+    "https://onthego2africa.com/api/events" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=architecto" \
-    -F "overview=minus" \
-    -F "itenary=nam" \
-    -F "cost=quasi" \
-    -F "images[]=corporis" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php516B.tmp" 
+    -F "title=iste" \
+    -F "overview=adipisci" \
+    -F "itenary=consequatur" \
+    -F "cost=dolores" \
+    -F "packages[]=reprehenderit" \
+    -F "images[]=magnam" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpE6C.tmp" 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/events"
+    "https://onthego2africa.com/api/events"
 );
 
 let headers = {
@@ -173,11 +176,12 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'architecto');
-body.append('overview', 'minus');
-body.append('itenary', 'nam');
-body.append('cost', 'quasi');
-body.append('images[]', 'corporis');
+body.append('title', 'iste');
+body.append('overview', 'adipisci');
+body.append('itenary', 'consequatur');
+body.append('cost', 'dolores');
+body.append('packages[]', 'reprehenderit');
+body.append('images[]', 'magnam');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -239,6 +243,12 @@ fetch(url, {
 
 </p>
 <p>
+<b><code>packages[]</code></b>&nbsp;&nbsp;<small>array</small>  &nbsp;
+<input type="text" name="packages.0" data-endpoint="POSTapi-events" data-component="body" required  hidden>
+<br>
+
+</p>
+<p>
 <b><code>images[]</code></b>&nbsp;&nbsp;<small>array</small>  &nbsp;
 <input type="text" name="images.0" data-endpoint="POSTapi-events" data-component="body" required  hidden>
 <br>
@@ -257,20 +267,20 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "https://onthego-api.ratecardly.com/api/events/aut" \
+    "https://onthego2africa.com/api/events/et" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=nesciunt" \
-    -F "overview=asperiores" \
-    -F "itenary=harum" \
-    -F "cost=qui" \
-    -F "images[]=repellendus" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php516C.tmp" 
+    -F "title=eum" \
+    -F "overview=quos" \
+    -F "itenary=in" \
+    -F "cost=tempora" \
+    -F "images[]=qui" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpE6D.tmp" 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/events/aut"
+    "https://onthego2africa.com/api/events/et"
 );
 
 let headers = {
@@ -279,11 +289,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'nesciunt');
-body.append('overview', 'asperiores');
-body.append('itenary', 'harum');
-body.append('cost', 'qui');
-body.append('images[]', 'repellendus');
+body.append('title', 'eum');
+body.append('overview', 'quos');
+body.append('itenary', 'in');
+body.append('cost', 'tempora');
+body.append('images[]', 'qui');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -370,14 +380,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/events/dolore" \
+    "https://onthego2africa.com/api/events/nihil" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/events/dolore"
+    "https://onthego2africa.com/api/events/nihil"
 );
 
 let headers = {

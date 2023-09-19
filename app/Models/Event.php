@@ -17,6 +17,7 @@ class Event extends Model
         'cover_image',
         'overview',
         'itenary',
+        'packages',
         'cost',
     ];
 

@@ -7,6 +7,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\NewsLetterController;
+use App\Http\Controllers\PackageController;
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\TourController;
 
@@ -25,6 +26,7 @@ use App\Http\Controllers\TourController;
 
 Route::get('/tours', [TourController::class, 'index']);
 Route::get('/events', [EventController::class, 'index']);
+Route::get('/packages', [PackageController::class, 'index']);
 Route::get('/faqs', [FaqController::class, 'index']);
 Route::post('/register', [AuthController::class, 'store']);
 Route::post('/forgot-password', [AuthController::class, 'forgotPassword']);
@@ -35,6 +37,7 @@ Route::post('/email/verification-notification', [AuthController::class, 'sendVer
 Route::get('/verify-email/{id}/{hash}', [AuthController::class, 'verify'])->name('verification.verify');
 Route::get('/events/{slug}', [EventController::class, 'show']);
 Route::get('/tours/{slug}', [TourController::class, 'show']);
+Route::get('/packages/{id}', [PackageController::class, 'show']);
 Route::get('password/reset/{token}', [AuthController::class, 'resetForm'])->name('password.reset');
 
 // user routes

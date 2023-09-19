@@ -11,14 +11,14 @@ Apis for managing event resource
 
 ```bash
 curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/faqs" \
+    -G "https://onthego2africa.com/api/faqs" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs"
+    "https://onthego2africa.com/api/faqs"
 );
 
 let headers = {
@@ -72,16 +72,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "https://onthego-api.ratecardly.com/api/faqs" \
+    "https://onthego2africa.com/api/faqs" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"maiores","content":"officia"}'
+    -d '{"title":"aut","content":"eligendi"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs"
+    "https://onthego2africa.com/api/faqs"
 );
 
 let headers = {
@@ -90,8 +90,8 @@ let headers = {
 };
 
 let body = {
-    "title": "maiores",
-    "content": "officia"
+    "title": "aut",
+    "content": "eligendi"
 }
 
 fetch(url, {
@@ -147,14 +147,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego-api.ratecardly.com/api/faqs/alias" \
+    -G "https://onthego2africa.com/api/faqs/vel" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs/alias"
+    "https://onthego2africa.com/api/faqs/vel"
 );
 
 let headers = {
@@ -215,16 +215,16 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "https://onthego-api.ratecardly.com/api/faqs/magnam" \
+    "https://onthego2africa.com/api/faqs/rerum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"reprehenderit","content":"totam"}'
+    -d '{"title":"natus","content":"quasi"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs/magnam"
+    "https://onthego2africa.com/api/faqs/rerum"
 );
 
 let headers = {
@@ -233,8 +233,8 @@ let headers = {
 };
 
 let body = {
-    "title": "reprehenderit",
-    "content": "totam"
+    "title": "natus",
+    "content": "quasi"
 }
 
 fetch(url, {
@@ -297,14 +297,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "https://onthego-api.ratecardly.com/api/faqs/modi" \
+    "https://onthego2africa.com/api/faqs/sequi" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego-api.ratecardly.com/api/faqs/modi"
+    "https://onthego2africa.com/api/faqs/sequi"
 );
 
 let headers = {
