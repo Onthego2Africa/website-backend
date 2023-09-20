@@ -32,12 +32,12 @@ You can switch the language used with the tabs at the top right (or from the nav
 
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
 <script>
-    var baseUrl = "https://onthego2africa.com";
+    var baseUrl = "https://onthego2africa.com/api";
 </script>
 <script src="js/tryitout-2.7.10.js"></script>
 
 > Base URL
 
 ```yaml
-https://onthego2africa.com
+https://onthego2africa.com/api
 ```

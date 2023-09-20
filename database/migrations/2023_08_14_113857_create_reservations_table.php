@@ -15,16 +15,19 @@ class CreateReservationsTable extends Migration
     {
         Schema::create('reservations', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->foreignId('event_id')->constrained()->onDelete('cascade');
-            $table->foreignId('tour_id')->constrained()->onDelete('cascade');
+            $table->foreignId('user_id')->nullable()->constrained()->onDelete('cascade');
+            $table->foreignId('event_id')->nullable()->constrained()->onDelete('cascade');
+            $table->foreignId('tour_id')->nullable()->constrained()->onDelete('cascade');
             $table->foreignId('package_id');
-            $table->foreignId('name');
-            $table->string('number_of_guests');
-            $table->string('paymentID');
+            $table->string('name');
+            $table->string('email');
+            $table->string('plan_name');
+            $table->string('plan_price');
+            $table->string('plan_quantity');
+            $table->string('paymentID')->nullable();
             $table->string('confirm_paid')->default('no');
-            $table->date('check_in');
-            $table->date('check_out');
+            $table->date('check_in')->nullable();
+            $table->date('check_out')->nullable();
             $table->string('cost');
             $table->timestamps();
         });

@@ -38,7 +38,7 @@ class DatabaseSeeder extends Seeder
 
         Package::create([
             'title' => 'Gye Nyame Package',
-            'image'=> 'https://onthego2africa.com/assets/images/gyenyame.jpg',
+            'image'=> 'https://onthego2africa.com/api/assets/images/gyenyame.jpg',
             'plan_1_name' => 'Single',
             'plan_1_price' => '$4,150.00 per person',
             'plan_2_name' => 'Twin',
@@ -47,7 +47,7 @@ class DatabaseSeeder extends Seeder
 
         Package::create([
             'title' => 'Fawohodie Package',
-            'image' => 'https://onthego2africa.com/assets/images/fawohodie.jpg',
+            'image' => 'https://onthego2africa.com/api/assets/images/fawohodie.jpg',
             'plan_1_name' => 'Single',
             'plan_1_price' => '$3,790.00',
             'plan_2_name' => 'Twin',
@@ -56,7 +56,7 @@ class DatabaseSeeder extends Seeder
 
         Package::create([
             'title' => 'Sankofa Package',
-            'image' => 'https://onthego2africa.com/assets/images/sankofa.jpg',
+            'image' => 'https://onthego2africa.com/api/assets/images/sankofa.jpg',
             'plan_1_name' => 'Hotel - Single',
             'plan_1_price' => '$3,400.00',
             'plan_2_name' => 'Hotel - Twin',

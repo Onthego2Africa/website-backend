@@ -11,14 +11,14 @@ Apis for managing reservation resource
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/reservations" \
+    -G "https://onthego2africa.com/api/api/reservations" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/reservations"
+    "https://onthego2africa.com/api/api/reservations"
 );
 
 let headers = {
@@ -72,16 +72,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "https://onthego2africa.com/api/book-tour/autem" \
+    "https://onthego2africa.com/api/api/book-tour/aliquam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"number_of_guests":"est","check_in":"aliquid","check_out":"est","cost":"adipisci","paymentID":"vel"}'
+    -d '{"number_of_guests":"eum","check_in":"quia","check_out":"corporis","cost":"corrupti","paymentID":"eum"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/book-tour/autem"
+    "https://onthego2africa.com/api/api/book-tour/aliquam"
 );
 
 let headers = {
@@ -90,11 +90,11 @@ let headers = {
 };
 
 let body = {
-    "number_of_guests": "est",
-    "check_in": "aliquid",
-    "check_out": "est",
-    "cost": "adipisci",
-    "paymentID": "vel"
+    "number_of_guests": "eum",
+    "check_in": "quia",
+    "check_out": "corporis",
+    "cost": "corrupti",
+    "paymentID": "eum"
 }
 
 fetch(url, {
@@ -175,16 +175,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "https://onthego2africa.com/api/book-event/libero" \
+    "https://onthego2africa.com/api/api/book-event/sit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"number_of_guests":"illo","check_in":"dolorem","check_out":"autem","cost":"rem","paymentID":"laborum","package_id":"temporibus","name":"ipsum"}'
+    -d '{"check_in":"eius","check_out":"voluptas","cost":"voluptate","paymentID":"animi","package_id":"qui","plan_name":"accusamus","plan_price":"blanditiis","plan_quantity":"quaerat","name":"voluptatem"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/book-event/libero"
+    "https://onthego2africa.com/api/api/book-event/sit"
 );
 
 let headers = {
@@ -193,13 +193,15 @@ let headers = {
 };
 
 let body = {
-    "number_of_guests": "illo",
-    "check_in": "dolorem",
-    "check_out": "autem",
-    "cost": "rem",
-    "paymentID": "laborum",
-    "package_id": "temporibus",
-    "name": "ipsum"
+    "check_in": "eius",
+    "check_out": "voluptas",
+    "cost": "voluptate",
+    "paymentID": "animi",
+    "package_id": "qui",
+    "plan_name": "accusamus",
+    "plan_price": "blanditiis",
+    "plan_quantity": "quaerat",
+    "name": "voluptatem"
 }
 
 fetch(url, {
@@ -238,20 +240,14 @@ fetch(url, {
 </p>
 <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
 <p>
-<b><code>number_of_guests</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="number_of_guests" data-endpoint="POSTapi-book-event--id-" data-component="body" required  hidden>
+<b><code>check_in</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="check_in" data-endpoint="POSTapi-book-event--id-" data-component="body"  hidden>
 <br>
 
 </p>
 <p>
-<b><code>check_in</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="check_in" data-endpoint="POSTapi-book-event--id-" data-component="body" required  hidden>
-<br>
-
-</p>
-<p>
-<b><code>check_out</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="check_out" data-endpoint="POSTapi-book-event--id-" data-component="body" required  hidden>
+<b><code>check_out</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="check_out" data-endpoint="POSTapi-book-event--id-" data-component="body"  hidden>
 <br>
 
 </p>
@@ -262,14 +258,32 @@ fetch(url, {
 
 </p>
 <p>
-<b><code>paymentID</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="paymentID" data-endpoint="POSTapi-book-event--id-" data-component="body" required  hidden>
+<b><code>paymentID</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+<input type="text" name="paymentID" data-endpoint="POSTapi-book-event--id-" data-component="body"  hidden>
 <br>
 
 </p>
 <p>
 <b><code>package_id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
 <input type="text" name="package_id" data-endpoint="POSTapi-book-event--id-" data-component="body" required  hidden>
+<br>
+
+</p>
+<p>
+<b><code>plan_name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="plan_name" data-endpoint="POSTapi-book-event--id-" data-component="body" required  hidden>
+<br>
+
+</p>
+<p>
+<b><code>plan_price</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="plan_price" data-endpoint="POSTapi-book-event--id-" data-component="body" required  hidden>
+<br>
+
+</p>
+<p>
+<b><code>plan_quantity</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="plan_quantity" data-endpoint="POSTapi-book-event--id-" data-component="body" required  hidden>
 <br>
 
 </p>
@@ -292,14 +306,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/reservations/autem" \
+    -G "https://onthego2africa.com/api/api/reservations/possimus" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/reservations/autem"
+    "https://onthego2africa.com/api/api/reservations/possimus"
 );
 
 let headers = {
@@ -360,14 +374,14 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "https://onthego2africa.com/api/reservations/quos" \
+    "https://onthego2africa.com/api/api/reservations/earum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/reservations/quos"
+    "https://onthego2africa.com/api/api/reservations/earum"
 );
 
 let headers = {
@@ -421,14 +435,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "https://onthego2africa.com/api/reservations/aliquam" \
+    "https://onthego2africa.com/api/api/reservations/perferendis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/reservations/aliquam"
+    "https://onthego2africa.com/api/api/reservations/perferendis"
 );
 
 let headers = {
@@ -482,14 +496,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/togglepaid/est" \
+    -G "https://onthego2africa.com/api/api/togglepaid/fugit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/togglepaid/est"
+    "https://onthego2africa.com/api/api/togglepaid/fugit"
 );
 
 let headers = {

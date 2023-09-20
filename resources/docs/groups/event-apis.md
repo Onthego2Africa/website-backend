@@ -11,14 +11,14 @@ Apis for managing event resource
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/events" \
+    -G "https://onthego2africa.com/api/api/events" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/events"
+    "https://onthego2africa.com/api/api/events"
 );
 
 let headers = {
@@ -72,14 +72,14 @@ Fetch event with slug
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/events/sequi" \
+    -G "https://onthego2africa.com/api/api/events/libero" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/events/sequi"
+    "https://onthego2africa.com/api/api/events/libero"
 );
 
 let headers = {
@@ -153,21 +153,21 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "https://onthego2africa.com/api/events" \
+    "https://onthego2africa.com/api/api/events" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=autem" \
-    -F "overview=sint" \
-    -F "itenary=corporis" \
-    -F "cost=quas" \
-    -F "packages[]=sunt" \
-    -F "images[]=officiis" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpD5CB.tmp" 
+    -F "title=ut" \
+    -F "overview=nisi" \
+    -F "itenary=nostrum" \
+    -F "cost=facere" \
+    -F "packages[]=sit" \
+    -F "images[]=dignissimos" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php6596.tmp" 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/events"
+    "https://onthego2africa.com/api/api/events"
 );
 
 let headers = {
@@ -176,12 +176,12 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'autem');
-body.append('overview', 'sint');
-body.append('itenary', 'corporis');
-body.append('cost', 'quas');
-body.append('packages[]', 'sunt');
-body.append('images[]', 'officiis');
+body.append('title', 'ut');
+body.append('overview', 'nisi');
+body.append('itenary', 'nostrum');
+body.append('cost', 'facere');
+body.append('packages[]', 'sit');
+body.append('images[]', 'dignissimos');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -267,20 +267,20 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "https://onthego2africa.com/api/events/quae" \
+    "https://onthego2africa.com/api/api/events/eaque" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=nam" \
-    -F "overview=doloribus" \
-    -F "itenary=consequatur" \
-    -F "cost=maiores" \
-    -F "images[]=quae" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpD5DC.tmp" 
+    -F "title=voluptatem" \
+    -F "overview=quia" \
+    -F "itenary=voluptatem" \
+    -F "cost=voluptatem" \
+    -F "images[]=eos" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php65A7.tmp" 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/events/quae"
+    "https://onthego2africa.com/api/api/events/eaque"
 );
 
 let headers = {
@@ -289,11 +289,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'nam');
-body.append('overview', 'doloribus');
-body.append('itenary', 'consequatur');
-body.append('cost', 'maiores');
-body.append('images[]', 'quae');
+body.append('title', 'voluptatem');
+body.append('overview', 'quia');
+body.append('itenary', 'voluptatem');
+body.append('cost', 'voluptatem');
+body.append('images[]', 'eos');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -380,14 +380,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "https://onthego2africa.com/api/events/velit" \
+    "https://onthego2africa.com/api/api/events/magni" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/events/velit"
+    "https://onthego2africa.com/api/api/events/magni"
 );
 
 let headers = {

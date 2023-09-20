@@ -11,14 +11,14 @@ Apis for managing newsletter resource
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/newsletter-subscriptions" \
+    -G "https://onthego2africa.com/api/api/newsletter-subscriptions" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/newsletter-subscriptions"
+    "https://onthego2africa.com/api/api/newsletter-subscriptions"
 );
 
 let headers = {
@@ -72,16 +72,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "https://onthego2africa.com/api/newsletter-subscribe" \
+    "https://onthego2africa.com/api/api/newsletter-subscribe" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"aliquid"}'
+    -d '{"email":"maxime"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/newsletter-subscribe"
+    "https://onthego2africa.com/api/api/newsletter-subscribe"
 );
 
 let headers = {
@@ -90,7 +90,7 @@ let headers = {
 };
 
 let body = {
-    "email": "aliquid"
+    "email": "maxime"
 }
 
 fetch(url, {

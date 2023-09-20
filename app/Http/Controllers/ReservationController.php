@@ -36,12 +36,14 @@ class ReservationController extends Controller
     /**
      * POST /book-event
      * 
-     * @bodyParam number_of_guests string required 
-     * @bodyParam check_in string required 
-     * @bodyParam check_out string required 
+     * @bodyParam check_in string 
+     * @bodyParam check_out string 
      * @bodyParam cost string required
-     * @bodyParam paymentID string required
+     * @bodyParam paymentID string
      * @bodyParam package_id string required
+     * @bodyParam plan_name string required
+     * @bodyParam plan_price string required
+     * @bodyParam plan_quantity string required
      * @bodyParam name string required
      * 
      * @param  \Illuminate\Http\Request  $request
@@ -50,13 +52,16 @@ class ReservationController extends Controller
     public function storeEventBooking(Request $request, $id)
     {
         $fields = $request->validate([
-            'number_of_guests' => 'string|required',
-            'check_in' => 'string|required',
-            'check_out' => 'required',
+            // 'check_in' => 'string|required',
+            // 'check_out' => 'required',
             'cost' => 'required',
-            'paymentID' => 'required',
+            // 'paymentID' => 'required',
             'package_id' => 'required',
-            'name' => 'required'
+            'plan_name' => 'required',
+            'plan_price' => 'required',
+            'plan_quantity' => 'required',
+            'name' => 'required',
+            'email' => 'required'
         ]);
 
         $fields['event_id'] = $id;

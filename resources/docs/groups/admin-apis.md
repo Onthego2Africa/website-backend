@@ -11,14 +11,14 @@ Get a list of all users
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/users" \
+    -G "https://onthego2africa.com/api/api/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/users"
+    "https://onthego2africa.com/api/api/users"
 );
 
 let headers = {
@@ -40,21 +40,21 @@ fetch(url, {
 {
     "data": [
         {
-            "name": "Fern Howell",
-            "username": "trobel",
-            "email": "hodkiewicz.lucie@example.org",
-            "email_verified_at": "2023-09-19T23:06:17.000000Z",
-            "updated_at": "2023-09-19T23:06:17.000000Z",
-            "created_at": "2023-09-19T23:06:17.000000Z",
+            "name": "Miller Hills",
+            "username": "yoberbrunner",
+            "email": "melvin76@example.org",
+            "email_verified_at": "2023-09-20T11:16:32.000000Z",
+            "updated_at": "2023-09-20T11:16:32.000000Z",
+            "created_at": "2023-09-20T11:16:32.000000Z",
             "id": 5
         },
         {
-            "name": "Vilma Dietrich",
-            "username": "alene.bosco",
-            "email": "schroeder.agustin@example.org",
-            "email_verified_at": "2023-09-19T23:06:17.000000Z",
-            "updated_at": "2023-09-19T23:06:17.000000Z",
-            "created_at": "2023-09-19T23:06:17.000000Z",
+            "name": "Prof. Jay Flatley DDS",
+            "username": "spinka.jackie",
+            "email": "bayer.leann@example.org",
+            "email_verified_at": "2023-09-20T11:16:32.000000Z",
+            "updated_at": "2023-09-20T11:16:32.000000Z",
+            "created_at": "2023-09-20T11:16:32.000000Z",
             "id": 6
         }
     ]
@@ -91,14 +91,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/admins" \
+    -G "https://onthego2africa.com/api/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/admins"
+    "https://onthego2africa.com/api/api/admins"
 );
 
 let headers = {
@@ -152,16 +152,16 @@ Store a newly created admin in storage.
 
 ```bash
 curl -X POST \
-    "https://onthego2africa.com/api/admins" \
+    "https://onthego2africa.com/api/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"cum","username":"qui","email":"vel","password":"quod","password_confirmation":"dicta"}'
+    -d '{"name":"ab","username":"commodi","email":"ut","password":"nisi","password_confirmation":"nulla"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/admins"
+    "https://onthego2africa.com/api/api/admins"
 );
 
 let headers = {
@@ -170,11 +170,11 @@ let headers = {
 };
 
 let body = {
-    "name": "cum",
-    "username": "qui",
-    "email": "vel",
-    "password": "quod",
-    "password_confirmation": "dicta"
+    "name": "ab",
+    "username": "commodi",
+    "email": "ut",
+    "password": "nisi",
+    "password_confirmation": "nulla"
 }
 
 fetch(url, {
@@ -248,14 +248,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/admins/fuga" \
+    -G "https://onthego2africa.com/api/api/admins/rerum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/admins/fuga"
+    "https://onthego2africa.com/api/api/admins/rerum"
 );
 
 let headers = {
@@ -316,16 +316,16 @@ Update the admin in storage.
 
 ```bash
 curl -X PUT \
-    "https://onthego2africa.com/api/admins" \
+    "https://onthego2africa.com/api/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"quia","username":"debitis"}'
+    -d '{"name":"voluptas","username":"voluptates"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/admins"
+    "https://onthego2africa.com/api/api/admins"
 );
 
 let headers = {
@@ -334,8 +334,8 @@ let headers = {
 };
 
 let body = {
-    "name": "quia",
-    "username": "debitis"
+    "name": "voluptas",
+    "username": "voluptates"
 }
 
 fetch(url, {
@@ -391,14 +391,14 @@ Remove the Admin from storage.
 
 ```bash
 curl -X DELETE \
-    "https://onthego2africa.com/api/admins" \
+    "https://onthego2africa.com/api/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/admins"
+    "https://onthego2africa.com/api/api/admins"
 );
 
 let headers = {

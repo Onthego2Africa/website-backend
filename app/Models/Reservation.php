@@ -11,7 +11,7 @@ class Reservation extends Model
     use HasFactory;
 
     protected $fillable = [
-        'number_of_guests',
+        'email',
         'paymentID',
         'check_in',
         'check_out',
@@ -20,6 +20,9 @@ class Reservation extends Model
         'event_id',
         'tour_id',
         'confirm_paid',
+        'plan_name',
+        'plan_price',
+        'plan_quantity',
         'name'
     ];
 

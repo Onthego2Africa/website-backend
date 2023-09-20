@@ -39,6 +39,7 @@ Route::get('/events/{slug}', [EventController::class, 'show']);
 Route::get('/tours/{slug}', [TourController::class, 'show']);
 Route::get('/packages/{id}', [PackageController::class, 'show']);
 Route::get('password/reset/{token}', [AuthController::class, 'resetForm'])->name('password.reset');
+Route::post('/book-event/{id}', [ReservationController::class, 'storeEventBooking']);
 
 // user routes
 Route::group(['middleware' => ['auth:sanctum', 'role:user|super-admin|admin']], function () {
@@ -46,7 +47,6 @@ Route::group(['middleware' => ['auth:sanctum', 'role:user|super-admin|admin']], 
     Route::put('/users', [AuthController::class, 'update']);
     Route::get('/reservations', [ReservationController::class, 'index']);
     Route::post('/book-tour/{id}', [ReservationController::class, 'storeTourBooking']);
-    Route::post('/book-event/{id}', [ReservationController::class, 'storeEventBooking']);
     Route::get('/reservations/{id}', [ReservationController::class, 'show']);
     Route::put('/reservations/{id}', [ReservationController::class, 'update']);
     Route::delete('/reservations/{id}', [ReservationController::class, 'destroy']);

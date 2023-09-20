@@ -11,14 +11,14 @@ Apis for managing event resource
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/faqs" \
+    -G "https://onthego2africa.com/api/api/faqs" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/faqs"
+    "https://onthego2africa.com/api/api/faqs"
 );
 
 let headers = {
@@ -72,16 +72,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "https://onthego2africa.com/api/faqs" \
+    "https://onthego2africa.com/api/api/faqs" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"officia","content":"impedit"}'
+    -d '{"title":"quaerat","content":"a"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/faqs"
+    "https://onthego2africa.com/api/api/faqs"
 );
 
 let headers = {
@@ -90,8 +90,8 @@ let headers = {
 };
 
 let body = {
-    "title": "officia",
-    "content": "impedit"
+    "title": "quaerat",
+    "content": "a"
 }
 
 fetch(url, {
@@ -147,14 +147,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/faqs/perspiciatis" \
+    -G "https://onthego2africa.com/api/api/faqs/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/faqs/perspiciatis"
+    "https://onthego2africa.com/api/api/faqs/et"
 );
 
 let headers = {
@@ -215,16 +215,16 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "https://onthego2africa.com/api/faqs/suscipit" \
+    "https://onthego2africa.com/api/api/faqs/in" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"autem","content":"assumenda"}'
+    -d '{"title":"dolores","content":"voluptatem"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/faqs/suscipit"
+    "https://onthego2africa.com/api/api/faqs/in"
 );
 
 let headers = {
@@ -233,8 +233,8 @@ let headers = {
 };
 
 let body = {
-    "title": "autem",
-    "content": "assumenda"
+    "title": "dolores",
+    "content": "voluptatem"
 }
 
 fetch(url, {
@@ -297,14 +297,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "https://onthego2africa.com/api/faqs/commodi" \
+    "https://onthego2africa.com/api/api/faqs/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/faqs/commodi"
+    "https://onthego2africa.com/api/api/faqs/et"
 );
 
 let headers = {
