@@ -14,7 +14,7 @@ curl -X POST \
     "https://onthego2africa.com/api/api/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"sed","username":"amet","email":"atque","password":"eum","password_confirmation":"quod"}'
+    -d '{"name":"cumque","username":"cum","email":"et","password":"voluptatum","password_confirmation":"dolor"}'
 
 ```
 
@@ -29,11 +29,11 @@ let headers = {
 };
 
 let body = {
-    "name": "sed",
-    "username": "amet",
-    "email": "atque",
-    "password": "eum",
-    "password_confirmation": "quod"
+    "name": "cumque",
+    "username": "cum",
+    "email": "et",
+    "password": "voluptatum",
+    "password_confirmation": "dolor"
 }
 
 fetch(url, {
@@ -49,13 +49,13 @@ fetch(url, {
 ```json
 {
     "data": {
-        "name": "Kristofer Feeney",
-        "username": "wlockman",
-        "email": "anne80@example.org",
-        "email_verified_at": "2023-09-20T11:16:32.000000Z",
-        "updated_at": "2023-09-20T11:16:32.000000Z",
-        "created_at": "2023-09-20T11:16:32.000000Z",
-        "id": 2
+        "name": "Dr. Larue Pouros",
+        "username": "quentin.hand",
+        "email": "schaefer.florencio@example.net",
+        "email_verified_at": "2023-10-04T10:11:44.000000Z",
+        "updated_at": "2023-10-04T10:11:44.000000Z",
+        "created_at": "2023-10-04T10:11:44.000000Z",
+        "id": 7
     }
 }
 ```
@@ -125,7 +125,7 @@ curl -X POST \
     "https://onthego2africa.com/api/api/forgot-password" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"eos"}'
+    -d '{"email":"aut"}'
 
 ```
 
@@ -140,7 +140,7 @@ let headers = {
 };
 
 let body = {
-    "email": "eos"
+    "email": "aut"
 }
 
 fetch(url, {
@@ -193,7 +193,7 @@ curl -X POST \
     "https://onthego2africa.com/api/api/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"ut","password":"aut"}'
+    -d '{"email":"quis","password":"incidunt"}'
 
 ```
 
@@ -208,8 +208,8 @@ let headers = {
 };
 
 let body = {
-    "email": "ut",
-    "password": "aut"
+    "email": "quis",
+    "password": "incidunt"
 }
 
 fetch(url, {
@@ -225,13 +225,13 @@ fetch(url, {
 ```json
 {
     "data": {
-        "name": "Sheldon Greenholt Jr.",
-        "username": "sophia19",
-        "email": "ibeier@example.org",
-        "email_verified_at": "2023-09-20T11:16:32.000000Z",
-        "updated_at": "2023-09-20T11:16:32.000000Z",
-        "created_at": "2023-09-20T11:16:32.000000Z",
-        "id": 3
+        "name": "Jaren Brakus DVM",
+        "username": "windler.davon",
+        "email": "karl.altenwerth@example.net",
+        "email_verified_at": "2023-10-04T10:11:44.000000Z",
+        "updated_at": "2023-10-04T10:11:44.000000Z",
+        "created_at": "2023-10-04T10:11:44.000000Z",
+        "id": 8
     }
 }
 ```
@@ -283,7 +283,7 @@ curl -X POST \
     "https://onthego2africa.com/api/api/email/verification-notification" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"fugit"}'
+    -d '{"email":"voluptate"}'
 
 ```
 
@@ -298,7 +298,7 @@ let headers = {
 };
 
 let body = {
-    "email": "fugit"
+    "email": "voluptate"
 }
 
 fetch(url, {
@@ -348,14 +348,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/api/verify-email/nihil/quo" \
+    -G "https://onthego2africa.com/api/api/verify-email/consectetur/perspiciatis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/api/verify-email/nihil/quo"
+    "https://onthego2africa.com/api/api/verify-email/consectetur/perspiciatis"
 );
 
 let headers = {
@@ -486,7 +486,7 @@ curl -X PUT \
     "https://onthego2africa.com/api/api/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"harum","username":"quisquam"}'
+    -d '{"name":"dolorem","username":"eos"}'
 
 ```
 
@@ -501,8 +501,8 @@ let headers = {
 };
 
 let body = {
-    "name": "harum",
-    "username": "quisquam"
+    "name": "dolorem",
+    "username": "eos"
 }
 
 fetch(url, {
@@ -518,13 +518,13 @@ fetch(url, {
 ```json
 {
     "data": {
-        "name": "Randi Hartmann III",
-        "username": "croberts",
-        "email": "jacobson.kirstin@example.com",
-        "email_verified_at": "2023-09-20T11:16:32.000000Z",
-        "updated_at": "2023-09-20T11:16:32.000000Z",
-        "created_at": "2023-09-20T11:16:32.000000Z",
-        "id": 4
+        "name": "Prof. Cecilia Hagenes",
+        "username": "eduardo.runte",
+        "email": "mclaughlin.eldred@example.net",
+        "email_verified_at": "2023-10-04T10:11:45.000000Z",
+        "updated_at": "2023-10-04T10:11:45.000000Z",
+        "created_at": "2023-10-04T10:11:45.000000Z",
+        "id": 9
     }
 }
 ```
@@ -573,14 +573,14 @@ Remove the specified resource from storage.
 
 ```bash
 curl -X DELETE \
-    "https://onthego2africa.com/api/api/users/ipsam" \
+    "https://onthego2africa.com/api/api/users/illo" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/api/users/ipsam"
+    "https://onthego2africa.com/api/api/users/illo"
 );
 
 let headers = {

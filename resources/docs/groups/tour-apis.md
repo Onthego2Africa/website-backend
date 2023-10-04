@@ -72,14 +72,14 @@ Fetch tour with slug
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/api/tours/quisquam" \
+    -G "https://onthego2africa.com/api/api/tours/quas" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/api/tours/quisquam"
+    "https://onthego2africa.com/api/api/tours/quas"
 );
 
 let headers = {
@@ -154,12 +154,12 @@ curl -X POST \
     "https://onthego2africa.com/api/api/tours" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=qui" \
-    -F "overview=est" \
-    -F "itenary=repellat" \
-    -F "cost=dolore" \
-    -F "images[]=aliquid" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php6585.tmp" 
+    -F "title=voluptas" \
+    -F "overview=deserunt" \
+    -F "itenary=explicabo" \
+    -F "cost=doloribus" \
+    -F "images[]=ex" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php4143.tmp" 
 ```
 
 ```javascript
@@ -173,11 +173,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'qui');
-body.append('overview', 'est');
-body.append('itenary', 'repellat');
-body.append('cost', 'dolore');
-body.append('images[]', 'aliquid');
+body.append('title', 'voluptas');
+body.append('overview', 'deserunt');
+body.append('itenary', 'explicabo');
+body.append('cost', 'doloribus');
+body.append('images[]', 'ex');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -257,20 +257,20 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "https://onthego2africa.com/api/api/tours/quo" \
+    "https://onthego2africa.com/api/api/tours/voluptatem" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=dicta" \
-    -F "overview=qui" \
-    -F "itenary=ut" \
-    -F "cost=exercitationem" \
-    -F "images[]=ex" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php6595.tmp" 
+    -F "title=nobis" \
+    -F "overview=nisi" \
+    -F "itenary=accusantium" \
+    -F "cost=voluptatem" \
+    -F "images[]=reiciendis" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php41C1.tmp" 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/api/tours/quo"
+    "https://onthego2africa.com/api/api/tours/voluptatem"
 );
 
 let headers = {
@@ -279,11 +279,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'dicta');
-body.append('overview', 'qui');
-body.append('itenary', 'ut');
-body.append('cost', 'exercitationem');
-body.append('images[]', 'ex');
+body.append('title', 'nobis');
+body.append('overview', 'nisi');
+body.append('itenary', 'accusantium');
+body.append('cost', 'voluptatem');
+body.append('images[]', 'reiciendis');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -370,14 +370,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "https://onthego2africa.com/api/api/tours/recusandae" \
+    "https://onthego2africa.com/api/api/tours/quia" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/api/tours/recusandae"
+    "https://onthego2africa.com/api/api/tours/quia"
 );
 
 let headers = {

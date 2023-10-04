@@ -45,6 +45,7 @@ class ReservationController extends Controller
      * @bodyParam plan_price string required
      * @bodyParam plan_quantity string required
      * @bodyParam name string required
+     * @bodyParam email string required
      * 
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -61,7 +62,7 @@ class ReservationController extends Controller
             'plan_price' => 'required',
             'plan_quantity' => 'required',
             'name' => 'required',
-            'email' => 'required'
+            'email' => 'email|required'
         ]);
 
         $fields['event_id'] = $id;

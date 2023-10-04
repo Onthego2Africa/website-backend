@@ -2,170 +2,6 @@
 
 Apis for managing reservation resource
 
-## GET /reservations
-
-
-
-
-> Example request:
-
-```bash
-curl -X GET \
-    -G "https://onthego2africa.com/api/api/reservations" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json"
-```
-
-```javascript
-const url = new URL(
-    "https://onthego2africa.com/api/api/reservations"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response => response.json());
-```
-
-
-> Example response (401):
-
-```json
-{
-    "message": "Unauthenticated."
-}
-```
-<div id="execution-results-GETapi-reservations" hidden>
-    <blockquote>Received response<span id="execution-response-status-GETapi-reservations"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-reservations"></code></pre>
-</div>
-<div id="execution-error-GETapi-reservations" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-reservations"></code></pre>
-</div>
-<form id="form-GETapi-reservations" data-method="GET" data-path="api/reservations" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETapi-reservations', this);">
-<h3>
-    Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETapi-reservations" onclick="tryItOut('GETapi-reservations');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETapi-reservations" onclick="cancelTryOut('GETapi-reservations');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETapi-reservations" hidden>Send Request 💥</button>
-    </h3>
-<p>
-<small class="badge badge-green">GET</small>
- <b><code>api/reservations</code></b>
-</p>
-</form>
-
-
-## POST /book-tour
-
-
-
-
-> Example request:
-
-```bash
-curl -X POST \
-    "https://onthego2africa.com/api/api/book-tour/aliquam" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-    -d '{"number_of_guests":"eum","check_in":"quia","check_out":"corporis","cost":"corrupti","paymentID":"eum"}'
-
-```
-
-```javascript
-const url = new URL(
-    "https://onthego2africa.com/api/api/book-tour/aliquam"
-);
-
-let headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "number_of_guests": "eum",
-    "check_in": "quia",
-    "check_out": "corporis",
-    "cost": "corrupti",
-    "paymentID": "eum"
-}
-
-fetch(url, {
-    method: "POST",
-    headers,
-    body: JSON.stringify(body),
-}).then(response => response.json());
-```
-
-
-<div id="execution-results-POSTapi-book-tour--id-" hidden>
-    <blockquote>Received response<span id="execution-response-status-POSTapi-book-tour--id-"></span>:</blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-book-tour--id-"></code></pre>
-</div>
-<div id="execution-error-POSTapi-book-tour--id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-book-tour--id-"></code></pre>
-</div>
-<form id="form-POSTapi-book-tour--id-" data-method="POST" data-path="api/book-tour/{id}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-book-tour--id-', this);">
-<h3>
-    Request&nbsp;&nbsp;&nbsp;
-        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-book-tour--id-" onclick="tryItOut('POSTapi-book-tour--id-');">Try it out ⚡</button>
-    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-book-tour--id-" onclick="cancelTryOut('POSTapi-book-tour--id-');" hidden>Cancel</button>&nbsp;&nbsp;
-    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-book-tour--id-" hidden>Send Request 💥</button>
-    </h3>
-<p>
-<small class="badge badge-black">POST</small>
- <b><code>api/book-tour/{id}</code></b>
-</p>
-<h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-<p>
-<b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="id" data-endpoint="POSTapi-book-tour--id-" data-component="url" required  hidden>
-<br>
-
-</p>
-<h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-<p>
-<b><code>number_of_guests</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="number_of_guests" data-endpoint="POSTapi-book-tour--id-" data-component="body" required  hidden>
-<br>
-
-</p>
-<p>
-<b><code>check_in</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="check_in" data-endpoint="POSTapi-book-tour--id-" data-component="body" required  hidden>
-<br>
-
-</p>
-<p>
-<b><code>check_out</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="check_out" data-endpoint="POSTapi-book-tour--id-" data-component="body" required  hidden>
-<br>
-
-</p>
-<p>
-<b><code>cost</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="cost" data-endpoint="POSTapi-book-tour--id-" data-component="body" required  hidden>
-<br>
-
-</p>
-<p>
-<b><code>paymentID</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
-<input type="text" name="paymentID" data-endpoint="POSTapi-book-tour--id-" data-component="body" required  hidden>
-<br>
-
-</p>
-
-</form>
-
-
 ## POST /book-event
 
 
@@ -175,16 +11,16 @@ fetch(url, {
 
 ```bash
 curl -X POST \
-    "https://onthego2africa.com/api/api/book-event/sit" \
+    "https://onthego2africa.com/api/api/book-event/velit" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"check_in":"eius","check_out":"voluptas","cost":"voluptate","paymentID":"animi","package_id":"qui","plan_name":"accusamus","plan_price":"blanditiis","plan_quantity":"quaerat","name":"voluptatem"}'
+    -d '{"check_in":"id","check_out":"optio","cost":"aliquid","paymentID":"beatae","package_id":"est","plan_name":"quia","plan_price":"suscipit","plan_quantity":"saepe","name":"reiciendis","email":"praesentium"}'
 
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/api/book-event/sit"
+    "https://onthego2africa.com/api/api/book-event/velit"
 );
 
 let headers = {
@@ -193,15 +29,16 @@ let headers = {
 };
 
 let body = {
-    "check_in": "eius",
-    "check_out": "voluptas",
-    "cost": "voluptate",
-    "paymentID": "animi",
-    "package_id": "qui",
-    "plan_name": "accusamus",
-    "plan_price": "blanditiis",
-    "plan_quantity": "quaerat",
-    "name": "voluptatem"
+    "check_in": "id",
+    "check_out": "optio",
+    "cost": "aliquid",
+    "paymentID": "beatae",
+    "package_id": "est",
+    "plan_name": "quia",
+    "plan_price": "suscipit",
+    "plan_quantity": "saepe",
+    "name": "reiciendis",
+    "email": "praesentium"
 }
 
 fetch(url, {
@@ -293,6 +130,176 @@ fetch(url, {
 <br>
 
 </p>
+<p>
+<b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="email" data-endpoint="POSTapi-book-event--id-" data-component="body" required  hidden>
+<br>
+
+</p>
+
+</form>
+
+
+## GET /reservations
+
+
+
+
+> Example request:
+
+```bash
+curl -X GET \
+    -G "https://onthego2africa.com/api/api/reservations" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"
+```
+
+```javascript
+const url = new URL(
+    "https://onthego2africa.com/api/api/reservations"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response => response.json());
+```
+
+
+> Example response (401):
+
+```json
+{
+    "message": "Unauthenticated."
+}
+```
+<div id="execution-results-GETapi-reservations" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETapi-reservations"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-reservations"></code></pre>
+</div>
+<div id="execution-error-GETapi-reservations" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-reservations"></code></pre>
+</div>
+<form id="form-GETapi-reservations" data-method="GET" data-path="api/reservations" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETapi-reservations', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETapi-reservations" onclick="tryItOut('GETapi-reservations');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETapi-reservations" onclick="cancelTryOut('GETapi-reservations');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETapi-reservations" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-green">GET</small>
+ <b><code>api/reservations</code></b>
+</p>
+</form>
+
+
+## POST /book-tour
+
+
+
+
+> Example request:
+
+```bash
+curl -X POST \
+    "https://onthego2africa.com/api/api/book-tour/nemo" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -d '{"number_of_guests":"non","check_in":"sed","check_out":"aspernatur","cost":"sit","paymentID":"enim"}'
+
+```
+
+```javascript
+const url = new URL(
+    "https://onthego2africa.com/api/api/book-tour/nemo"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "number_of_guests": "non",
+    "check_in": "sed",
+    "check_out": "aspernatur",
+    "cost": "sit",
+    "paymentID": "enim"
+}
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response => response.json());
+```
+
+
+<div id="execution-results-POSTapi-book-tour--id-" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-book-tour--id-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-book-tour--id-"></code></pre>
+</div>
+<div id="execution-error-POSTapi-book-tour--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-book-tour--id-"></code></pre>
+</div>
+<form id="form-POSTapi-book-tour--id-" data-method="POST" data-path="api/book-tour/{id}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-book-tour--id-', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-book-tour--id-" onclick="tryItOut('POSTapi-book-tour--id-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-book-tour--id-" onclick="cancelTryOut('POSTapi-book-tour--id-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-book-tour--id-" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-black">POST</small>
+ <b><code>api/book-tour/{id}</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+<p>
+<b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="id" data-endpoint="POSTapi-book-tour--id-" data-component="url" required  hidden>
+<br>
+
+</p>
+<h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+<p>
+<b><code>number_of_guests</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="number_of_guests" data-endpoint="POSTapi-book-tour--id-" data-component="body" required  hidden>
+<br>
+
+</p>
+<p>
+<b><code>check_in</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="check_in" data-endpoint="POSTapi-book-tour--id-" data-component="body" required  hidden>
+<br>
+
+</p>
+<p>
+<b><code>check_out</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="check_out" data-endpoint="POSTapi-book-tour--id-" data-component="body" required  hidden>
+<br>
+
+</p>
+<p>
+<b><code>cost</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="cost" data-endpoint="POSTapi-book-tour--id-" data-component="body" required  hidden>
+<br>
+
+</p>
+<p>
+<b><code>paymentID</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="paymentID" data-endpoint="POSTapi-book-tour--id-" data-component="body" required  hidden>
+<br>
+
+</p>
 
 </form>
 
@@ -306,14 +313,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/api/reservations/possimus" \
+    -G "https://onthego2africa.com/api/api/reservations/sint" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/api/reservations/possimus"
+    "https://onthego2africa.com/api/api/reservations/sint"
 );
 
 let headers = {
@@ -374,14 +381,14 @@ fetch(url, {
 
 ```bash
 curl -X PUT \
-    "https://onthego2africa.com/api/api/reservations/earum" \
+    "https://onthego2africa.com/api/api/reservations/magnam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/api/reservations/earum"
+    "https://onthego2africa.com/api/api/reservations/magnam"
 );
 
 let headers = {
@@ -435,14 +442,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "https://onthego2africa.com/api/api/reservations/perferendis" \
+    "https://onthego2africa.com/api/api/reservations/unde" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/api/reservations/perferendis"
+    "https://onthego2africa.com/api/api/reservations/unde"
 );
 
 let headers = {
@@ -496,14 +503,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/api/togglepaid/fugit" \
+    -G "https://onthego2africa.com/api/api/togglepaid/voluptate" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/api/togglepaid/fugit"
+    "https://onthego2africa.com/api/api/togglepaid/voluptate"
 );
 
 let headers = {
