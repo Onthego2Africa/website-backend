@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewReservationMail;
+use App\Mail\ThanksReservationMail;
+use App\Models\Event;
 use App\Models\Package;
 use App\Models\Reservation;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 /**
  * @group Booking APIs
@@ -22,9 +26,9 @@ class ReservationController extends Controller
      */
     public function index(Request $request)
     {
-        // $reservations = Reservation::all();
-        $reservations = Reservation::where('user_id', $request->user()->id)::with('events')->get();
-        $reservations = Reservation::where('user_id', $request->user()->id)::with('tours')->get();
+        $reservations = Reservation::all();
+        // $reservations = Reservation::where('user_id', $request->user()->id)::with('events')->get();
+        // $reservations = Reservation::where('user_id', $request->user()->id)::with('tours')->get();
 
         $response = [
             'reservations' => $reservations
@@ -67,11 +71,34 @@ class ReservationController extends Controller
 
         $fields['event_id'] = $id;
 
+        $ticket_id = 'T-' . random_int(10000, 99999);
+
+        //Just do the query how ever you want, this is totally generic
+
+        while (Reservation::where('ticket_id', $ticket_id)->first()) {
+            $ticket_id = 'T-' . random_int(10000, 99999);
+        }
+
+        $fields['ticket_id'] = $ticket_id;
+
+        $event = Event::find($id);
+
+        $package = Package::find($fields['package_id']);
+
         $reservation = Reservation::create($fields);
 
         $response = [
             'reservation' => $reservation,
         ];
+
+        $reservation['event'] = $event['title'];
+        $reservation['package'] = $package['title'];
+
+        Mail::to('info@onthego2africa.com')->send(new NewReservationMail($reservation));
+
+        Mail::to($fields['email'])->send(new ThanksReservationMail($reservation));
+
+        // return response()->json(['message' => 'Email sent successfully']);
 
         return response($response, 201);
     }

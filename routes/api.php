@@ -1,15 +1,16 @@
 <?php
 
-use App\Http\Controllers\AdminController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\EventController;
 use App\Http\Controllers\FaqController;
-use App\Http\Controllers\NewsLetterController;
-use App\Http\Controllers\PackageController;
-use App\Http\Controllers\ReservationController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\TourController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\PackageController;
+use App\Http\Controllers\NewsLetterController;
+use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\ReservationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,7 @@ use App\Http\Controllers\TourController;
 
 // Public Routes
 
+Route::post('/contact-us', [ContactFormController::class, 'store']);
 Route::get('/tours', [TourController::class, 'index']);
 Route::get('/events', [EventController::class, 'index']);
 Route::get('/packages', [PackageController::class, 'index']);
@@ -63,6 +65,9 @@ Route::group(['middleware' => ['auth:sanctum', 'role:super-admin|admin']], funct
     Route::get('/admins/{id}', [AdminController::class, 'show']);
     Route::put('/admins', [AdminController::class, 'update']);
     Route::delete('/admins', [AdminController::class, 'destroy']);
+    Route::get('/contact-us', [ContactFormController::class, 'index']);
+    Route::get('/contact-us/{id}', [ContactFormController::class, 'show']);
+    Route::delete('/contact-us/{id}', [ContactFormController::class, 'destroy']);
     Route::post('/faqs', [FaqController::class, 'store']);
     Route::get('/faqs/{id}', [FaqController::class, 'show']);
     Route::put('/faqs/{id}', [FaqController::class, 'update']);

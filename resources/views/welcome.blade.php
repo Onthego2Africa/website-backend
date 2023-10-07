@@ -219,7 +219,6 @@ button a{
 
         <div class="bottomHalf">
           <p>Email Verified Successfully</p>
-
           <button id="alertMO">
               <a href="https://">Visit On The go2 Africa</a>
               {{-- <a href="https://localhost:4200/login">Go To RateCardly</a> --}}

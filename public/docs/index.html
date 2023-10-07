@@ -44,7 +44,7 @@
                             <li><a href='http://github.com/knuckleswtf/scribe'>Documentation powered by Scribe ✍</a></li>
                     </ul>
             <ul class="toc-footer" id="last-updated">
-            <li>Last updated: October 4 2023</li>
+            <li>Last updated: October 7 2023</li>
         </ul>
 </div>
 <div class="page-wrapper">
@@ -93,22 +93,22 @@ fetch(url, {
 <pre><code class="language-json">{
     "data": [
         {
-            "name": "Mrs. Corine Breitenberg",
-            "username": "julio16",
-            "email": "torrey06@example.org",
-            "email_verified_at": "2023-10-04T10:11:45.000000Z",
-            "updated_at": "2023-10-04T10:11:45.000000Z",
-            "created_at": "2023-10-04T10:11:45.000000Z",
-            "id": 10
+            "name": "Prof. Myra Jones",
+            "username": "fermin.tremblay",
+            "email": "witting.madilyn@example.org",
+            "email_verified_at": "2023-10-07T11:12:25.000000Z",
+            "updated_at": "2023-10-07T11:12:25.000000Z",
+            "created_at": "2023-10-07T11:12:25.000000Z",
+            "id": 5
         },
         {
-            "name": "Dr. Jayce Konopelski",
-            "username": "seffertz",
-            "email": "agulgowski@example.com",
-            "email_verified_at": "2023-10-04T10:11:45.000000Z",
-            "updated_at": "2023-10-04T10:11:45.000000Z",
-            "created_at": "2023-10-04T10:11:45.000000Z",
-            "id": 11
+            "name": "Lamont Olson",
+            "username": "harley77",
+            "email": "angela.wolff@example.net",
+            "email_verified_at": "2023-10-07T11:12:25.000000Z",
+            "updated_at": "2023-10-07T11:12:25.000000Z",
+            "created_at": "2023-10-07T11:12:25.000000Z",
+            "id": 6
         }
     ]
 }</code></pre>
@@ -188,7 +188,7 @@ fetch(url, {
     "https://onthego2africa.com/api/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"laboriosam","username":"nam","email":"ipsum","password":"suscipit","password_confirmation":"saepe"}'
+    -d '{"name":"voluptas","username":"voluptatem","email":"impedit","password":"id","password_confirmation":"illum"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego2africa.com/api/api/admins"
@@ -200,11 +200,11 @@ let headers = {
 };
 
 let body = {
-    "name": "laboriosam",
-    "username": "nam",
-    "email": "ipsum",
-    "password": "suscipit",
-    "password_confirmation": "saepe"
+    "name": "voluptas",
+    "username": "voluptatem",
+    "email": "impedit",
+    "password": "id",
+    "password_confirmation": "illum"
 }
 
 fetch(url, {
@@ -269,11 +269,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego2africa.com/api/api/admins/sequi" \
+    -G "https://onthego2africa.com/api/api/admins/autem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/admins/sequi"
+    "https://onthego2africa.com/api/api/admins/autem"
 );
 
 let headers = {
@@ -327,7 +327,7 @@ fetch(url, {
     "https://onthego2africa.com/api/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"maiores","username":"ut"}'
+    -d '{"name":"repellat","username":"tempora"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego2africa.com/api/api/admins"
@@ -339,8 +339,8 @@ let headers = {
 };
 
 let body = {
-    "name": "maiores",
-    "username": "ut"
+    "name": "repellat",
+    "username": "tempora"
 }
 
 fetch(url, {
@@ -430,13 +430,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego2africa.com/api/api/book-event/velit" \
+    "https://onthego2africa.com/api/api/book-event/veniam" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"check_in":"id","check_out":"optio","cost":"aliquid","paymentID":"beatae","package_id":"est","plan_name":"quia","plan_price":"suscipit","plan_quantity":"saepe","name":"reiciendis","email":"praesentium"}'
+    -d '{"check_in":"sint","check_out":"vero","cost":"recusandae","paymentID":"quia","package_id":"voluptate","plan_name":"autem","plan_price":"voluptas","plan_quantity":"qui","name":"sint","email":"porro"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/book-event/velit"
+    "https://onthego2africa.com/api/api/book-event/veniam"
 );
 
 let headers = {
@@ -445,16 +445,16 @@ let headers = {
 };
 
 let body = {
-    "check_in": "id",
-    "check_out": "optio",
-    "cost": "aliquid",
-    "paymentID": "beatae",
-    "package_id": "est",
-    "plan_name": "quia",
-    "plan_price": "suscipit",
-    "plan_quantity": "saepe",
-    "name": "reiciendis",
-    "email": "praesentium"
+    "check_in": "sint",
+    "check_out": "vero",
+    "cost": "recusandae",
+    "paymentID": "quia",
+    "package_id": "voluptate",
+    "plan_name": "autem",
+    "plan_price": "voluptas",
+    "plan_quantity": "qui",
+    "name": "sint",
+    "email": "porro"
 }
 
 fetch(url, {
@@ -603,13 +603,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X POST \
-    "https://onthego2africa.com/api/api/book-tour/nemo" \
+    "https://onthego2africa.com/api/api/book-tour/nostrum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"number_of_guests":"non","check_in":"sed","check_out":"aspernatur","cost":"sit","paymentID":"enim"}'
+    -d '{"number_of_guests":"qui","check_in":"illum","check_out":"quaerat","cost":"quos","paymentID":"nostrum"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/book-tour/nemo"
+    "https://onthego2africa.com/api/api/book-tour/nostrum"
 );
 
 let headers = {
@@ -618,11 +618,11 @@ let headers = {
 };
 
 let body = {
-    "number_of_guests": "non",
-    "check_in": "sed",
-    "check_out": "aspernatur",
-    "cost": "sit",
-    "paymentID": "enim"
+    "number_of_guests": "qui",
+    "check_in": "illum",
+    "check_out": "quaerat",
+    "cost": "quos",
+    "paymentID": "nostrum"
 }
 
 fetch(url, {
@@ -694,11 +694,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego2africa.com/api/api/reservations/sint" \
+    -G "https://onthego2africa.com/api/api/reservations/est" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/reservations/sint"
+    "https://onthego2africa.com/api/api/reservations/est"
 );
 
 let headers = {
@@ -748,11 +748,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "https://onthego2africa.com/api/api/reservations/magnam" \
+    "https://onthego2africa.com/api/api/reservations/atque" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/reservations/magnam"
+    "https://onthego2africa.com/api/api/reservations/atque"
 );
 
 let headers = {
@@ -796,11 +796,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "https://onthego2africa.com/api/api/reservations/unde" \
+    "https://onthego2africa.com/api/api/reservations/magni" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/reservations/unde"
+    "https://onthego2africa.com/api/api/reservations/magni"
 );
 
 let headers = {
@@ -844,11 +844,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego2africa.com/api/api/togglepaid/voluptate" \
+    -G "https://onthego2africa.com/api/api/togglepaid/exercitationem" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/togglepaid/voluptate"
+    "https://onthego2africa.com/api/api/togglepaid/exercitationem"
 );
 
 let headers = {
@@ -889,6 +889,226 @@ fetch(url, {
 <p>
 <b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
 <input type="text" name="id" data-endpoint="GETapi-togglepaid--id-" data-component="url" required  hidden>
+<br>
+
+</p>
+</form><h1>Contact Form APIs</h1>
+<p>Apis for managing event resource</p>
+<h2>POST /contact-us</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "https://onthego2africa.com/api/api/contact-us" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -d '{"name":"ipsum","email":"magni","text":"et"}'
+</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "https://onthego2africa.com/api/api/contact-us"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "name": "ipsum",
+    "email": "magni",
+    "text": "et"
+}
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre>
+<div id="execution-results-POSTapi-contact-us" hidden>
+    <blockquote>Received response<span id="execution-response-status-POSTapi-contact-us"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-contact-us"></code></pre>
+</div>
+<div id="execution-error-POSTapi-contact-us" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-contact-us"></code></pre>
+</div>
+<form id="form-POSTapi-contact-us" data-method="POST" data-path="api/contact-us" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('POSTapi-contact-us', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-POSTapi-contact-us" onclick="tryItOut('POSTapi-contact-us');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-POSTapi-contact-us" onclick="cancelTryOut('POSTapi-contact-us');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-POSTapi-contact-us" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-black">POST</small>
+ <b><code>api/contact-us</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+<p>
+<b><code>name</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="name" data-endpoint="POSTapi-contact-us" data-component="body" required  hidden>
+<br>
+
+</p>
+<p>
+<b><code>email</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="email" data-endpoint="POSTapi-contact-us" data-component="body" required  hidden>
+<br>
+
+</p>
+<p>
+<b><code>text</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="text" data-endpoint="POSTapi-contact-us" data-component="body" required  hidden>
+<br>
+
+</p>
+
+</form>
+<h2>GET /contact-us</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "https://onthego2africa.com/api/api/contact-us" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "https://onthego2africa.com/api/api/contact-us"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+<blockquote>
+<p>Example response (401):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Unauthenticated."
+}</code></pre>
+<div id="execution-results-GETapi-contact-us" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETapi-contact-us"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-contact-us"></code></pre>
+</div>
+<div id="execution-error-GETapi-contact-us" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-contact-us"></code></pre>
+</div>
+<form id="form-GETapi-contact-us" data-method="GET" data-path="api/contact-us" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETapi-contact-us', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETapi-contact-us" onclick="tryItOut('GETapi-contact-us');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETapi-contact-us" onclick="cancelTryOut('GETapi-contact-us');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETapi-contact-us" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-green">GET</small>
+ <b><code>api/contact-us</code></b>
+</p>
+</form>
+<h2>GET /contact-us/id</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "https://onthego2africa.com/api/api/contact-us/fugiat" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "https://onthego2africa.com/api/api/contact-us/fugiat"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+<blockquote>
+<p>Example response (401):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "message": "Unauthenticated."
+}</code></pre>
+<div id="execution-results-GETapi-contact-us--id-" hidden>
+    <blockquote>Received response<span id="execution-response-status-GETapi-contact-us--id-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-contact-us--id-"></code></pre>
+</div>
+<div id="execution-error-GETapi-contact-us--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-contact-us--id-"></code></pre>
+</div>
+<form id="form-GETapi-contact-us--id-" data-method="GET" data-path="api/contact-us/{id}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('GETapi-contact-us--id-', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-GETapi-contact-us--id-" onclick="tryItOut('GETapi-contact-us--id-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-GETapi-contact-us--id-" onclick="cancelTryOut('GETapi-contact-us--id-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-GETapi-contact-us--id-" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-green">GET</small>
+ <b><code>api/contact-us/{id}</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+<p>
+<b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="id" data-endpoint="GETapi-contact-us--id-" data-component="url" required  hidden>
+<br>
+
+</p>
+</form>
+<h2>DELETE /contact-us</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X DELETE \
+    "https://onthego2africa.com/api/api/contact-us/repudiandae" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "https://onthego2africa.com/api/api/contact-us/repudiandae"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+<div id="execution-results-DELETEapi-contact-us--id-" hidden>
+    <blockquote>Received response<span id="execution-response-status-DELETEapi-contact-us--id-"></span>:</blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-contact-us--id-"></code></pre>
+</div>
+<div id="execution-error-DELETEapi-contact-us--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-contact-us--id-"></code></pre>
+</div>
+<form id="form-DELETEapi-contact-us--id-" data-method="DELETE" data-path="api/contact-us/{id}" data-authed="0" data-hasfiles="0" data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}' onsubmit="event.preventDefault(); executeTryOut('DELETEapi-contact-us--id-', this);">
+<h3>
+    Request&nbsp;&nbsp;&nbsp;
+        <button type="button" style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-tryout-DELETEapi-contact-us--id-" onclick="tryItOut('DELETEapi-contact-us--id-');">Try it out ⚡</button>
+    <button type="button" style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-canceltryout-DELETEapi-contact-us--id-" onclick="cancelTryOut('DELETEapi-contact-us--id-');" hidden>Cancel</button>&nbsp;&nbsp;
+    <button type="submit" style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;" id="btn-executetryout-DELETEapi-contact-us--id-" hidden>Send Request 💥</button>
+    </h3>
+<p>
+<small class="badge badge-red">DELETE</small>
+ <b><code>api/contact-us/{id}</code></b>
+</p>
+<h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+<p>
+<b><code>id</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+<input type="text" name="id" data-endpoint="DELETEapi-contact-us--id-" data-component="url" required  hidden>
 <br>
 
 </p>
@@ -1035,11 +1255,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego2africa.com/api/api/events/id" \
+    -G "https://onthego2africa.com/api/api/events/cum" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/events/id"
+    "https://onthego2africa.com/api/api/events/cum"
 );
 
 let headers = {
@@ -1105,13 +1325,13 @@ fetch(url, {
     "https://onthego2africa.com/api/api/events" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=aut" \
-    -F "overview=qui" \
-    -F "itenary=eum" \
-    -F "cost=accusantium" \
-    -F "packages[]=illo" \
-    -F "images[]=quis" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php41F1.tmp" </code></pre>
+    -F "title=voluptatum" \
+    -F "overview=laudantium" \
+    -F "itenary=quas" \
+    -F "cost=quasi" \
+    -F "packages[]=autem" \
+    -F "images[]=voluptatibus" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpDEAE.tmp" </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego2africa.com/api/api/events"
 );
@@ -1122,12 +1342,12 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'aut');
-body.append('overview', 'qui');
-body.append('itenary', 'eum');
-body.append('cost', 'accusantium');
-body.append('packages[]', 'illo');
-body.append('images[]', 'quis');
+body.append('title', 'voluptatum');
+body.append('overview', 'laudantium');
+body.append('itenary', 'quas');
+body.append('cost', 'quasi');
+body.append('packages[]', 'autem');
+body.append('images[]', 'voluptatibus');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -1204,17 +1424,17 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "https://onthego2africa.com/api/api/events/unde" \
+    "https://onthego2africa.com/api/api/events/dolores" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=eligendi" \
-    -F "overview=quia" \
-    -F "itenary=accusantium" \
-    -F "cost=officiis" \
-    -F "images[]=odio" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php4221.tmp" </code></pre>
+    -F "title=pariatur" \
+    -F "overview=voluptas" \
+    -F "itenary=dolorum" \
+    -F "cost=debitis" \
+    -F "images[]=ab" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpDEAF.tmp" </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/events/unde"
+    "https://onthego2africa.com/api/api/events/dolores"
 );
 
 let headers = {
@@ -1223,11 +1443,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'eligendi');
-body.append('overview', 'quia');
-body.append('itenary', 'accusantium');
-body.append('cost', 'officiis');
-body.append('images[]', 'odio');
+body.append('title', 'pariatur');
+body.append('overview', 'voluptas');
+body.append('itenary', 'dolorum');
+body.append('cost', 'debitis');
+body.append('images[]', 'ab');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -1305,11 +1525,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "https://onthego2africa.com/api/api/events/voluptatum" \
+    "https://onthego2africa.com/api/api/events/minima" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/events/voluptatum"
+    "https://onthego2africa.com/api/api/events/minima"
 );
 
 let headers = {
@@ -1387,8 +1607,8 @@ fetch(url, {
             "plan_3_price": null,
             "plan_4_name": null,
             "plan_4_price": null,
-            "created_at": "2023-09-20T11:28:18.000000Z",
-            "updated_at": "2023-09-20T11:28:18.000000Z"
+            "created_at": "2023-10-07T11:10:40.000000Z",
+            "updated_at": "2023-10-07T11:10:40.000000Z"
         },
         {
             "id": 2,
@@ -1402,8 +1622,8 @@ fetch(url, {
             "plan_3_price": null,
             "plan_4_name": null,
             "plan_4_price": null,
-            "created_at": "2023-09-20T11:28:18.000000Z",
-            "updated_at": "2023-09-20T11:28:18.000000Z"
+            "created_at": "2023-10-07T11:10:40.000000Z",
+            "updated_at": "2023-10-07T11:10:40.000000Z"
         },
         {
             "id": 3,
@@ -1417,8 +1637,8 @@ fetch(url, {
             "plan_3_price": "$3,000.00",
             "plan_4_name": "Apartment (The Signature) - Twin",
             "plan_4_price": "$2,200.00",
-            "created_at": "2023-09-20T11:28:18.000000Z",
-            "updated_at": "2023-09-20T11:28:18.000000Z"
+            "created_at": "2023-10-07T11:10:40.000000Z",
+            "updated_at": "2023-10-07T11:10:40.000000Z"
         }
     ]
 }</code></pre>
@@ -1447,11 +1667,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego2africa.com/api/api/packages/quidem" \
+    -G "https://onthego2africa.com/api/api/packages/quo" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/packages/quidem"
+    "https://onthego2africa.com/api/api/packages/quo"
 );
 
 let headers = {
@@ -2024,7 +2244,7 @@ fetch(url, {
     "https://onthego2africa.com/api/api/faqs" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"laborum","content":"voluptate"}'
+    -d '{"title":"molestiae","content":"totam"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego2africa.com/api/api/faqs"
@@ -2036,8 +2256,8 @@ let headers = {
 };
 
 let body = {
-    "title": "laborum",
-    "content": "voluptate"
+    "title": "molestiae",
+    "content": "totam"
 }
 
 fetch(url, {
@@ -2084,11 +2304,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego2africa.com/api/api/faqs/in" \
+    -G "https://onthego2africa.com/api/api/faqs/dicta" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/faqs/in"
+    "https://onthego2africa.com/api/api/faqs/dicta"
 );
 
 let headers = {
@@ -2138,13 +2358,13 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "https://onthego2africa.com/api/api/faqs/repellat" \
+    "https://onthego2africa.com/api/api/faqs/tempore" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"title":"eligendi","content":"est"}'
+    -d '{"title":"omnis","content":"ducimus"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/faqs/repellat"
+    "https://onthego2africa.com/api/api/faqs/tempore"
 );
 
 let headers = {
@@ -2153,8 +2373,8 @@ let headers = {
 };
 
 let body = {
-    "title": "eligendi",
-    "content": "est"
+    "title": "omnis",
+    "content": "ducimus"
 }
 
 fetch(url, {
@@ -2307,7 +2527,7 @@ fetch(url, {
     "https://onthego2africa.com/api/api/newsletter-subscribe" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"exercitationem"}'
+    -d '{"email":"qui"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego2africa.com/api/api/newsletter-subscribe"
@@ -2319,7 +2539,7 @@ let headers = {
 };
 
 let body = {
-    "email": "exercitationem"
+    "email": "qui"
 }
 
 fetch(url, {
@@ -2409,11 +2629,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego2africa.com/api/api/tours/quas" \
+    -G "https://onthego2africa.com/api/api/tours/expedita" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/tours/quas"
+    "https://onthego2africa.com/api/api/tours/expedita"
 );
 
 let headers = {
@@ -2477,12 +2697,12 @@ fetch(url, {
     "https://onthego2africa.com/api/api/tours" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=voluptas" \
-    -F "overview=deserunt" \
-    -F "itenary=explicabo" \
-    -F "cost=doloribus" \
-    -F "images[]=ex" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php4143.tmp" </code></pre>
+    -F "title=nihil" \
+    -F "overview=soluta" \
+    -F "itenary=doloribus" \
+    -F "cost=dolor" \
+    -F "images[]=veniam" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpDE7D.tmp" </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego2africa.com/api/api/tours"
 );
@@ -2493,11 +2713,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'voluptas');
-body.append('overview', 'deserunt');
-body.append('itenary', 'explicabo');
-body.append('cost', 'doloribus');
-body.append('images[]', 'ex');
+body.append('title', 'nihil');
+body.append('overview', 'soluta');
+body.append('itenary', 'doloribus');
+body.append('cost', 'dolor');
+body.append('images[]', 'veniam');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -2568,17 +2788,17 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X PUT \
-    "https://onthego2africa.com/api/api/tours/voluptatem" \
+    "https://onthego2africa.com/api/api/tours/vero" \
     -H "Content-Type: multipart/form-data" \
     -H "Accept: application/json" \
-    -F "title=nobis" \
-    -F "overview=nisi" \
-    -F "itenary=accusantium" \
-    -F "cost=voluptatem" \
-    -F "images[]=reiciendis" \
-    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\php41C1.tmp" </code></pre>
+    -F "title=quo" \
+    -F "overview=culpa" \
+    -F "itenary=repellendus" \
+    -F "cost=nihil" \
+    -F "images[]=ratione" \
+    -F "cover_image=@C:\Users\PC\AppData\Local\Temp\phpDE9D.tmp" </code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/tours/voluptatem"
+    "https://onthego2africa.com/api/api/tours/vero"
 );
 
 let headers = {
@@ -2587,11 +2807,11 @@ let headers = {
 };
 
 const body = new FormData();
-body.append('title', 'nobis');
-body.append('overview', 'nisi');
-body.append('itenary', 'accusantium');
-body.append('cost', 'voluptatem');
-body.append('images[]', 'reiciendis');
+body.append('title', 'quo');
+body.append('overview', 'culpa');
+body.append('itenary', 'repellendus');
+body.append('cost', 'nihil');
+body.append('images[]', 'ratione');
 body.append('cover_image', document.querySelector('input[name="cover_image"]').files[0]);
 
 fetch(url, {
@@ -2669,11 +2889,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "https://onthego2africa.com/api/api/tours/quia" \
+    "https://onthego2africa.com/api/api/tours/perferendis" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/tours/quia"
+    "https://onthego2africa.com/api/api/tours/perferendis"
 );
 
 let headers = {
@@ -2722,7 +2942,7 @@ fetch(url, {
     "https://onthego2africa.com/api/api/register" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"cumque","username":"cum","email":"et","password":"voluptatum","password_confirmation":"dolor"}'
+    -d '{"name":"rerum","username":"ipsum","email":"voluptas","password":"sapiente","password_confirmation":"quia"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego2africa.com/api/api/register"
@@ -2734,11 +2954,11 @@ let headers = {
 };
 
 let body = {
-    "name": "cumque",
-    "username": "cum",
-    "email": "et",
-    "password": "voluptatum",
-    "password_confirmation": "dolor"
+    "name": "rerum",
+    "username": "ipsum",
+    "email": "voluptas",
+    "password": "sapiente",
+    "password_confirmation": "quia"
 }
 
 fetch(url, {
@@ -2751,13 +2971,13 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
-        "name": "Dr. Larue Pouros",
-        "username": "quentin.hand",
-        "email": "schaefer.florencio@example.net",
-        "email_verified_at": "2023-10-04T10:11:44.000000Z",
-        "updated_at": "2023-10-04T10:11:44.000000Z",
-        "created_at": "2023-10-04T10:11:44.000000Z",
-        "id": 7
+        "name": "Bailee Champlin",
+        "username": "pyundt",
+        "email": "lbecker@example.org",
+        "email_verified_at": "2023-10-07T11:12:25.000000Z",
+        "updated_at": "2023-10-07T11:12:25.000000Z",
+        "created_at": "2023-10-07T11:12:25.000000Z",
+        "id": 2
     }
 }</code></pre>
 <div id="execution-results-POSTapi-register" hidden>
@@ -2820,7 +3040,7 @@ fetch(url, {
     "https://onthego2africa.com/api/api/forgot-password" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"aut"}'
+    -d '{"email":"earum"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego2africa.com/api/api/forgot-password"
@@ -2832,7 +3052,7 @@ let headers = {
 };
 
 let body = {
-    "email": "aut"
+    "email": "earum"
 }
 
 fetch(url, {
@@ -2876,7 +3096,7 @@ fetch(url, {
     "https://onthego2africa.com/api/api/login" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"quis","password":"incidunt"}'
+    -d '{"email":"cumque","password":"voluptatem"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego2africa.com/api/api/login"
@@ -2888,8 +3108,8 @@ let headers = {
 };
 
 let body = {
-    "email": "quis",
-    "password": "incidunt"
+    "email": "cumque",
+    "password": "voluptatem"
 }
 
 fetch(url, {
@@ -2902,13 +3122,13 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
-        "name": "Jaren Brakus DVM",
-        "username": "windler.davon",
-        "email": "karl.altenwerth@example.net",
-        "email_verified_at": "2023-10-04T10:11:44.000000Z",
-        "updated_at": "2023-10-04T10:11:44.000000Z",
-        "created_at": "2023-10-04T10:11:44.000000Z",
-        "id": 8
+        "name": "Isobel Lesch",
+        "username": "sophie30",
+        "email": "janiya66@example.org",
+        "email_verified_at": "2023-10-07T11:12:25.000000Z",
+        "updated_at": "2023-10-07T11:12:25.000000Z",
+        "created_at": "2023-10-07T11:12:25.000000Z",
+        "id": 3
     }
 }</code></pre>
 <div id="execution-results-POSTapi-login" hidden>
@@ -2953,7 +3173,7 @@ fetch(url, {
     "https://onthego2africa.com/api/api/email/verification-notification" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"voluptate"}'
+    -d '{"email":"et"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego2africa.com/api/api/email/verification-notification"
@@ -2965,7 +3185,7 @@ let headers = {
 };
 
 let body = {
-    "email": "voluptate"
+    "email": "et"
 }
 
 fetch(url, {
@@ -3006,11 +3226,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X GET \
-    -G "https://onthego2africa.com/api/api/verify-email/consectetur/perspiciatis" \
+    -G "https://onthego2africa.com/api/api/verify-email/ut/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/verify-email/consectetur/perspiciatis"
+    "https://onthego2africa.com/api/api/verify-email/ut/et"
 );
 
 let headers = {
@@ -3117,7 +3337,7 @@ fetch(url, {
     "https://onthego2africa.com/api/api/users" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"dolorem","username":"eos"}'
+    -d '{"name":"assumenda","username":"similique"}'
 </code></pre>
 <pre><code class="language-javascript">const url = new URL(
     "https://onthego2africa.com/api/api/users"
@@ -3129,8 +3349,8 @@ let headers = {
 };
 
 let body = {
-    "name": "dolorem",
-    "username": "eos"
+    "name": "assumenda",
+    "username": "similique"
 }
 
 fetch(url, {
@@ -3143,13 +3363,13 @@ fetch(url, {
 </blockquote>
 <pre><code class="language-json">{
     "data": {
-        "name": "Prof. Cecilia Hagenes",
-        "username": "eduardo.runte",
-        "email": "mclaughlin.eldred@example.net",
-        "email_verified_at": "2023-10-04T10:11:45.000000Z",
-        "updated_at": "2023-10-04T10:11:45.000000Z",
-        "created_at": "2023-10-04T10:11:45.000000Z",
-        "id": 9
+        "name": "Lizzie Torp",
+        "username": "frank.hagenes",
+        "email": "harmony74@example.net",
+        "email_verified_at": "2023-10-07T11:12:25.000000Z",
+        "updated_at": "2023-10-07T11:12:25.000000Z",
+        "created_at": "2023-10-07T11:12:25.000000Z",
+        "id": 4
     }
 }</code></pre>
 <div id="execution-results-PUTapi-users" hidden>
@@ -3192,11 +3412,11 @@ fetch(url, {
 <p>Example request:</p>
 </blockquote>
 <pre><code class="language-bash">curl -X DELETE \
-    "https://onthego2africa.com/api/api/users/illo" \
+    "https://onthego2africa.com/api/api/users/et" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"</code></pre>
 <pre><code class="language-javascript">const url = new URL(
-    "https://onthego2africa.com/api/api/users/illo"
+    "https://onthego2africa.com/api/api/users/et"
 );
 
 let headers = {

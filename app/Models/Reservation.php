@@ -23,6 +23,7 @@ class Reservation extends Model
         'plan_name',
         'plan_price',
         'plan_quantity',
+        'ticket_id',
         'name'
     ];
 

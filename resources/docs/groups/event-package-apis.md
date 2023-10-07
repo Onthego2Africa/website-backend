@@ -51,8 +51,8 @@ fetch(url, {
             "plan_3_price": null,
             "plan_4_name": null,
             "plan_4_price": null,
-            "created_at": "2023-09-20T11:28:18.000000Z",
-            "updated_at": "2023-09-20T11:28:18.000000Z"
+            "created_at": "2023-10-07T11:10:40.000000Z",
+            "updated_at": "2023-10-07T11:10:40.000000Z"
         },
         {
             "id": 2,
@@ -66,8 +66,8 @@ fetch(url, {
             "plan_3_price": null,
             "plan_4_name": null,
             "plan_4_price": null,
-            "created_at": "2023-09-20T11:28:18.000000Z",
-            "updated_at": "2023-09-20T11:28:18.000000Z"
+            "created_at": "2023-10-07T11:10:40.000000Z",
+            "updated_at": "2023-10-07T11:10:40.000000Z"
         },
         {
             "id": 3,
@@ -81,8 +81,8 @@ fetch(url, {
             "plan_3_price": "$3,000.00",
             "plan_4_name": "Apartment (The Signature) - Twin",
             "plan_4_price": "$2,200.00",
-            "created_at": "2023-09-20T11:28:18.000000Z",
-            "updated_at": "2023-09-20T11:28:18.000000Z"
+            "created_at": "2023-10-07T11:10:40.000000Z",
+            "updated_at": "2023-10-07T11:10:40.000000Z"
         }
     ]
 }
@@ -118,14 +118,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/api/packages/quidem" \
+    -G "https://onthego2africa.com/api/api/packages/quo" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/api/packages/quidem"
+    "https://onthego2africa.com/api/api/packages/quo"
 );
 
 let headers = {

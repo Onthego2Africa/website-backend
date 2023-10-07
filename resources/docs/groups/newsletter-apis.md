@@ -75,7 +75,7 @@ curl -X POST \
     "https://onthego2africa.com/api/api/newsletter-subscribe" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"email":"exercitationem"}'
+    -d '{"email":"qui"}'
 
 ```
 
@@ -90,7 +90,7 @@ let headers = {
 };
 
 let body = {
-    "email": "exercitationem"
+    "email": "qui"
 }
 
 fetch(url, {

@@ -21,6 +21,7 @@ class CreateReservationsTable extends Migration
             $table->foreignId('package_id');
             $table->string('name');
             $table->string('email');
+            $table->string('ticket_id');
             $table->string('plan_name');
             $table->string('plan_price');
             $table->string('plan_quantity');
