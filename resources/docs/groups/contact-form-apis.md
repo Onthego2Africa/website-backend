@@ -14,7 +14,7 @@ curl -X POST \
     "https://onthego2africa.com/api/api/contact-us" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"ipsum","email":"magni","text":"et"}'
+    -d '{"name":"totam","email":"vel","text":"officiis"}'
 
 ```
 
@@ -29,9 +29,9 @@ let headers = {
 };
 
 let body = {
-    "name": "ipsum",
-    "email": "magni",
-    "text": "et"
+    "name": "totam",
+    "email": "vel",
+    "text": "officiis"
 }
 
 fetch(url, {
@@ -154,14 +154,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/api/contact-us/fugiat" \
+    -G "https://onthego2africa.com/api/api/contact-us/eveniet" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/api/contact-us/fugiat"
+    "https://onthego2africa.com/api/api/contact-us/eveniet"
 );
 
 let headers = {
@@ -222,14 +222,14 @@ fetch(url, {
 
 ```bash
 curl -X DELETE \
-    "https://onthego2africa.com/api/api/contact-us/repudiandae" \
+    "https://onthego2africa.com/api/api/contact-us/ea" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/api/contact-us/repudiandae"
+    "https://onthego2africa.com/api/api/contact-us/ea"
 );
 
 let headers = {

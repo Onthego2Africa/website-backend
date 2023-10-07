@@ -118,14 +118,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/api/packages/quo" \
+    -G "https://onthego2africa.com/api/api/packages/expedita" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/api/packages/quo"
+    "https://onthego2africa.com/api/api/packages/expedita"
 );
 
 let headers = {

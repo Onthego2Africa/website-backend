@@ -40,22 +40,22 @@ fetch(url, {
 {
     "data": [
         {
-            "name": "Prof. Myra Jones",
-            "username": "fermin.tremblay",
-            "email": "witting.madilyn@example.org",
-            "email_verified_at": "2023-10-07T11:12:25.000000Z",
-            "updated_at": "2023-10-07T11:12:25.000000Z",
-            "created_at": "2023-10-07T11:12:25.000000Z",
-            "id": 5
+            "name": "Emmet Hodkiewicz",
+            "username": "eemmerich",
+            "email": "hope.nienow@example.net",
+            "email_verified_at": "2023-10-07T12:09:31.000000Z",
+            "updated_at": "2023-10-07T12:09:31.000000Z",
+            "created_at": "2023-10-07T12:09:31.000000Z",
+            "id": 10
         },
         {
-            "name": "Lamont Olson",
-            "username": "harley77",
-            "email": "angela.wolff@example.net",
-            "email_verified_at": "2023-10-07T11:12:25.000000Z",
-            "updated_at": "2023-10-07T11:12:25.000000Z",
-            "created_at": "2023-10-07T11:12:25.000000Z",
-            "id": 6
+            "name": "Ms. Leann Kohler Sr.",
+            "username": "oernser",
+            "email": "wlangworth@example.net",
+            "email_verified_at": "2023-10-07T12:09:31.000000Z",
+            "updated_at": "2023-10-07T12:09:31.000000Z",
+            "created_at": "2023-10-07T12:09:31.000000Z",
+            "id": 11
         }
     ]
 }
@@ -155,7 +155,7 @@ curl -X POST \
     "https://onthego2africa.com/api/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"voluptas","username":"voluptatem","email":"impedit","password":"id","password_confirmation":"illum"}'
+    -d '{"name":"temporibus","username":"et","email":"ullam","password":"blanditiis","password_confirmation":"eos"}'
 
 ```
 
@@ -170,11 +170,11 @@ let headers = {
 };
 
 let body = {
-    "name": "voluptas",
-    "username": "voluptatem",
-    "email": "impedit",
-    "password": "id",
-    "password_confirmation": "illum"
+    "name": "temporibus",
+    "username": "et",
+    "email": "ullam",
+    "password": "blanditiis",
+    "password_confirmation": "eos"
 }
 
 fetch(url, {
@@ -248,14 +248,14 @@ fetch(url, {
 
 ```bash
 curl -X GET \
-    -G "https://onthego2africa.com/api/api/admins/autem" \
+    -G "https://onthego2africa.com/api/api/admins/nemo" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json"
 ```
 
 ```javascript
 const url = new URL(
-    "https://onthego2africa.com/api/api/admins/autem"
+    "https://onthego2africa.com/api/api/admins/nemo"
 );
 
 let headers = {
@@ -319,7 +319,7 @@ curl -X PUT \
     "https://onthego2africa.com/api/api/admins" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
-    -d '{"name":"repellat","username":"tempora"}'
+    -d '{"name":"quia","username":"maiores"}'
 
 ```
 
@@ -334,8 +334,8 @@ let headers = {
 };
 
 let body = {
-    "name": "repellat",
-    "username": "tempora"
+    "name": "quia",
+    "username": "maiores"
 }
 
 fetch(url, {
